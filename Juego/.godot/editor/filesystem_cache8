@@ -1,0 +1,62 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1707808813
+icon.svg::CompressedTexture2D::4241022476155833261::1706124822::1706124835::1::::<><>::
+::res://Scenes/::1707808725
+flying_enemy.tscn::PackedScene::6675178516674965444::1707808725::0::1::::<><>::
+player.tscn::PackedScene::6103653191951528368::1707808725::0::1::::<><>::res://Scripts/Player.gd<>uid://ba3kbkecxa5v1::::res://SPRITES/Player.png
+try_scene.tscn::PackedScene::343827145287394733::1707808725::0::1::::<><>::uid://cs7wjnol0uw3q::::res://Scenes/player.tscn<>uid://b5ony53qtqnjo::::res://SPRITES/Parallax and tiles/tiles/grass tileset.png<>uid://b1onax1euquxp::::res://icon.svg
+::res://Scripts/::1707808407
+Player.gd::GDScript::-1::1707808407::0::1::::<>CharacterBody2D<>::
+::res://SPRITES/::1706621577
+Boss 2.png::CompressedTexture2D::1212470456334305529::1694289161::1706124979::1::::<><>::
+Player.png::CompressedTexture2D::2444832748062705420::1525661956::1706124979::1::::<><>::
+::res://SPRITES/Boss 1/::1706124979
+Attack1.png::CompressedTexture2D::8743330551479730435::1598498990::1706124979::1::::<><>::
+Attack2.png::CompressedTexture2D::8547046074694069005::1598499009::1706124979::1::::<><>::
+Death.png::CompressedTexture2D::298537753264350996::1598499231::1706124979::1::::<><>::
+Idle.png::CompressedTexture2D::8193392613649318545::1598498940::1706124979::1::::<><>::
+Run.png::CompressedTexture2D::3461447872616384645::1598498960::1706124979::1::::<><>::
+Take hit.png::CompressedTexture2D::8606815944890166024::1598499076::1706124979::1::::<><>::
+::res://SPRITES/enemie 1/::1706124975
+::res://SPRITES/enemie 1/Files/::1706124975
+::res://SPRITES/enemie 1/GIFS/::1706124975
+::res://SPRITES/enemie 1/Sprite Sheets/::1706124979
+Skeleton Attack.png::CompressedTexture2D::4530178643000039203::1493954473::1706124979::1::::<><>::
+Skeleton Dead.png::CompressedTexture2D::3400912824169884683::1493954503::1706124979::1::::<><>::
+Skeleton Hit.png::CompressedTexture2D::6608264365798757903::1493954542::1706124979::1::::<><>::
+Skeleton Idle.png::CompressedTexture2D::2894062309173408055::1493954552::1706124979::1::::<><>::
+Skeleton React.png::CompressedTexture2D::6078645412319255990::1493954565::1706124979::1::::<><>::
+Skeleton Walk.png::CompressedTexture2D::1091564164624380136::1493954575::1706124979::1::::<><>::
+::res://SPRITES/enemie 2/::1706124979
+Attack.png::CompressedTexture2D::5352094216967300000::1694288973::1706124979::1::::<><>::
+Death.png::CompressedTexture2D::8142911634740180296::1694288973::1706124979::1::::<><>::
+Flight.png::CompressedTexture2D::381207967785507153::1694288973::1706124979::1::::<><>::
+Take Hit.png::CompressedTexture2D::8983223783943278462::1694288973::1706124979::1::::<><>::
+::res://SPRITES/enemie 3/::1706124979
+Attack.png::CompressedTexture2D::7741475808349520528::1694288973::1706124979::1::::<><>::
+Death.png::CompressedTexture2D::3498470215110883187::1694288973::1706124979::1::::<><>::
+Idle.png::CompressedTexture2D::1091815879581862689::1694288973::1706124979::1::::<><>::
+Run.png::CompressedTexture2D::2742179234556926599::1694288973::1706124979::1::::<><>::
+Take Hit.png::CompressedTexture2D::1965285593949560687::1694288973::1706124979::1::::<><>::
+::res://SPRITES/enemie 4/::1706124979
+Attack.png::CompressedTexture2D::6867882425455876762::1694288973::1706124979::1::::<><>::
+Death.png::CompressedTexture2D::2533518747234829053::1694288973::1706124979::1::::<><>::
+Idle.png::CompressedTexture2D::2893588872866037821::1694288973::1706124979::1::::<><>::
+Run.png::CompressedTexture2D::3239005976115751825::1694288973::1706124979::1::::<><>::
+Take Hit.png::CompressedTexture2D::6057332598870765333::1694288973::1706124979::1::::<><>::
+::res://SPRITES/enemie 5/::1706124979
+Attack.png::CompressedTexture2D::7439271073076666587::1694288973::1706124979::1::::<><>::
+Death.png::CompressedTexture2D::2142639668975362881::1694288973::1706124979::1::::<><>::
+Idle.png::CompressedTexture2D::3420414362997217846::1694288973::1706124979::1::::<><>::
+Shield.png::CompressedTexture2D::8782146265318148779::1694288973::1706124979::1::::<><>::
+Take Hit.png::CompressedTexture2D::2315063092225073610::1694288973::1706124979::1::::<><>::
+Walk.png::CompressedTexture2D::1360659241779936953::1694288974::1706124979::1::::<><>::
+::res://SPRITES/Parallax and tiles/::1706621577
+::res://SPRITES/Parallax and tiles/Parallax/::1706621581
+plx-1.png::CompressedTexture2D::3190094900613618015::1490650896::1706621581::1::::<><>::
+plx-2.png::CompressedTexture2D::1420234752071704644::1490650916::1706621581::1::::<><>::
+plx-3.png::CompressedTexture2D::7517294875560909540::1490650936::1706621581::1::::<><>::
+plx-4.png::CompressedTexture2D::9201584532197614333::1490650984::1706621581::1::::<><>::
+plx-5.png::CompressedTexture2D::1893863326009288166::1490650998::1706621581::1::::<><>::
+::res://SPRITES/Parallax and tiles/tiles/::1706621581
+grass tileset.png::CompressedTexture2D::4521821081058620324::1694874506::1706621581::1::::<><>::
