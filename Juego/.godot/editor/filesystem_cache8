@@ -1,12 +1,13 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1707813236
+::res://::1711358679
 icon.svg::CompressedTexture2D::4241022476155833261::1706124822::1706124835::1::::<><>::
-::res://Scenes/::1707808725
-flying_enemy.tscn::PackedScene::6675178516674965444::1707808725::0::1::::<><>::
-player.tscn::PackedScene::6103653191951528368::1707808725::0::1::::<><>::res://Scripts/Player.gd<>uid://ba3kbkecxa5v1::::res://SPRITES/Player.png
-try_scene.tscn::PackedScene::343827145287394733::1707808725::0::1::::<><>::uid://cs7wjnol0uw3q::::res://Scenes/player.tscn<>uid://b5ony53qtqnjo::::res://SPRITES/Parallax and tiles/tiles/grass tileset.png<>uid://b1onax1euquxp::::res://icon.svg
-::res://Scripts/::1707808407
-Player.gd::GDScript::-1::1707808407::0::1::::<>CharacterBody2D<>::
+::res://Scenes/::1711356701
+flying_enemy.tscn::PackedScene::6675178516674965444::1711356701::0::1::::<><>::uid://ciiuhesc5v1sm::::res://SPRITES/enemie 2/Attack.png<>res://Scripts/flying_enemy.gd<>uid://fowo7dpo3quj::::res://SPRITES/enemie 2/Flight.png<>uid://doaqthcaff0ky::::res://SPRITES/enemie 2/Death.png<>uid://d08snbbq7tb6e::::res://SPRITES/enemie 2/Take Hit.png
+player.tscn::PackedScene::6103653191951528368::1711356224::0::1::::<><>::res://Scripts/Player.gd<>uid://ba3kbkecxa5v1::::res://SPRITES/Player.png
+try_scene.tscn::PackedScene::343827145287394733::1711356224::0::1::::<><>::uid://cs7wjnol0uw3q::::res://Scenes/player.tscn<>uid://b5ony53qtqnjo::::res://SPRITES/Parallax and tiles/tiles/grass tileset.png<>uid://c2drhko8d5vya::::res://Scenes/flying_enemy.tscn
+::res://Scripts/::1711356355
+flying_enemy.gd::GDScript::-1::1711356355::0::1::::<>CharacterBody2D<>::
+Player.gd::GDScript::-1::1711182606::0::1::::<>CharacterBody2D<>::
 ::res://SPRITES/::1706621577
 Boss 2.png::CompressedTexture2D::1212470456334305529::1694289161::1706124979::1::::<><>::
 Player.png::CompressedTexture2D::2444832748062705420::1525661956::1706124979::1::::<><>::

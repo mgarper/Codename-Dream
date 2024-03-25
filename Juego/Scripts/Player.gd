@@ -115,5 +115,5 @@ func _input(event):
 		set_physics_process(true)
 
 func _on_detector_body_entered(body):
-	if body.is_in_group("Enemigos"):
-		body.queue_free()
+	if body.name == "flying_enemy":
+		body.dead()
