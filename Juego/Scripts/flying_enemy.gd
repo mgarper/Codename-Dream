@@ -29,7 +29,7 @@ func _ready():
 
 func _physics_process(delta):
 	var collision
-	
+	velocity.y = 0
 	if Attack_Detector_A.is_colliding():
 		collision = Attack_Detector_A.get_collider()
 		if collision.name == "Player":
