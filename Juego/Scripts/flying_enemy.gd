@@ -5,7 +5,7 @@ var MC_Detector_B
 var Attack_Detector_A
 var Attack_Detector_B
 var enemy_sprite
-
+var health_bar
 
 var speed
 var is_attacking
@@ -17,6 +17,9 @@ func _ready():
 	Attack_Detector_A = $Attack_detector_A
 	Attack_Detector_B = $Attack_detector_B
 	enemy_sprite = $AnimatedSprite2D
+	health_bar = $ProgressBar
+	health_bar.value = 100
+	health_bar.visible = false
 	
 	speed = 50
 	is_attacking = false
@@ -43,6 +46,7 @@ func _physics_process(delta):
 			enemy_sprite.play("Attack")
 	else:
 		is_attacking = false
+		enemy_sprite.play("Flight")
 	
 	if MC_Detector_A.is_colliding() && !is_attacking:
 		collision = MC_Detector_A.get_collider()
@@ -63,16 +67,17 @@ func _physics_process(delta):
 	else:
 		is_moving = false
 	
-	
-	
-	
-	
 	if !is_moving && !is_attacking:
 		velocity.x = 0
 	
 	move_and_slide()
 
-
+func hit():
+	health_bar.value -= 40
+	if health_bar.value < 100:
+		health_bar.visible = true
+	if health_bar.value <= 0:
+		dead()
 
 func dead():
 	set_physics_process(false)

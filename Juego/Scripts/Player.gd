@@ -116,4 +116,4 @@ func _input(event):
 
 func _on_detector_body_entered(body):
 	if body.name == "flying_enemy":
-		body.dead()
+		body.hit()

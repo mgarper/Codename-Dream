@@ -1,5 +1,5 @@
-res://Scenes/flying_enemy.tscn
-res://Scripts/flying_enemy.gd
 res://Scenes/player.tscn
 res://Scenes/try_scene.tscn
+res://Scenes/flying_enemy.tscn
+res://Scripts/flying_enemy.gd
 res://Scripts/Player.gd

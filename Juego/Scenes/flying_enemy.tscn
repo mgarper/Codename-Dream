@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=3 uid="uid://c2drhko8d5vya"]
+[gd_scene load_steps=34 format=3 uid="uid://c2drhko8d5vya"]
 
 [ext_resource type="Texture2D" uid="uid://ciiuhesc5v1sm" path="res://SPRITES/enemie 2/Attack.png" id="1_lf402"]
 [ext_resource type="Script" path="res://Scripts/flying_enemy.gd" id="1_mypw8"]
@@ -200,6 +200,12 @@ animations = [{
 "speed": 10.0
 }]
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dtay0"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_46hah"]
+bg_color = Color(0.627451, 0, 0, 1)
+
 [node name="FLYING_ENEMY" type="Node2D"]
 
 [node name="flying_enemy" type="CharacterBody2D" parent="."]
@@ -230,3 +236,14 @@ target_position = Vector2(48, 0)
 [node name="Attack_detector_B" type="RayCast2D" parent="flying_enemy"]
 position = Vector2(155, 148)
 target_position = Vector2(-52, 0)
+
+[node name="ProgressBar" type="ProgressBar" parent="flying_enemy"]
+offset_left = 133.0
+offset_top = 123.0
+offset_right = 188.0
+offset_bottom = 173.0
+scale = Vector2(1, 0.1)
+theme_override_colors/font_color = Color(0, 0, 0, 0)
+theme_override_styles/background = SubResource("StyleBoxFlat_dtay0")
+theme_override_styles/fill = SubResource("StyleBoxFlat_46hah")
+value = 100.0
