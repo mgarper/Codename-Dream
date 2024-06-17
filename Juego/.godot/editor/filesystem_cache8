@@ -1,13 +1,15 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1718118223
+::res://::1718629535
 icon.svg::CompressedTexture2D::4241022476155833261::1706128422::1706128435::1::::<><>::
-::res://Scenes/::1714982229
-flying_enemy.tscn::PackedScene::6675178516674965444::1714982229::0::1::::<><>::uid://ciiuhesc5v1sm::::res://SPRITES/enemie 2/Attack.png<>res://Scripts/flying_enemy.gd<>uid://fowo7dpo3quj::::res://SPRITES/enemie 2/Flight.png<>uid://doaqthcaff0ky::::res://SPRITES/enemie 2/Death.png<>uid://d08snbbq7tb6e::::res://SPRITES/enemie 2/Take Hit.png
-player.tscn::PackedScene::6103653191951528368::1714982228::0::1::::<><>::res://Scripts/Player.gd<>uid://ba3kbkecxa5v1::::res://SPRITES/Player.png
-try_scene.tscn::PackedScene::343827145287394733::1714982228::0::1::::<><>::uid://cs7wjnol0uw3q::::res://Scenes/player.tscn<>uid://b5ony53qtqnjo::::res://SPRITES/Parallax and tiles/tiles/grass tileset.png<>uid://c2drhko8d5vya::::res://Scenes/flying_enemy.tscn
-::res://Scripts/::1711448122
-flying_enemy.gd::GDScript::-1::1711448122::0::1::::<>CharacterBody2D<>::
-Player.gd::GDScript::-1::1711363972::0::1::::<>CharacterBody2D<>::
+::res://Scenes/::1718130226
+flying_enemy.tscn::PackedScene::6675178516674965444::1718130196::0::1::::<><>::uid://ciiuhesc5v1sm::::res://SPRITES/enemie 2/Attack.png<>res://Scripts/flying_enemy.gd<>uid://fowo7dpo3quj::::res://SPRITES/enemie 2/Flight.png<>uid://doaqthcaff0ky::::res://SPRITES/enemie 2/Death.png<>uid://d08snbbq7tb6e::::res://SPRITES/enemie 2/Take Hit.png
+patrol_enemy.tscn::PackedScene::2558834806619661401::1718130226::0::1::::<><>::uid://bfclj52pge8r8::::res://SPRITES/enemie 3/Run.png<>res://Scripts/patrol_enemy.gd<>uid://dika8fx3fjq1e::::res://SPRITES/enemie 3/Attack.png<>uid://bp3xj8cixl5fj::::res://SPRITES/enemie 3/Death.png<>uid://28874njc7csd::::res://SPRITES/enemie 3/Take Hit.png<>uid://ps5bvrnoaegf::::res://SPRITES/enemie 3/Idle.png
+player.tscn::PackedScene::6103653191951528368::1718130195::0::1::::<><>::res://Scripts/Player.gd<>uid://ba3kbkecxa5v1::::res://SPRITES/Player.png
+try_scene.tscn::PackedScene::343827145287394733::1718130195::0::1::::<><>::uid://cs7wjnol0uw3q::::res://Scenes/player.tscn<>uid://b5ony53qtqnjo::::res://SPRITES/Parallax and tiles/tiles/grass tileset.png<>uid://c2drhko8d5vya::::res://Scenes/flying_enemy.tscn<>uid://bcprvuslm7am8::::res://Scenes/patrol_enemy.tscn
+::res://Scripts/::1718130188
+flying_enemy.gd::GDScript::-1::1718120503::0::1::::<>CharacterBody2D<>::
+patrol_enemy.gd::GDScript::-1::1718130188::0::1::::<>CharacterBody2D<>::
+Player.gd::GDScript::-1::1718119521::0::1::::<>CharacterBody2D<>::
 ::res://SPRITES/::1706625177
 Boss 2.png::CompressedTexture2D::1212470456334305529::1694292761::1706128579::1::::<><>::
 Player.png::CompressedTexture2D::2444832748062705420::1525665556::1706128579::1::::<><>::

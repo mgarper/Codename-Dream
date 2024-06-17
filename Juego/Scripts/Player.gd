@@ -7,6 +7,7 @@ var attack_detection
 var max_speed = 200
 var jump = 200
 var gravity = 450
+var hit = false
 
 var switch_attacks = false
 var is_dashing = false
@@ -70,13 +71,13 @@ func _apply_animation():
 			else:
 				anim.play("IDLE")
 			
-		if velocity.y < 0:
+		if velocity.y < 0 && !hit:
 			if !is_double_jump:
 				anim.play("JUMP")
 			else:
 				anim.play("DOUBLE_JUMP")
 				
-		elif velocity.y > 0:
+		elif velocity.y > 0 && !hit:
 			anim.play("FALL")
 			
 	else:
@@ -117,3 +118,13 @@ func _input(event):
 func _on_detector_body_entered(body):
 	if body.name == "flying_enemy":
 		body.hit()
+	elif body.name == "patrol_enemy":
+		body.hit()
+
+func damage(source_name):
+	velocity.y = -150
+	move_and_slide()
+	anim.play("HIT")
+	await anim.animation_finished
+	velocity = Vector2.ZERO
+	hit = false

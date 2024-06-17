@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://cs7wjnol0uw3q"]
+[gd_scene load_steps=19 format=3 uid="uid://cs7wjnol0uw3q"]
 
 [ext_resource type="Script" path="res://Scripts/Player.gd" id="1_bqfmn"]
 [ext_resource type="Texture2D" uid="uid://ba3kbkecxa5v1" path="res://SPRITES/Player.png" id="1_d5dl5"]
@@ -143,7 +143,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_m76vw"]
 resource_name = "FALL"
-length = 0.2
+length = 0.3
 loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -217,6 +217,18 @@ tracks/1/keys = {
 "update": 1,
 "values": [true]
 }
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Sprite2D:flip_h")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
 
 [sub_resource type="Animation" id="Animation_asr56"]
 resource_name = "RUN"
@@ -234,6 +246,35 @@ tracks/0/keys = {
 "values": [8, 9, 10, 11, 12, 13]
 }
 
+[sub_resource type="Animation" id="Animation_xhp6r"]
+resource_name = "HIT"
+length = 0.3
+step = 0.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [53, 54, 54]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:flip_h")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_3rsy1"]
 _data = {
 "ATTACK_A": SubResource("Animation_eowvl"),
@@ -244,6 +285,7 @@ _data = {
 "DEAD": SubResource("Animation_k1v2s"),
 "DOUBLE_JUMP": SubResource("Animation_d17xe"),
 "FALL": SubResource("Animation_m76vw"),
+"HIT": SubResource("Animation_xhp6r"),
 "IDLE": SubResource("Animation_kfpm2"),
 "JUMP": SubResource("Animation_cbnmp"),
 "RESET": SubResource("Animation_oooio"),
@@ -264,6 +306,7 @@ script = ExtResource("1_bqfmn")
 position = Vector2(392.594, 253.496)
 scale = Vector2(1.93625, 2.2029)
 texture = ExtResource("1_d5dl5")
+flip_h = true
 hframes = 7
 vframes = 11
 
