@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://e5s1u8dpgk3n"]
+[gd_scene load_steps=8 format=3 uid="uid://e5s1u8dpgk3n"]
 
 [ext_resource type="PackedScene" uid="uid://cs7wjnol0uw3q" path="res://Scenes/player.tscn" id="2_g4ykx"]
 [ext_resource type="Texture2D" uid="uid://b5ony53qtqnjo" path="res://SPRITES/Parallax and tiles/tiles/grass tileset.png" id="2_htogq"]
 [ext_resource type="PackedScene" uid="uid://c2drhko8d5vya" path="res://Scenes/flying_enemy.tscn" id="2_j302s"]
 [ext_resource type="PackedScene" uid="uid://bcprvuslm7am8" path="res://Scenes/patrol_enemy.tscn" id="4_jfwut"]
+[ext_resource type="PackedScene" uid="uid://dnkcr3f4dwsqd" path="res://Scenes/skeleton.tscn" id="5_1jtcy"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_w7y4l"]
 texture = ExtResource("2_htogq")
@@ -689,7 +690,7 @@ sources/0 = SubResource("TileSetAtlasSource_w7y4l")
 
 [node name="MAIN_CHARACTER" parent="." instance=ExtResource("2_g4ykx")]
 z_index = 1
-position = Vector2(-570, -132)
+position = Vector2(-1093, 58)
 
 [node name="FLYING_ENEMY" parent="." groups=["Enemigos"] instance=ExtResource("2_j302s")]
 position = Vector2(1191, 169)
@@ -701,3 +702,6 @@ layer_0/tile_data = PackedInt32Array(720896, 65536, 0, 720897, 65536, 0, 720898,
 
 [node name="patrol_enemy" parent="." instance=ExtResource("4_jfwut")]
 position = Vector2(27, 183)
+
+[node name="skeleton" parent="." instance=ExtResource("5_1jtcy")]
+position = Vector2(-1290, 184)

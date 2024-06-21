@@ -120,6 +120,8 @@ func _on_detector_body_entered(body):
 		body.hit()
 	elif body.name == "patrol_enemy":
 		body.hit()
+	elif body.name == "skeleton":
+		body.hit()
 
 func damage(source_name):
 	velocity.y = -150
