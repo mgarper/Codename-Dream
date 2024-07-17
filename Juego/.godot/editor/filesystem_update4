@@ -1,7 +1,8 @@
+res://Scenes/player.tscn
 res://Scenes/try_scene.tscn
 res://Scenes/skeleton.tscn
-res://Scripts/skeleton.gd
-res://Scenes/player.tscn
+res://Scenes/beginning.tscn
 res://Scripts/Player.gd
-res://Scenes/flying_enemy.tscn
-res://Scenes/patrol_enemy.tscn
+res://Scripts/patrol_enemy.gd
+res://Scripts/skeleton.gd
+res://Scripts/flying_enemy.gd

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bsf7otldg5gat"
+path="res://.godot/imported/jump.ogg-099df00eb80ea67cc52c472dfd72148b.oggvorbisstr"
+
+[deps]
+
+source_file="res://SPRITES/Assets Descargados/gothicvania church-phaser3 files/gothicvania church/assets/sounds/jump.ogg"
+dest_files=["res://.godot/imported/jump.ogg-099df00eb80ea67cc52c472dfd72148b.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

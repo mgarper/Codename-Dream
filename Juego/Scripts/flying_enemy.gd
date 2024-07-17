@@ -50,7 +50,7 @@ func _physics_process(delta):
 	
 	if MC_Detector_A.is_colliding() && !is_attacking:
 		collision = MC_Detector_A.get_collider()
-		if collision.name == "Player":
+		if collision != null and collision.name == "Player":
 			enemy_sprite.flip_h = false
 			velocity.x = speed
 			is_attacking = false
@@ -58,7 +58,7 @@ func _physics_process(delta):
 			enemy_sprite.play("Flight")
 	elif MC_Detector_B.is_colliding() && !is_attacking:
 		collision = MC_Detector_B.get_collider()
-		if collision.name == "Player":
+		if collision != null and collision.name == "Player":
 			enemy_sprite.flip_h = true
 			velocity.x = -speed
 			is_attacking = false

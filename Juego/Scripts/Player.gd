@@ -3,12 +3,15 @@ extends CharacterBody2D
 var anim
 var sprite
 var attack_detection
+var health_sprite
+var health_bar
 
 var max_speed = 200
 var jump = 200
 var gravity = 450
-var hit = false
+var life = 5
 
+var hit = false
 var switch_attacks = false
 var is_dashing = false
 var is_double_jump = false
@@ -18,7 +21,10 @@ func _ready():
 	anim = $AnimationPlayer
 	sprite = $Sprite2D
 	attack_detection = $Attack_Detector
-
+	health_sprite = get_node("../CanvasLayer/Sprite2D")
+	health_bar = get_node("../CanvasLayer/health_bar")
+	health_sprite.frame = 0
+	
 #Bucle que se repite cada delta tiempo, procesando fisicas
 func _physics_process(delta):
 	#Positivo y negativo estan invertidos en el eje y de Godot Engine
@@ -124,9 +130,23 @@ func _on_detector_body_entered(body):
 		body.hit()
 
 func damage(source_name):
+	life -= 1
+	if life == 0:
+		dead()
+	var animation = "life_" + str(life)
+	health_bar.play(animation)
 	velocity.y = -150
 	move_and_slide()
 	anim.play("HIT")
 	await anim.animation_finished
 	velocity = Vector2.ZERO
 	hit = false
+		
+
+func dead():
+	set_physics_process(false)
+	$CollisionShape2D.disabled = true
+	health_bar.play("death")
+	anim.play("DEAD")
+	await anim.animation_finished
+	self.queue_free()

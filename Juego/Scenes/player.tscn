@@ -1,7 +1,8 @@
-[gd_scene load_steps=19 format=3 uid="uid://cs7wjnol0uw3q"]
+[gd_scene load_steps=27 format=3 uid="uid://cs7wjnol0uw3q"]
 
 [ext_resource type="Script" path="res://Scripts/Player.gd" id="1_bqfmn"]
 [ext_resource type="Texture2D" uid="uid://ba3kbkecxa5v1" path="res://SPRITES/Player.png" id="1_d5dl5"]
+[ext_resource type="Texture2D" uid="uid://cockllsiskbge" path="res://SPRITES/Assets Descargados/Hearts n Bars/Hearts n Bars/Bars_Animations/Bar2.png" id="3_pdkvx"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8k3ul"]
 size = Vector2(20.0691, 52.3768)
@@ -295,6 +296,110 @@ _data = {
 [sub_resource type="CircleShape2D" id="CircleShape2D_dipo3"]
 radius = 23.1021
 
+[sub_resource type="Animation" id="Animation_xiy0d"]
+resource_name = "life_4"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [0, 1, 3]
+}
+
+[sub_resource type="Animation" id="Animation_mlnu6"]
+resource_name = "life_3"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [3, 4, 6]
+}
+
+[sub_resource type="Animation" id="Animation_m63ji"]
+resource_name = "life_2"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [6, 7, 9]
+}
+
+[sub_resource type="Animation" id="Animation_b5n1w"]
+resource_name = "life_1"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [9, 10, 12]
+}
+
+[sub_resource type="Animation" id="Animation_hjwwi"]
+resource_name = "death"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [12, 13, 14]
+}
+
+[sub_resource type="Animation" id="Animation_n22sb"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_o01k8"]
+_data = {
+"RESET": SubResource("Animation_n22sb"),
+"death": SubResource("Animation_hjwwi"),
+"life_1": SubResource("Animation_b5n1w"),
+"life_2": SubResource("Animation_m63ji"),
+"life_3": SubResource("Animation_mlnu6"),
+"life_4": SubResource("Animation_xiy0d")
+}
+
 [node name="MAIN_CHARACTER" type="Node2D"]
 
 [node name="Player" type="CharacterBody2D" parent="."]
@@ -333,5 +438,19 @@ position = Vector2(426.471, 263.638)
 position = Vector2(-11.0381, -4.07166)
 shape = SubResource("CircleShape2D_dipo3")
 disabled = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer"]
+position = Vector2(91.25, 16)
+scale = Vector2(3.51961, 3)
+texture = ExtResource("3_pdkvx")
+hframes = 2
+vframes = 8
+
+[node name="health_bar" type="AnimationPlayer" parent="CanvasLayer"]
+libraries = {
+"": SubResource("AnimationLibrary_o01k8")
+}
 
 [connection signal="body_entered" from="Player/Attack_Detector" to="Player" method="_on_detector_body_entered"]

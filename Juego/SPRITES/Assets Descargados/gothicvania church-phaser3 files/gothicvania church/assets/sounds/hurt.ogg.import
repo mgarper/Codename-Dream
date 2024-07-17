@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bbogqbmcj4n2q"
+path="res://.godot/imported/hurt.ogg-b37331cfee2ee36e124c760f8263b3ec.oggvorbisstr"
+
+[deps]
+
+source_file="res://SPRITES/Assets Descargados/gothicvania church-phaser3 files/gothicvania church/assets/sounds/hurt.ogg"
+dest_files=["res://.godot/imported/hurt.ogg-b37331cfee2ee36e124c760f8263b3ec.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

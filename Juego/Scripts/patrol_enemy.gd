@@ -52,12 +52,12 @@ func detection():
 	var collision
 	if attack_detectorL.is_colliding():
 		collision = attack_detectorL.get_collider()
-		if collision.name == "Player":
+		if collision != null and collision.name == "Player":
 			sprite.flip_h = true
 			attack()
 	elif attack_detectorR.is_colliding():
 		collision = attack_detectorR.get_collider()
-		if collision.name == "Player":
+		if collision != null and collision.name == "Player":
 			sprite.flip_h = false
 			attack()
 
