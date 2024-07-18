@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://ds85qxx8h04x3"]
+[gd_scene load_steps=19 format=3 uid="uid://ds85qxx8h04x3"]
 
 [ext_resource type="Texture2D" uid="uid://bme87qhiy0bs8" path="res://SPRITES/enemie 4/Run.png" id="1_6id3k"]
 [ext_resource type="Script" path="res://Scripts/mushroom_enemy.gd" id="1_7mgu7"]
@@ -7,6 +7,8 @@
 [ext_resource type="Texture2D" uid="uid://cskhnaweqla66" path="res://SPRITES/enemie 4/Take Hit.png" id="3_qsw3b"]
 [ext_resource type="Texture2D" uid="uid://bcdixii2wd0nh" path="res://SPRITES/enemie 4/Death.png" id="4_h44r7"]
 [ext_resource type="Texture2D" uid="uid://c434axjp5xnx7" path="res://SPRITES/enemie 4/Attack.png" id="5_x0rtm"]
+[ext_resource type="Script" path="res://Scripts/bullet.gd" id="8_5mw36"]
+[ext_resource type="Texture2D" uid="uid://6y4tavmdnlay" path="res://SPRITES/bullet/bullet.png" id="9_6jfdk"]
 
 [sub_resource type="Animation" id="Animation_801xc"]
 length = 0.001
@@ -276,6 +278,9 @@ _data = {
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_b1mxt"]
 size = Vector2(25, 37)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_j17ts"]
+size = Vector2(6, 3.75)
+
 [node name="mushroom_enemy" type="Node2D"]
 
 [node name="mushroom_enemy" type="CharacterBody2D" parent="."]
@@ -306,3 +311,17 @@ target_position = Vector2(89, 0)
 
 [node name="Marker2D" type="Marker2D" parent="mushroom_enemy"]
 position = Vector2(565, 239)
+
+[node name="bullet" type="Area2D" parent="mushroom_enemy"]
+script = ExtResource("8_5mw36")
+
+[node name="Sprite2D" type="Sprite2D" parent="mushroom_enemy/bullet"]
+position = Vector2(444, 209)
+scale = Vector2(0.538643, 0.45255)
+texture = ExtResource("9_6jfdk")
+region_enabled = true
+region_rect = Rect2(275, 28, 20, 10)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="mushroom_enemy/bullet"]
+position = Vector2(446, 209)
+shape = SubResource("RectangleShape2D_j17ts")
