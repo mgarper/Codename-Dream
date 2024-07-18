@@ -519,8 +519,8 @@ texture = ExtResource("5_0hmc0")
 centered = false
 
 [node name="skeleton" parent="." instance=ExtResource("6_2mri1")]
-position = Vector2(1692, 157)
-scale = Vector2(0.776596, 0.693182)
+position = Vector2(1691, 181)
+scale = Vector2(0.648943, 0.552284)
 
 [node name="patrol_enemy" parent="." instance=ExtResource("8_i7skf")]
 position = Vector2(-173, 662)

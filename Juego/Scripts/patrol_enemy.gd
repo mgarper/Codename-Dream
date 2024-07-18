@@ -11,6 +11,7 @@ var health_bar
 
 var speed
 var is_waiting 
+var direction
 
 func _ready():
 	sprite = $Sprite2D
@@ -26,15 +27,21 @@ func _ready():
 	
 	speed = 120
 	is_waiting = false
+	direction = 1
 
 func _physics_process(delta):
 	if is_waiting:
 		return
 	
 	if !raycastDL.is_colliding():
-		velocity.x = speed
+		direction = 1
 	elif !raycastDR.is_colliding():
-		velocity.x = -speed
+		direction = -1
+	
+	if is_on_wall():
+		direction *= -1
+	
+	velocity.x = speed*direction
 	
 	if velocity.x < 0:
 		sprite.flip_h = true
@@ -53,11 +60,13 @@ func detection():
 	if attack_detectorL.is_colliding():
 		collision = attack_detectorL.get_collider()
 		if collision != null and collision.name == "Player":
+			set_physics_process(false)
 			sprite.flip_h = true
 			attack()
 	elif attack_detectorR.is_colliding():
 		collision = attack_detectorR.get_collider()
 		if collision != null and collision.name == "Player":
+			set_physics_process(false)
 			sprite.flip_h = false
 			attack()
 
@@ -69,7 +78,7 @@ func attack():
 		velocity.x = -speed
 	else:
 		velocity.x = speed
-
+	set_physics_process(true)
 
 func _player_body_detected(body):
 	if body.name == "Player":

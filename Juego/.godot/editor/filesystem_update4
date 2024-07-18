@@ -4,3 +4,4 @@ res://Scenes/skeleton.tscn
 res://Scenes/beginning.tscn
 res://Scenes/mushroom_enemy.tscn
 res://Scripts/patrol_enemy.gd
+res://Scenes/patrol_enemy.tscn
