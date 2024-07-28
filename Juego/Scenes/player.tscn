@@ -427,9 +427,15 @@ libraries = {
 [node name="Camera2D" type="Camera2D" parent="Player"]
 position = Vector2(412.423, 279.925)
 scale = Vector2(1.00346, 1.01791)
-zoom = Vector2(2, 2)
+zoom = Vector2(1.5, 1.5)
 position_smoothing_enabled = true
 position_smoothing_speed = 2.0
+drag_horizontal_enabled = true
+drag_vertical_enabled = true
+drag_left_margin = 0.17
+drag_right_margin = 0.15
+editor_draw_limits = true
+editor_draw_drag_margin = true
 
 [node name="Attack_Detector" type="Area2D" parent="Player"]
 position = Vector2(426.471, 263.638)
@@ -442,8 +448,8 @@ disabled = true
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="Sprite2D" type="Sprite2D" parent="CanvasLayer"]
-position = Vector2(91.25, 16)
-scale = Vector2(3.51961, 3)
+position = Vector2(175, 50)
+scale = Vector2(5.65787, 5.14301)
 texture = ExtResource("3_pdkvx")
 hframes = 2
 vframes = 8

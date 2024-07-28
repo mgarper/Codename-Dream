@@ -5,6 +5,7 @@ var sprite
 var attack_detection
 var health_sprite
 var health_bar
+var camera
 
 var max_speed = 200
 var jump = 200
@@ -21,6 +22,7 @@ func _ready():
 	anim = $AnimationPlayer
 	sprite = $Sprite2D
 	attack_detection = $Attack_Detector
+	camera = $Camera2D
 	health_sprite = get_node("../CanvasLayer/Sprite2D")
 	health_bar = get_node("../CanvasLayer/health_bar")
 	health_sprite.frame = 0

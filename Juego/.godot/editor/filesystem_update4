@@ -1,7 +1,7 @@
+res://Scenes/village.tscn
 res://Scenes/player.tscn
-res://Scenes/try_scene.tscn
-res://Scenes/skeleton.tscn
 res://Scenes/beginning.tscn
-res://Scenes/mushroom_enemy.tscn
-res://Scripts/patrol_enemy.gd
-res://Scenes/patrol_enemy.tscn
+res://Scripts/ForestZone.gd
+res://Scripts/General.gd
+res://Scripts/Player.gd
+res://Scripts/VillageZone.gd
