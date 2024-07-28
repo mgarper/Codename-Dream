@@ -1,0 +1,186 @@
+[gd_scene load_steps=15 format=3 uid="uid://cbhpux4701bbc"]
+
+[ext_resource type="Script" path="res://Scripts/main_menu.gd" id="1_2xij3"]
+[ext_resource type="Texture2D" uid="uid://dphvgwk2npmoq" path="res://SPRITES/Assets Descargados/stringstar fields/background_0.png" id="1_pidkb"]
+[ext_resource type="FontFile" uid="uid://7v2kawm2qawy" path="res://SPRITES/Assets Descargados/alagard/alagard.ttf" id="2_0sycx"]
+[ext_resource type="Texture2D" uid="uid://d0kupslrb2qsc" path="res://SPRITES/Assets Descargados/stringstar fields/background_1.png" id="2_hi8dv"]
+[ext_resource type="Texture2D" uid="uid://doe3a35dolnl3" path="res://SPRITES/Assets Descargados/stringstar fields/background_2.png" id="3_ywb2q"]
+[ext_resource type="Texture2D" uid="uid://ba3kbkecxa5v1" path="res://SPRITES/Player.png" id="4_dr5pd"]
+[ext_resource type="Texture2D" uid="uid://cf3dnxrnu7cav" path="res://SPRITES/Assets Descargados/DARK - Dog Companion/Doggo-Run.png" id="4_fmecp"]
+[ext_resource type="Texture2D" uid="uid://c3mkgp6e5y5d" path="res://SPRITES/Assets Descargados/Ultimate Dark Fantasy UI set v1.2/scalable screen/Variations/Type 1/Screen2.png" id="8_t1ilr"]
+
+[sub_resource type="Animation" id="Animation_b614t"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Main_Character:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [8]
+}
+
+[sub_resource type="Animation" id="Animation_uxaug"]
+resource_name = "RUN"
+length = 0.6
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Main_Character:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [8, 9, 10, 11, 12, 13]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_by3dh"]
+_data = {
+"RESET": SubResource("Animation_b614t"),
+"RUN": SubResource("Animation_uxaug")
+}
+
+[sub_resource type="Animation" id="Animation_v7htn"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Dog:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_42so8"]
+resource_name = "RUN"
+length = 0.8
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Dog:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ci7c0"]
+_data = {
+"RESET": SubResource("Animation_v7htn"),
+"RUN": SubResource("Animation_42so8")
+}
+
+[node name="Main_menu" type="Node2D"]
+script = ExtResource("1_2xij3")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+offset_left = 476.0
+offset_top = 361.0
+offset_right = 671.0
+offset_bottom = 461.0
+theme_override_constants/separation = 8
+
+[node name="Button" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(0.83505, 0.853052, 0.161241, 0.996078)
+theme_override_fonts/font = ExtResource("2_0sycx")
+theme_override_font_sizes/font_size = 40
+text = "Play Demo"
+flat = true
+
+[node name="Button2" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(0.835294, 0.854902, 0.160784, 0.996078)
+theme_override_fonts/font = ExtResource("2_0sycx")
+theme_override_font_sizes/font_size = 40
+text = "Exit"
+flat = true
+
+[node name="Main_Character" type="Sprite2D" parent="."]
+position = Vector2(596, 578)
+scale = Vector2(4, 4)
+texture = ExtResource("4_dr5pd")
+hframes = 7
+vframes = 11
+frame = 8
+
+[node name="Dog" type="Sprite2D" parent="."]
+position = Vector2(460, 589)
+scale = Vector2(4, 4)
+texture = ExtResource("4_fmecp")
+hframes = 8
+
+[node name="MC_Moves" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_by3dh")
+}
+
+[node name="Dog_Moves" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_ci7c0")
+}
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="CanvasLayer"]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="CanvasLayer/ParallaxBackground"]
+motion_mirroring = Vector2(1153.44, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/ParallaxBackground/ParallaxLayer"]
+scale = Vector2(4.00463, 3.59953)
+texture = ExtResource("1_pidkb")
+centered = false
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="CanvasLayer/ParallaxBackground"]
+motion_mirroring = Vector2(1153.44, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/ParallaxBackground/ParallaxLayer2"]
+scale = Vector2(4.005, 3.6)
+texture = ExtResource("2_hi8dv")
+centered = false
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="CanvasLayer/ParallaxBackground"]
+motion_mirroring = Vector2(1153.44, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/ParallaxBackground/ParallaxLayer3"]
+scale = Vector2(4.005, 3.6)
+texture = ExtResource("3_ywb2q")
+centered = false
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(580, 325)
+limit_left = 0
+limit_top = 0
+
+[node name="Label" type="Label" parent="."]
+offset_left = 405.0
+offset_top = 212.0
+offset_right = 736.0
+offset_bottom = 306.0
+theme_override_fonts/font = ExtResource("2_0sycx")
+theme_override_font_sizes/font_size = 100
+text = "ONIROS"
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(566, 252)
+scale = Vector2(24.9947, 5.81084)
+texture = ExtResource("8_t1ilr")
+
+[connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button2" to="." method="_on_button_2_pressed"]

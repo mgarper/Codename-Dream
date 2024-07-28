@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://d23lvr4qd0sgt"]
+
+[ext_resource type="Texture2D" uid="uid://b5vvq5r0sc0fh" path="res://SPRITES/Assets Descargados/gothicvania-cemetery-files/gothicvania-cemetery-files/PNG/Environment/sliced-objects/statue.png" id="1_7vu1h"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4bbys"]
+size = Vector2(49, 77)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_7vu1h")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(8.5, -0.5)
+shape = SubResource("RectangleShape2D_4bbys")

@@ -1,30 +1,58 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1722169437
+::res://::1722187901
 icon.svg::CompressedTexture2D::4241022476155833261::1706128422::1706128435::1::::<><>::
-::res://Scenes/::1722170661
-beginning.tscn::PackedScene::5687984457094396485::1722170661::0::1::::<><>::res://Scripts/ForestZone.gd<>uid://byyrga434sui1::::res://SPRITES/Assets Descargados/stringstar fields/tileset.png<>uid://cs7wjnol0uw3q::::res://Scenes/player.tscn<>uid://dphvgwk2npmoq::::res://SPRITES/Assets Descargados/stringstar fields/background_0.png<>uid://d0kupslrb2qsc::::res://SPRITES/Assets Descargados/stringstar fields/background_1.png<>uid://doe3a35dolnl3::::res://SPRITES/Assets Descargados/stringstar fields/background_2.png<>uid://dnkcr3f4dwsqd::::res://Scenes/skeleton.tscn<>uid://bcprvuslm7am8::::res://Scenes/patrol_enemy.tscn<>uid://c2drhko8d5vya::::res://Scenes/flying_enemy.tscn
+::res://Scenes/::1722188688
+beginning.tscn::PackedScene::5687984457094396485::1722188687::0::1::::<><>::res://Scripts/ForestZone.gd<>uid://byyrga434sui1::::res://SPRITES/Assets Descargados/stringstar fields/tileset.png<>uid://dphvgwk2npmoq::::res://SPRITES/Assets Descargados/stringstar fields/background_0.png<>uid://d0kupslrb2qsc::::res://SPRITES/Assets Descargados/stringstar fields/background_1.png<>uid://doe3a35dolnl3::::res://SPRITES/Assets Descargados/stringstar fields/background_2.png<>uid://dnkcr3f4dwsqd::::res://Scenes/skeleton.tscn<>uid://bcprvuslm7am8::::res://Scenes/patrol_enemy.tscn<>uid://c2drhko8d5vya::::res://Scenes/flying_enemy.tscn<>uid://d23lvr4qd0sgt::::res://Scenes/Save_Statue.tscn
 bullet.tscn::PackedScene::6482915103138290322::1718818831::0::1::::<><>::res://Scripts/bullet.gd<>uid://6y4tavmdnlay::::res://SPRITES/bullet/bullet.png
 flying_enemy.tscn::PackedScene::6675178516674965444::1719081773::0::1::::<><>::uid://ciiuhesc5v1sm::::res://SPRITES/enemie 2/Attack.png<>res://Scripts/flying_enemy.gd<>uid://fowo7dpo3quj::::res://SPRITES/enemie 2/Flight.png<>uid://doaqthcaff0ky::::res://SPRITES/enemie 2/Death.png<>uid://d08snbbq7tb6e::::res://SPRITES/enemie 2/Take Hit.png
+main_menu.tscn::PackedScene::4858428580396994248::1722188688::0::1::::<><>::res://Scripts/main_menu.gd<>uid://dphvgwk2npmoq::::res://SPRITES/Assets Descargados/stringstar fields/background_0.png<>uid://7v2kawm2qawy::::res://SPRITES/Assets Descargados/alagard/alagard.ttf<>uid://d0kupslrb2qsc::::res://SPRITES/Assets Descargados/stringstar fields/background_1.png<>uid://doe3a35dolnl3::::res://SPRITES/Assets Descargados/stringstar fields/background_2.png<>uid://ba3kbkecxa5v1::::res://SPRITES/Player.png<>uid://cf3dnxrnu7cav::::res://SPRITES/Assets Descargados/DARK - Dog Companion/Doggo-Run.png<>uid://c3mkgp6e5y5d::::res://SPRITES/Assets Descargados/Ultimate Dark Fantasy UI set v1.2/scalable screen/Variations/Type 1/Screen2.png
 mushroom_enemy.tscn::PackedScene::8492637030010626102::1721377416::0::1::::<><>::uid://bme87qhiy0bs8::::res://SPRITES/enemie 4/Run.png<>res://Scripts/mushroom_enemy.gd<>uid://bhhw8r14g135b::::res://SPRITES/enemie 4/Idle.png<>uid://cymmwui1dsk8i::::res://Scenes/bullet.tscn<>uid://cskhnaweqla66::::res://SPRITES/enemie 4/Take Hit.png<>uid://bcdixii2wd0nh::::res://SPRITES/enemie 4/Death.png<>uid://c434axjp5xnx7::::res://SPRITES/enemie 4/Attack.png<>res://Scripts/bullet.gd<>uid://6y4tavmdnlay::::res://SPRITES/bullet/bullet.png
 patrol_enemy.tscn::PackedScene::2558834806619661401::1721377416::0::1::::<><>::uid://bfclj52pge8r8::::res://SPRITES/enemie 3/Run.png<>res://Scripts/patrol_enemy.gd<>uid://dika8fx3fjq1e::::res://SPRITES/enemie 3/Attack.png<>uid://bp3xj8cixl5fj::::res://SPRITES/enemie 3/Death.png<>uid://28874njc7csd::::res://SPRITES/enemie 3/Take Hit.png<>uid://ps5bvrnoaegf::::res://SPRITES/enemie 3/Idle.png
-player.tscn::PackedScene::6103653191951528368::1722170661::0::1::::<><>::res://Scripts/Player.gd<>uid://ba3kbkecxa5v1::::res://SPRITES/Player.png<>uid://cockllsiskbge::::res://SPRITES/Assets Descargados/Hearts n Bars/Hearts n Bars/Bars_Animations/Bar2.png
+player.tscn::PackedScene::6103653191951528368::1722188687::0::1::::<><>::res://Scripts/Player.gd<>uid://ba3kbkecxa5v1::::res://SPRITES/Player.png<>uid://cockllsiskbge::::res://SPRITES/Assets Descargados/Hearts n Bars/Hearts n Bars/Bars_Animations/Bar2.png
+Save_Statue.tscn::PackedScene::9112869733440545119::1722188688::0::1::::<><>::uid://b5vvq5r0sc0fh::::res://SPRITES/Assets Descargados/gothicvania-cemetery-files/gothicvania-cemetery-files/PNG/Environment/sliced-objects/statue.png
 skeleton.tscn::PackedScene::8092514068096586539::1721377416::0::1::::<><>::uid://boy4yv5yeacos::::res://SPRITES/enemie 5/Idle.png<>res://Scripts/skeleton.gd<>uid://5r57yooc0g86::::res://SPRITES/enemie 5/Death.png<>uid://dd8vycc0s6lo2::::res://SPRITES/enemie 5/Attack.png<>uid://tnd4g55ejg70::::res://SPRITES/enemie 5/Walk.png<>uid://78o0sbexdigw::::res://SPRITES/enemie 5/Take Hit.png
 try_scene.tscn::PackedScene::343827145287394733::1721376795::0::1::::<><>::uid://cs7wjnol0uw3q::::res://Scenes/player.tscn<>uid://b5ony53qtqnjo::::res://SPRITES/Parallax and tiles/tiles/grass tileset.png<>uid://c2drhko8d5vya::::res://Scenes/flying_enemy.tscn<>uid://bcprvuslm7am8::::res://Scenes/patrol_enemy.tscn<>uid://dnkcr3f4dwsqd::::res://Scenes/skeleton.tscn
-village.tscn::PackedScene::6807829560321558413::1722170661::0::1::::<><>::uid://dcbx1u3yhii42::::res://SPRITES/Assets Descargados/GothicVania-town-files/GothicVania-town-files/PNG/environment/layers/background.png<>res://Scripts/VillageZone.gd<>uid://e1abt3jsvbtd::::res://SPRITES/Assets Descargados/GothicVania-town-files/GothicVania-town-files/PNG/environment/layers/middleground.png<>uid://c4d8iml15eyup::::res://SPRITES/Assets Descargados/GothicVania-town-files/GothicVania-town-files/PNG/environment/layers/tileset.png<>uid://cs7wjnol0uw3q::::res://Scenes/player.tscn<>uid://dm43bbnmah5tg::::res://SPRITES/Assets Descargados/GothicVania-town-files/GothicVania-town-files/code/phaser-code/assets/atlas/atlas-props.png<>uid://ucdw30nv2qai::::res://SPRITES/Assets Descargados/GothicVania-town-files/GothicVania-town-files/PNG/environment/props/houses.png<>uid://btuxeqfgg6147::::res://SPRITES/Assets Descargados/GothicVania-town-files/GothicVania-town-files/PNG/environment/props/props.png
-::res://Scripts/::1722169905
+village.tscn::PackedScene::6807829560321558413::1722188688::0::1::::<><>::uid://dcbx1u3yhii42::::res://SPRITES/Assets Descargados/GothicVania-town-files/GothicVania-town-files/PNG/environment/layers/background.png<>res://Scripts/VillageZone.gd<>uid://e1abt3jsvbtd::::res://SPRITES/Assets Descargados/GothicVania-town-files/GothicVania-town-files/PNG/environment/layers/middleground.png<>uid://c4d8iml15eyup::::res://SPRITES/Assets Descargados/GothicVania-town-files/GothicVania-town-files/PNG/environment/layers/tileset.png<>uid://cs7wjnol0uw3q::::res://Scenes/player.tscn<>uid://dm43bbnmah5tg::::res://SPRITES/Assets Descargados/GothicVania-town-files/GothicVania-town-files/code/phaser-code/assets/atlas/atlas-props.png<>uid://ucdw30nv2qai::::res://SPRITES/Assets Descargados/GothicVania-town-files/GothicVania-town-files/PNG/environment/props/houses.png<>uid://btuxeqfgg6147::::res://SPRITES/Assets Descargados/GothicVania-town-files/GothicVania-town-files/PNG/environment/props/props.png<>uid://d23lvr4qd0sgt::::res://Scenes/Save_Statue.tscn
+::res://Scripts/::1722188506
 bullet.gd::GDScript::-1::1718789459::0::1::::<>Area2D<>::
 flying_enemy.gd::GDScript::-1::1721232817::0::1::::<>CharacterBody2D<>::
+ForestZone.gd::GDScript::-1::1722188205::0::1::::<>Node2D<>::
+General.gd::GDScript::-1::1722182222::0::1::::<>Node<>::
+main_menu.gd::GDScript::-1::1722187875::0::1::::<>Node2D<>::
 mushroom_enemy.gd::GDScript::-1::1718818791::0::1::::<>CharacterBody2D<>::
 patrol_enemy.gd::GDScript::-1::1721328160::0::1::::<>CharacterBody2D<>::
 Player.gd::GDScript::-1::1722166110::0::1::::<>CharacterBody2D<>::
-ForestZone.gd::GDScript::-1::1722169719::0::1::::<>Node2D<>::
-General.gd::GDScript::-1::1722169905::0::1::::<>Node<>::
-VillageZone.gd::GDScript::-1::1722166799::0::1::::<>Node2D<>::
 skeleton.gd::GDScript::-1::1721232957::0::1::::<>CharacterBody2D<>::
+VillageZone.gd::GDScript::-1::1722188506::0::1::::<>Node2D<>::
 ::res://SPRITES/::1719127979
 Boss 2.png::CompressedTexture2D::1212470456334305529::1694292761::1706128579::1::::<><>::
 Player.png::CompressedTexture2D::2444832748062705420::1525665556::1706128579::1::::<><>::
-::res://SPRITES/Assets Descargados/::1721315808
+::res://SPRITES/Assets Descargados/::1722181599
+::res://SPRITES/Assets Descargados/alagard/::1722181603
+alagard.ttf::FontFile::2291052180563668020::1722181585::1722181603::1::::<><>::
+::res://SPRITES/Assets Descargados/DARK - Dog Companion/::1722181603
+Dead.png::CompressedTexture2D::6357854343813505186::1722181579::1722181603::1::::<><>::
+Doggo 45x34.png::CompressedTexture2D::8356526736956930900::1722181579::1722181603::1::::<><>::
+Doggo-Bark.png::CompressedTexture2D::4398476484156123776::1722181579::1722181603::1::::<><>::
+Doggo-Bite.png::CompressedTexture2D::5619536432505060030::1722181579::1722181603::1::::<><>::
+Doggo-Fall.png::CompressedTexture2D::7442876594035418309::1722181579::1722181603::1::::<><>::
+Doggo-Get Up.png::CompressedTexture2D::7528259684320741525::1722181579::1722181603::1::::<><>::
+Doggo-Idle.png::CompressedTexture2D::8732006446549778779::1722181579::1722181603::1::::<><>::
+Doggo-Jump.png::CompressedTexture2D::796104468849809408::1722181579::1722181603::1::::<><>::
+Doggo-Land.png::CompressedTexture2D::5955764369371527788::1722181579::1722181603::1::::<><>::
+Doggo-Lay Down Idle.png::CompressedTexture2D::3911586276628881011::1722181579::1722181603::1::::<><>::
+Doggo-Ledge Climb.png::CompressedTexture2D::1957510867194035568::1722181579::1722181603::1::::<><>::
+Doggo-Ledge Grab.png::CompressedTexture2D::6282064097925494794::1722181579::1722181603::1::::<><>::
+Doggo-Run.png::CompressedTexture2D::5181794763906476477::1722181579::1722181603::1::::<><>::
+Doggo-Sit Idle.png::CompressedTexture2D::7766427576362478660::1722181579::1722181603::1::::<><>::
+Doggo-Sit.png::CompressedTexture2D::6567681456284719503::1722181579::1722181603::1::::<><>::
+Doggo-Sleep.png::CompressedTexture2D::7179538582214652815::1722181580::1722181603::1::::<><>::
+Doggo-Stand.png::CompressedTexture2D::8511867342563165920::1722181580::1722181603::1::::<><>::
+Doggo-To Sleep.png::CompressedTexture2D::2507126942815172820::1722181580::1722181603::1::::<><>::
+Doggo-Wake Up Transition.png::CompressedTexture2D::4785814753633526800::1722181580::1722181603::1::::<><>::
+Doggo-Walk Sniff.png::CompressedTexture2D::320229336593327775::1722181580::1722181603::1::::<><>::
+Doggo-Walk.png::CompressedTexture2D::2124366738591594935::1722181580::1722181603::1::::<><>::
+Eat.png::CompressedTexture2D::6830247745124358029::1722181580::1722181603::1::::<><>::
 ::res://SPRITES/Assets Descargados/gothicvania-cemetery-files/::1719127982
 ::res://SPRITES/Assets Descargados/gothicvania-cemetery-files/gothicvania-cemetery-files/::1719127982
 public-license.txt::TextFile::-1::1711394210::0::1::::<><>::
@@ -866,6 +894,265 @@ background_1.png::CompressedTexture2D::8935869009522583278::1711394258::17191280
 background_2.png::CompressedTexture2D::8151864965978855902::1711394258::1719128033::1::::<><>::
 example.png::CompressedTexture2D::5403499068039682486::1711394258::1719128033::1::::<><>::
 tileset.png::CompressedTexture2D::4121540946854776730::1711394258::1719128033::1::::<><>::
+::res://SPRITES/Assets Descargados/Ultimate Dark Fantasy UI set v1.2/::1722180045
+Hud Elements Preview.png::CompressedTexture2D::7528160526385900706::1722180008::1722180045::1::::<><>::
+Lisence.txt::TextFile::-1::1722180008::0::1::::<><>::
+Menu Preview.png::CompressedTexture2D::4705868024413144023::1722180008::1722180045::1::::<><>::
+Scalable Screen Preview.png::CompressedTexture2D::6276399491790087808::1722180008::1722180045::1::::<><>::
+Skill tree Preview.png::CompressedTexture2D::6574036940424368668::1722180008::1722180045::1::::<><>::
+::res://SPRITES/Assets Descargados/Ultimate Dark Fantasy UI set v1.2/Boss bar/::1722180044
+boss_bar x1.png::CompressedTexture2D::4981406330816788169::1722180004::1722180044::1::::<><>::
+boss_bar x2.png::CompressedTexture2D::4260512987724138300::1722180004::1722180044::1::::<><>::
+boss_bar_Filler x1.png::CompressedTexture2D::5775909289476632032::1722180004::1722180044::1::::<><>::
+boss_bar_Filler x2.png::CompressedTexture2D::7567049971312914821::1722180004::1722180044::1::::<><>::
+::res://SPRITES/Assets Descargados/Ultimate Dark Fantasy UI set v1.2/Boss bar/Mini Boss bar/::1722180044
+mioni_boss_bar x1.png::CompressedTexture2D::433635163604098537::1722180004::1722180044::1::::<><>::
+mioni_boss_bar x2.png::CompressedTexture2D::6529417052733966088::1722180004::1722180044::1::::<><>::
+mioni_boss_bar_filler x1.png::CompressedTexture2D::3360609202944287433::1722180004::1722180044::1::::<><>::
+mioni_boss_bar_filler x2.png::CompressedTexture2D::8686568351636140757::1722180004::1722180044::1::::<><>::
+::res://SPRITES/Assets Descargados/Ultimate Dark Fantasy UI set v1.2/Gothic patterns/::1722180044
+Fade_effect_line x2.png::CompressedTexture2D::2034908373885997097::1722180004::1722180044::1::::<><>::
+Fade_effect_line.png::CompressedTexture2D::2727133681530392329::1722180004::1722180044::1::::<><>::
+Pattern01 x1.png::CompressedTexture2D::3814834278208021813::1722180004::1722180044::1::::<><>::
+Pattern01 x2.png::CompressedTexture2D::2132766853031085404::1722180004::1722180044::1::::<><>::
+Pattern02 x1.png::CompressedTexture2D::685147940320684701::1722180004::1722180044::1::::<><>::
+Pattern02 x2.png::CompressedTexture2D::3643851092465521078::1722180004::1722180044::1::::<><>::
+Pattern03 x1.png::CompressedTexture2D::2792799825263293733::1722180004::1722180044::1::::<><>::
+Pattern03 x2.png::CompressedTexture2D::6471686970697803187::1722180004::1722180044::1::::<><>::
+::res://SPRITES/Assets Descargados/Ultimate Dark Fantasy UI set v1.2/inventory/::1722180044
+16x16 Item holder.png::CompressedTexture2D::355125011510637890::1722180004::1722180044::1::::<><>::
+16x16 Item selector.png::CompressedTexture2D::7936970277710840154::1722180004::1722180044::1::::<><>::
+16x32 Item holder.png::CompressedTexture2D::1801895293884617224::1722180004::1722180044::1::::<><>::
+16x32 Item selector.png::CompressedTexture2D::627720120550441124::1722180004::1722180044::1::::<><>::
+32x32 Item holder.png::CompressedTexture2D::5641344778071173154::1722180004::1722180044::1::::<><>::
+32x32 Item selector.png::CompressedTexture2D::8389838295719368687::1722180004::1722180044::1::::<><>::
+32x64 Item holder.png::CompressedTexture2D::8825746327972722569::1722180004::1722180044::1::::<><>::
+32x64 Item selector.png::CompressedTexture2D::1498177287592034722::1722180004::1722180044::1::::<><>::
+64x32 arc holder.png::CompressedTexture2D::7779731750828424364::1722180004::1722180044::1::::<><>::
+64x32 arc selector.png::CompressedTexture2D::6554897050925794158::1722180004::1722180044::1::::<><>::
+::res://SPRITES/Assets Descargados/Ultimate Dark Fantasy UI set v1.2/Loading Bar/::1722180045
+filler x1.png::CompressedTexture2D::6776127544463855645::1722180005::1722180044::1::::<><>::
+filler x2.png::CompressedTexture2D::1777815954991523803::1722180005::1722180044::1::::<><>::
+Loading Sprite sheet.png::CompressedTexture2D::7372383420072059620::1722180005::1722180045::1::::<><>::
+Loading_Bar x1.png::CompressedTexture2D::1941937496527893254::1722180005::1722180045::1::::<><>::
+Loading_Bar x2.png::CompressedTexture2D::3793817740189473146::1722180005::1722180045::1::::<><>::
+::res://SPRITES/Assets Descargados/Ultimate Dark Fantasy UI set v1.2/Mini Arrows/::1722180032
+::res://SPRITES/Assets Descargados/Ultimate Dark Fantasy UI set v1.2/Mini Arrows/x1/::1722180045
+Mini_Arrows1.png::CompressedTexture2D::543472978362077013::1722180005::1722180045::1::::<><>::
+Mini_Arrows2.png::CompressedTexture2D::7041636486303094046::1722180005::1722180045::1::::<><>::
+Mini_Arrows3.png::CompressedTexture2D::1900345580293896083::1722180005::1722180045::1::::<><>::
+Mini_Arrows4.png::CompressedTexture2D::8052446465333642336::1722180005::1722180045::1::::<><>::
+::res://SPRITES/Assets Descargados/Ultimate Dark Fantasy UI set v1.2/Mini Arrows/x2/::1722180045
+Mini_Arrows1.png::CompressedTexture2D::6724040612131174358::1722180005::1722180045::1::::<><>::
+Mini_Arrows2.png::CompressedTexture2D::4344706734490428029::1722180005::1722180045::1::::<><>::
+Mini_Arrows3.png::CompressedTexture2D::8257463841917365823::1722180005::1722180045::1::::<><>::
+Mini_Arrows4.png::CompressedTexture2D::3384258622553025193::1722180005::1722180045::1::::<><>::
+::res://SPRITES/Assets Descargados/Ultimate Dark Fantasy UI set v1.2/Player Bar/::1722180044
+health_filler3.png::CompressedTexture2D::5793874141037508357::1722180005::1722180044::1::::<><>::
+Mana_filler3.png::CompressedTexture2D::3950941058882332751::1722180005::1722180044::1::::<><>::
+Player_Bar x2.png::CompressedTexture2D::1941082684827966095::1722180005::1722180044::1::::<><>::
+Player_Bar.png::CompressedTexture2D::2944125133363646669::1722180005::1722180044::1::::<><>::
+Stamina_filler.png::CompressedTexture2D::8908275629515778300::1722180005::1722180044::1::::<><>::
+::res://SPRITES/Assets Descargados/Ultimate Dark Fantasy UI set v1.2/Player Bar/potions/::1722180032
+::res://SPRITES/Assets Descargados/Ultimate Dark Fantasy UI set v1.2/Player Bar/potions/x1/::1722180045
+potion1.png::CompressedTexture2D::4511084494878035058::1722180005::1722180045::1::::<><>::
+potion2.png::CompressedTexture2D::8586529498966880747::1722180005::1722180045::1::::<><>::
+potion3.png::CompressedTexture2D::3098511051844328783::1722180005::1722180045::1::::<><>::
+::res://SPRITES/Assets Descargados/Ultimate Dark Fantasy UI set v1.2/Player Bar/potions/x2/::1722180045
+potions0 x2.png::CompressedTexture2D::7962050336456340506::1722180005::1722180045::1::::<><>::
+potions1 x2.png::CompressedTexture2D::6778025368221325344::1722180005::1722180045::1::::<><>::
+potions2 x2.png::CompressedTexture2D::7333602122422290372::1722180005::1722180044::1::::<><>::
+::res://SPRITES/Assets Descargados/Ultimate Dark Fantasy UI set v1.2/Popup Screen/::1722180044
+Blurry_popup x2.png::CompressedTexture2D::8549579908636607316::1722180005::1722180044::1::::<><>::
+Blurry_popup.png::CompressedTexture2D::3851097884836090339::1722180005::1722180044::1::::<><>::
+Fade_effect_line x2.png::CompressedTexture2D::6776496492154006460::1722180005::1722180044::1::::<><>::
+Fade_effect_line.png::CompressedTexture2D::8413215564174348828::1722180005::1722180044::1::::<><>::
+::res://SPRITES/Assets Descargados/Ultimate Dark Fantasy UI set v1.2/scalable screen/::1722180045
+Scalable txt screen x1.png::CompressedTexture2D::5191195315417211239::1722180005::1722180045::1::::<><>::
+Scalable txt screen x2.png::CompressedTexture2D::2114228450182333887::1722180005::1722180045::1::::<><>::
+::res://SPRITES/Assets Descargados/Ultimate Dark Fantasy UI set v1.2/scalable screen/Variations/::1722180032
+::res://SPRITES/Assets Descargados/Ultimate Dark Fantasy UI set v1.2/scalable screen/Variations/Type 1/::1722180044
+Screen1.png::CompressedTexture2D::6787831109501909628::1722180005::1722180044::1::::<><>::
+Screen2.png::CompressedTexture2D::198927065969203503::1722180005::1722180044::1::::<><>::
+Screen3.png::CompressedTexture2D::8677826652885961370::1722180005::1722180044::1::::<><>::
+Screen4.png::CompressedTexture2D::5405539010129850391::1722180005::1722180044::1::::<><>::
+Screen5.png::CompressedTexture2D::5043881953379421951::1722180005::1722180044::1::::<><>::
+Screen6.png::CompressedTexture2D::447908176881058860::1722180005::1722180044::1::::<><>::
+Screen7.png::CompressedTexture2D::4594547145273907774::1722180005::1722180044::1::::<><>::
+Screen8.png::CompressedTexture2D::7160164620066435761::1722180005::1722180044::1::::<><>::
+Screen9.png::CompressedTexture2D::6799607308893043456::1722180006::1722180044::1::::<><>::
+Screen10.png::CompressedTexture2D::3132325865846115365::1722180005::1722180044::1::::<><>::
+ScreenxDouble1.png::CompressedTexture2D::5528138887294889800::1722180006::1722180044::1::::<><>::
+ScreenxDouble2.png::CompressedTexture2D::6924562000622541529::1722180006::1722180044::1::::<><>::
+ScreenxDouble3.png::CompressedTexture2D::5499738767140333433::1722180006::1722180044::1::::<><>::
+ScreenxDouble4.png::CompressedTexture2D::3297750760048857213::1722180006::1722180044::1::::<><>::
+ScreenxDouble5.png::CompressedTexture2D::4598780360073151706::1722180006::1722180044::1::::<><>::
+ScreenxDouble6.png::CompressedTexture2D::1388104057587933062::1722180006::1722180044::1::::<><>::
+ScreenxDouble7.png::CompressedTexture2D::5903004623525269364::1722180006::1722180044::1::::<><>::
+ScreenxDouble8.png::CompressedTexture2D::2473900885857115658::1722180006::1722180044::1::::<><>::
+ScreenxDouble9.png::CompressedTexture2D::2157304209560195432::1722180006::1722180044::1::::<><>::
+ScreenxDouble10.png::CompressedTexture2D::6836396316785172424::1722180006::1722180044::1::::<><>::
+::res://SPRITES/Assets Descargados/Ultimate Dark Fantasy UI set v1.2/scalable screen/Variations/Type 2/::1722180044
+Screen__1.png::CompressedTexture2D::4231799510781158071::1722180006::1722180044::1::::<><>::
+Screen__2.png::CompressedTexture2D::2081361103296364743::1722180006::1722180044::1::::<><>::
+Screen__3.png::CompressedTexture2D::925739209283552567::1722180006::1722180044::1::::<><>::
+Screen__4.png::CompressedTexture2D::2736512781735160786::1722180006::1722180044::1::::<><>::
+Screen__5.png::CompressedTexture2D::6290924680074024406::1722180006::1722180044::1::::<><>::
+Screen__6.png::CompressedTexture2D::8537270520091084862::1722180006::1722180044::1::::<><>::
+Screen__7.png::CompressedTexture2D::7049365929014964351::1722180006::1722180044::1::::<><>::
+Screen__8.png::CompressedTexture2D::2094485957790395091::1722180006::1722180044::1::::<><>::
+Screen__9.png::CompressedTexture2D::5825390791029944226::1722180006::1722180044::1::::<><>::
+Screen__10.png::CompressedTexture2D::1644526496755771071::1722180006::1722180044::1::::<><>::
+Screen__Doubled1.png::CompressedTexture2D::2201760291061901249::1722180006::1722180044::1::::<><>::
+Screen__Doubled2.png::CompressedTexture2D::3258210296630813737::1722180006::1722180044::1::::<><>::
+Screen__Doubled3.png::CompressedTexture2D::5795821002019228995::1722180006::1722180044::1::::<><>::
+Screen__Doubled4.png::CompressedTexture2D::8638598334321527017::1722180006::1722180044::1::::<><>::
+Screen__Doubled5.png::CompressedTexture2D::6408984661409080867::1722180006::1722180044::1::::<><>::
+Screen__Doubled6.png::CompressedTexture2D::5170697832550981960::1722180006::1722180044::1::::<><>::
+Screen__Doubled7.png::CompressedTexture2D::3271297906914665650::1722180006::1722180044::1::::<><>::
+Screen__Doubled8.png::CompressedTexture2D::3276821386643442786::1722180006::1722180044::1::::<><>::
+Screen__Doubled9.png::CompressedTexture2D::4896265005387836121::1722180006::1722180044::1::::<><>::
+Screen__Doubled10.png::CompressedTexture2D::2819061528091668205::1722180006::1722180044::1::::<><>::
+::res://SPRITES/Assets Descargados/Ultimate Dark Fantasy UI set v1.2/scalable screen/Variations/Type 3/::1722180044
+Screen_1.png::CompressedTexture2D::7875783353034864641::1722180006::1722180044::1::::<><>::
+Screen_2.png::CompressedTexture2D::4767942166560949371::1722180006::1722180044::1::::<><>::
+Screen_3.png::CompressedTexture2D::7328078810733013465::1722180006::1722180044::1::::<><>::
+Screen_4.png::CompressedTexture2D::3862092371093762631::1722180006::1722180044::1::::<><>::
+Screen_5.png::CompressedTexture2D::4538015353153015004::1722180006::1722180044::1::::<><>::
+Screen_6.png::CompressedTexture2D::5451606837436693170::1722180006::1722180044::1::::<><>::
+Screen_7.png::CompressedTexture2D::4182725585431733832::1722180006::1722180044::1::::<><>::
+Screen_8.png::CompressedTexture2D::1769068497696746860::1722180006::1722180044::1::::<><>::
+Screen_9.png::CompressedTexture2D::5361690866348790185::1722180006::1722180044::1::::<><>::
+Screen_10.png::CompressedTexture2D::628021803715216972::1722180006::1722180044::1::::<><>::
+Screen_doubled1.png::CompressedTexture2D::6969963290285935687::1722180006::1722180044::1::::<><>::
+Screen_doubled2.png::CompressedTexture2D::8162374838259016636::1722180006::1722180044::1::::<><>::
+Screen_doubled3.png::CompressedTexture2D::1310386271513037793::1722180006::1722180044::1::::<><>::
+Screen_doubled4.png::CompressedTexture2D::2961037512572855339::1722180006::1722180044::1::::<><>::
+Screen_doubled5.png::CompressedTexture2D::1409171000645263852::1722180006::1722180044::1::::<><>::
+Screen_doubled6.png::CompressedTexture2D::452062934594144643::1722180006::1722180044::1::::<><>::
+Screen_doubled7.png::CompressedTexture2D::4223769111565971974::1722180006::1722180044::1::::<><>::
+Screen_doubled8.png::CompressedTexture2D::8636732203694685608::1722180006::1722180044::1::::<><>::
+Screen_doubled9.png::CompressedTexture2D::5359301072484542041::1722180006::1722180044::1::::<><>::
+Screen_doubled10.png::CompressedTexture2D::7142070810335118705::1722180006::1722180044::1::::<><>::
+::res://SPRITES/Assets Descargados/Ultimate Dark Fantasy UI set v1.2/scalable screen/Variations/Type 4/::1722180045
+Screen__Doubled__1.png::CompressedTexture2D::316346884330150179::1722180006::1722180045::1::::<><>::
+Screen__Doubled__2.png::CompressedTexture2D::1049718795385245726::1722180006::1722180045::1::::<><>::
+Screen__Doubled__3.png::CompressedTexture2D::4329613759054704732::1722180006::1722180045::1::::<><>::
+Screen__Doubled__4.png::CompressedTexture2D::228947412838511500::1722180006::1722180045::1::::<><>::
+Screen__Doubled__5.png::CompressedTexture2D::1577732129142954991::1722180006::1722180045::1::::<><>::
+Screen__Doubled__6.png::CompressedTexture2D::2508824177968632100::1722180006::1722180045::1::::<><>::
+Screen__Doubled__7.png::CompressedTexture2D::7145693690317103466::1722180006::1722180045::1::::<><>::
+Screen__Doubled__8.png::CompressedTexture2D::2269388917373282990::1722180007::1722180045::1::::<><>::
+Screen__Doubled__9.png::CompressedTexture2D::6680065822056719029::1722180007::1722180045::1::::<><>::
+Screen__Doubled__10.png::CompressedTexture2D::3221990895608764630::1722180006::1722180045::1::::<><>::
+Screen____1.png::CompressedTexture2D::2441324436310862360::1722180007::1722180045::1::::<><>::
+Screen____2.png::CompressedTexture2D::745460063705472679::1722180007::1722180045::1::::<><>::
+Screen____3.png::CompressedTexture2D::6183757055956440493::1722180007::1722180045::1::::<><>::
+Screen____4.png::CompressedTexture2D::4773141631564670833::1722180007::1722180045::1::::<><>::
+Screen____5.png::CompressedTexture2D::9153270772942081880::1722180007::1722180045::1::::<><>::
+Screen____6.png::CompressedTexture2D::638117782673972540::1722180007::1722180045::1::::<><>::
+Screen____7.png::CompressedTexture2D::6073920545528479946::1722180007::1722180045::1::::<><>::
+Screen____8.png::CompressedTexture2D::8829016086032200176::1722180007::1722180045::1::::<><>::
+Screen____9.png::CompressedTexture2D::7734982432996439129::1722180007::1722180045::1::::<><>::
+Screen____10.png::CompressedTexture2D::5300562577102967166::1722180007::1722180045::1::::<><>::
+::res://SPRITES/Assets Descargados/Ultimate Dark Fantasy UI set v1.2/Skill Tree/::1722180045
+Preview.png::CompressedTexture2D::5295085234408497287::1722180007::1722180045::1::::<><>::
+::res://SPRITES/Assets Descargados/Ultimate Dark Fantasy UI set v1.2/Skill Tree/Icons/::1722180032
+::res://SPRITES/Assets Descargados/Ultimate Dark Fantasy UI set v1.2/Skill Tree/Icons/locked/::1722180032
+::res://SPRITES/Assets Descargados/Ultimate Dark Fantasy UI set v1.2/Skill Tree/Icons/locked/x1/::1722180045
+icon1.png::CompressedTexture2D::722827905363528964::1722180007::1722180045::1::::<><>::
+icon2.png::CompressedTexture2D::6502322665354713896::1722180007::1722180045::1::::<><>::
+icon3.png::CompressedTexture2D::2068085200557189384::1722180007::1722180045::1::::<><>::
+icon4.png::CompressedTexture2D::4777894082800318358::1722180007::1722180045::1::::<><>::
+icon5.png::CompressedTexture2D::4052370987342236729::1722180007::1722180045::1::::<><>::
+icon6.png::CompressedTexture2D::3892454278691808996::1722180007::1722180045::1::::<><>::
+icon7.png::CompressedTexture2D::9034411269326004700::1722180007::1722180045::1::::<><>::
+icon8.png::CompressedTexture2D::835479580320592166::1722180007::1722180045::1::::<><>::
+icon9.png::CompressedTexture2D::5770806300492777490::1722180007::1722180045::1::::<><>::
+icon10.png::CompressedTexture2D::6505183476499433310::1722180007::1722180045::1::::<><>::
+icon11.png::CompressedTexture2D::471715658575327317::1722180007::1722180045::1::::<><>::
+::res://SPRITES/Assets Descargados/Ultimate Dark Fantasy UI set v1.2/Skill Tree/Icons/locked/x2/::1722180045
+icon1.png::CompressedTexture2D::8066648759305642757::1722180007::1722180045::1::::<><>::
+icon2.png::CompressedTexture2D::6223393609353531386::1722180007::1722180045::1::::<><>::
+icon3.png::CompressedTexture2D::7636892780447294012::1722180007::1722180045::1::::<><>::
+icon4.png::CompressedTexture2D::3291733174914687690::1722180007::1722180045::1::::<><>::
+icon5.png::CompressedTexture2D::3520832367891934208::1722180007::1722180045::1::::<><>::
+icon6.png::CompressedTexture2D::8415367538586607670::1722180007::1722180045::1::::<><>::
+icon7.png::CompressedTexture2D::1134910833784448712::1722180007::1722180045::1::::<><>::
+icon8.png::CompressedTexture2D::6786744143986779768::1722180007::1722180045::1::::<><>::
+icon9.png::CompressedTexture2D::8789515833983746951::1722180007::1722180045::1::::<><>::
+icon10.png::CompressedTexture2D::9214546607275454628::1722180007::1722180045::1::::<><>::
+icon11.png::CompressedTexture2D::5318341191121112700::1722180007::1722180045::1::::<><>::
+::res://SPRITES/Assets Descargados/Ultimate Dark Fantasy UI set v1.2/Skill Tree/Icons/Next Unlocked/::1722180032
+::res://SPRITES/Assets Descargados/Ultimate Dark Fantasy UI set v1.2/Skill Tree/Icons/Next Unlocked/x1/::1722180045
+next_unlocked1.png::CompressedTexture2D::3622486500733345070::1722180007::1722180045::1::::<><>::
+next_unlocked2.png::CompressedTexture2D::8666871881365042144::1722180007::1722180045::1::::<><>::
+next_unlocked3.png::CompressedTexture2D::263898701425786723::1722180007::1722180045::1::::<><>::
+next_unlocked4.png::CompressedTexture2D::452940720922996427::1722180007::1722180045::1::::<><>::
+next_unlocked5.png::CompressedTexture2D::5296220144881460331::1722180007::1722180045::1::::<><>::
+next_unlocked6.png::CompressedTexture2D::7208568879428722593::1722180007::1722180045::1::::<><>::
+next_unlocked7.png::CompressedTexture2D::9167363797915998259::1722180007::1722180045::1::::<><>::
+next_unlocked8.png::CompressedTexture2D::1698686623284482743::1722180007::1722180045::1::::<><>::
+next_unlocked9.png::CompressedTexture2D::3691195362859882855::1722180007::1722180045::1::::<><>::
+next_unlocked10.png::CompressedTexture2D::9110795873965026723::1722180007::1722180045::1::::<><>::
+next_unlocked11.png::CompressedTexture2D::8638424720972228702::1722180007::1722180045::1::::<><>::
+::res://SPRITES/Assets Descargados/Ultimate Dark Fantasy UI set v1.2/Skill Tree/Icons/Next Unlocked/x2/::1722180045
+next_unlocked1.png::CompressedTexture2D::1635965585344546254::1722180007::1722180045::1::::<><>::
+next_unlocked2.png::CompressedTexture2D::537202517429550902::1722180007::1722180045::1::::<><>::
+next_unlocked3.png::CompressedTexture2D::7079518837071307916::1722180007::1722180045::1::::<><>::
+next_unlocked4.png::CompressedTexture2D::2264818765057161289::1722180007::1722180045::1::::<><>::
+next_unlocked5.png::CompressedTexture2D::7629088258059215976::1722180007::1722180045::1::::<><>::
+next_unlocked6.png::CompressedTexture2D::4860563269628437117::1722180007::1722180045::1::::<><>::
+next_unlocked7.png::CompressedTexture2D::315902358130925995::1722180007::1722180045::1::::<><>::
+next_unlocked8.png::CompressedTexture2D::8550460670484243541::1722180007::1722180045::1::::<><>::
+next_unlocked9.png::CompressedTexture2D::2448869460033483047::1722180007::1722180045::1::::<><>::
+next_unlocked10.png::CompressedTexture2D::1966354029854985192::1722180007::1722180045::1::::<><>::
+next_unlocked11.png::CompressedTexture2D::441507689472229335::1722180007::1722180045::1::::<><>::
+::res://SPRITES/Assets Descargados/Ultimate Dark Fantasy UI set v1.2/Skill Tree/Icons/Unlocked/::1722180032
+::res://SPRITES/Assets Descargados/Ultimate Dark Fantasy UI set v1.2/Skill Tree/Icons/Unlocked/x1/::1722180045
+Unlocked1.png::CompressedTexture2D::4561229283066428393::1722180007::1722180045::1::::<><>::
+Unlocked2.png::CompressedTexture2D::5759064296830693684::1722180007::1722180045::1::::<><>::
+Unlocked3.png::CompressedTexture2D::2519040102835025686::1722180008::1722180045::1::::<><>::
+Unlocked4.png::CompressedTexture2D::3389510712148194428::1722180008::1722180045::1::::<><>::
+Unlocked5.png::CompressedTexture2D::7636537087069961643::1722180008::1722180045::1::::<><>::
+Unlocked6.png::CompressedTexture2D::6489826777081722553::1722180008::1722180045::1::::<><>::
+Unlocked7.png::CompressedTexture2D::7894756628145498379::1722180008::1722180045::1::::<><>::
+Unlocked8.png::CompressedTexture2D::5784340484410377614::1722180008::1722180045::1::::<><>::
+Unlocked9.png::CompressedTexture2D::7472014552336525653::1722180008::1722180045::1::::<><>::
+Unlocked10.png::CompressedTexture2D::2409142716634189008::1722180007::1722180045::1::::<><>::
+Unlocked11.png::CompressedTexture2D::4164683559135521125::1722180007::1722180045::1::::<><>::
+::res://SPRITES/Assets Descargados/Ultimate Dark Fantasy UI set v1.2/Skill Tree/Icons/Unlocked/x2/::1722180045
+Unlocked1.png::CompressedTexture2D::6422778025666824795::1722180008::1722180045::1::::<><>::
+Unlocked2.png::CompressedTexture2D::5287438675724475590::1722180008::1722180045::1::::<><>::
+Unlocked3.png::CompressedTexture2D::846958271761257482::1722180008::1722180045::1::::<><>::
+Unlocked4.png::CompressedTexture2D::8931181948000240926::1722180008::1722180045::1::::<><>::
+Unlocked5.png::CompressedTexture2D::3464734312196405939::1722180008::1722180045::1::::<><>::
+Unlocked6.png::CompressedTexture2D::2311413563837894147::1722180008::1722180045::1::::<><>::
+Unlocked7.png::CompressedTexture2D::1019216701643171625::1722180008::1722180045::1::::<><>::
+Unlocked8.png::CompressedTexture2D::1020611123460542846::1722180008::1722180045::1::::<><>::
+Unlocked9.png::CompressedTexture2D::3934403431230974441::1722180008::1722180045::1::::<><>::
+Unlocked10.png::CompressedTexture2D::6111725766717577064::1722180008::1722180045::1::::<><>::
+Unlocked11.png::CompressedTexture2D::2106974168543501327::1722180008::1722180045::1::::<><>::
+::res://SPRITES/Assets Descargados/Ultimate Dark Fantasy UI set v1.2/Skill Tree/Tree/::1722180045
+circle.png::CompressedTexture2D::2083344838749206913::1722180008::1722180045::1::::<><>::
+circlex2.png::CompressedTexture2D::6550433499138983553::1722180008::1722180045::1::::<><>::
+example 01.png::CompressedTexture2D::6963772113237210899::1722180008::1722180045::1::::<><>::
+example 01x2.png::CompressedTexture2D::4847084400135807039::1722180008::1722180045::1::::<><>::
+example 02.png::CompressedTexture2D::97333055884517080::1722180008::1722180045::1::::<><>::
+example 02x2.png::CompressedTexture2D::2151026593760814816::1722180008::1722180045::1::::<><>::
+example 03.png::CompressedTexture2D::4666102951004205625::1722180008::1722180045::1::::<><>::
+example 03x2.png::CompressedTexture2D::769345723565208531::1722180008::1722180045::1::::<><>::
+::res://SPRITES/Assets Descargados/Ultimate Dark Fantasy UI set v1.2/Slider/::1722180032
+::res://SPRITES/Assets Descargados/Ultimate Dark Fantasy UI set v1.2/Slider/x1/::1722180045
+Slider_components1.png::CompressedTexture2D::2216275592605483872::1722180008::1722180045::1::::<><>::
+Slider_components2.png::CompressedTexture2D::5854522200841222653::1722180008::1722180045::1::::<><>::
+Slider_components3.png::CompressedTexture2D::4054952049374341014::1722180008::1722180045::1::::<><>::
+Slider_components4.png::CompressedTexture2D::3223592713794512137::1722180008::1722180045::1::::<><>::
+::res://SPRITES/Assets Descargados/Ultimate Dark Fantasy UI set v1.2/Slider/x2/::1722180045
+Slider_components1.png::CompressedTexture2D::6905652295157817193::1722180008::1722180045::1::::<><>::
+Slider_components2.png::CompressedTexture2D::7385790721372513165::1722180008::1722180045::1::::<><>::
+Slider_components3.png::CompressedTexture2D::405303567810106852::1722180008::1722180045::1::::<><>::
+Slider_components4.png::CompressedTexture2D::269324468321008084::1722180008::1722180045::1::::<><>::
 ::res://SPRITES/Boss 1/::1706128579
 Attack1.png::CompressedTexture2D::8743330551479730435::1598502590::1706128579::1::::<><>::
 Attack2.png::CompressedTexture2D::8547046074694069005::1598502609::1706128579::1::::<><>::
