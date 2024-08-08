@@ -18,9 +18,9 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	layer1.motion_offset.x += 1
-	layer2.motion_offset.x += 2
-	layer3.motion_offset.x += 4
+	layer1.motion_offset.x -= 1
+	layer2.motion_offset.x -= 2
+	layer3.motion_offset.x -= 4
 
 
 func _on_button_pressed():

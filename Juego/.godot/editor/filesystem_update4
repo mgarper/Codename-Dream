@@ -1,8 +1,6 @@
-res://Scenes/main_menu.tscn
-res://Scripts/main_menu.gd
-res://Scenes/village.tscn
-res://Scripts/VillageZone.gd
-res://Scenes/player.tscn
+res://Scenes/castle.tscn
 res://Scenes/beginning.tscn
+res://Scenes/player.tscn
+res://Scenes/village.tscn
 res://Scenes/Save_Statue.tscn
-res://Scripts/ForestZone.gd
+res://Scenes/main_menu.tscn
