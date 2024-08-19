@@ -1,6 +1,7 @@
 extends Node2D
 var mc
 var marker
+var statue
 
 func _ready():
 	DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_FULLSCREEN)
@@ -9,18 +10,23 @@ func _ready():
 	add_child(mc)
 	
 	marker = $Marker2D
+	statue = $Node2D
 	_player_set_up()
 
 # Sets up the scale, position and camera of the player
 func _player_set_up():
 	mc.scale = Vector2(0.7, 0.7)
-	if General.first_load:
-		mc.position = Vector2(-102, -139)
-		General.first_load = false
-	elif General.dead:
-		pass
+	if !General.load_game:
+		if General.first_load:
+			mc.position = Vector2(-102, -139)
+			General.first_load = false
+		elif General.dead:
+			pass
+		else:
+			mc.position = Vector2(marker.position.x - 240, marker.position.y - 150)
 	else:
-		mc.position = Vector2(marker.position.x - 240, marker.position.y - 150)
+		General.first_load = false
+		mc.position = Vector2(statue.position.x - 240, statue.position.y - 170)
 	
 	var camera = mc.get_node("Player/Camera2D")
 	
@@ -31,4 +37,7 @@ func _player_set_up():
 # Moving to the Village
 func _on_to_village_body_shape_entered(body_rid, body, body_shape_index, local_shape_index):
 	if body.name == "Player":
-		General.change_scene("Forest","Village")
+		General.change_scene("beginning","village")
+
+
+		

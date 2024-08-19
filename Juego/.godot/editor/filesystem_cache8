@@ -1,19 +1,19 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1723101237
+::res://::1724047946
 icon.svg::CompressedTexture2D::4241022476155833261::1706128422::1706128435::1::::<><>::
-::res://Scenes/::1723113900
-beginning.tscn::PackedScene::5687984457094396485::1723113898::0::1::::<><>::res://Scripts/ForestZone.gd<>uid://byyrga434sui1::::res://SPRITES/Assets Descargados/stringstar fields/tileset.png<>uid://dphvgwk2npmoq::::res://SPRITES/Assets Descargados/stringstar fields/background_0.png<>uid://d0kupslrb2qsc::::res://SPRITES/Assets Descargados/stringstar fields/background_1.png<>uid://doe3a35dolnl3::::res://SPRITES/Assets Descargados/stringstar fields/background_2.png<>uid://dnkcr3f4dwsqd::::res://Scenes/skeleton.tscn<>uid://bcprvuslm7am8::::res://Scenes/patrol_enemy.tscn<>uid://c2drhko8d5vya::::res://Scenes/flying_enemy.tscn<>uid://d23lvr4qd0sgt::::res://Scenes/Save_Statue.tscn
+::res://Scenes/::1724002912
+beginning.tscn::PackedScene::5687984457094396485::1724002909::0::1::::<><>::res://Scripts/ForestZone.gd<>uid://byyrga434sui1::::res://SPRITES/Assets Descargados/stringstar fields/tileset.png<>uid://dphvgwk2npmoq::::res://SPRITES/Assets Descargados/stringstar fields/background_0.png<>uid://d0kupslrb2qsc::::res://SPRITES/Assets Descargados/stringstar fields/background_1.png<>uid://doe3a35dolnl3::::res://SPRITES/Assets Descargados/stringstar fields/background_2.png<>uid://dnkcr3f4dwsqd::::res://Scenes/skeleton.tscn<>uid://bcprvuslm7am8::::res://Scenes/patrol_enemy.tscn<>uid://c2drhko8d5vya::::res://Scenes/flying_enemy.tscn<>uid://d23lvr4qd0sgt::::res://Scenes/Save_Statue.tscn
 bullet.tscn::PackedScene::6482915103138290322::1718818831::0::1::::<><>::res://Scripts/bullet.gd<>uid://6y4tavmdnlay::::res://SPRITES/bullet/bullet.png
-castle.tscn::PackedScene::4485326927600365854::1723113900::0::1::::<><>::uid://cas4lo7hiqpry::::res://SPRITES/Assets Descargados/SSW_CastlePack_v1.0/_PNG/MainLevBuild.png<>uid://cbx1pi0grwy1i::::res://SPRITES/Assets Descargados/SSW_CastlePack_v1.0/_PNG/Decoratives.png<>uid://bthdan5v1nnjf::::res://SPRITES/Assets Descargados/SSW_CastlePack_v1.0/_PNG/Background1.png<>uid://dwsbin2mn6aq3::::res://SPRITES/Assets Descargados/SSW_CastlePack_v1.0/_PNG/Background2.png<>uid://dd1tuj1uoppv7::::res://SPRITES/Assets Descargados/SSW_CastlePack_v1.0/_PNG/Background3.png<>uid://cpuyu6wqt3rqa::::res://SPRITES/Assets Descargados/SSW_CastlePack_v1.0/_PNG/Background4.png<>uid://daw0mo382ivf2::::res://SPRITES/Assets Descargados/SSW_CastlePack_v1.0/_PNG/Background5.png<>uid://cs7wjnol0uw3q::::res://Scenes/player.tscn
+castle.tscn::PackedScene::4485326927600365854::1724002912::0::1::::<><>::uid://cas4lo7hiqpry::::res://SPRITES/Assets Descargados/SSW_CastlePack_v1.0/_PNG/MainLevBuild.png<>uid://cbx1pi0grwy1i::::res://SPRITES/Assets Descargados/SSW_CastlePack_v1.0/_PNG/Decoratives.png<>uid://bthdan5v1nnjf::::res://SPRITES/Assets Descargados/SSW_CastlePack_v1.0/_PNG/Background1.png<>uid://dwsbin2mn6aq3::::res://SPRITES/Assets Descargados/SSW_CastlePack_v1.0/_PNG/Background2.png<>uid://dd1tuj1uoppv7::::res://SPRITES/Assets Descargados/SSW_CastlePack_v1.0/_PNG/Background3.png<>uid://cpuyu6wqt3rqa::::res://SPRITES/Assets Descargados/SSW_CastlePack_v1.0/_PNG/Background4.png<>uid://daw0mo382ivf2::::res://SPRITES/Assets Descargados/SSW_CastlePack_v1.0/_PNG/Background5.png<>uid://cs7wjnol0uw3q::::res://Scenes/player.tscn
 flying_enemy.tscn::PackedScene::6675178516674965444::1719081773::0::1::::<><>::uid://ciiuhesc5v1sm::::res://SPRITES/enemie 2/Attack.png<>res://Scripts/flying_enemy.gd<>uid://fowo7dpo3quj::::res://SPRITES/enemie 2/Flight.png<>uid://doaqthcaff0ky::::res://SPRITES/enemie 2/Death.png<>uid://d08snbbq7tb6e::::res://SPRITES/enemie 2/Take Hit.png
-main_menu.tscn::PackedScene::4858428580396994248::1723113899::0::1::::<><>::res://Scripts/main_menu.gd<>uid://dphvgwk2npmoq::::res://SPRITES/Assets Descargados/stringstar fields/background_0.png<>uid://7v2kawm2qawy::::res://SPRITES/Assets Descargados/alagard/alagard.ttf<>uid://d0kupslrb2qsc::::res://SPRITES/Assets Descargados/stringstar fields/background_1.png<>uid://doe3a35dolnl3::::res://SPRITES/Assets Descargados/stringstar fields/background_2.png<>uid://ba3kbkecxa5v1::::res://SPRITES/Player.png<>uid://cf3dnxrnu7cav::::res://SPRITES/Assets Descargados/DARK - Dog Companion/Doggo-Run.png<>uid://c3mkgp6e5y5d::::res://SPRITES/Assets Descargados/Ultimate Dark Fantasy UI set v1.2/scalable screen/Variations/Type 1/Screen2.png
+main_menu.tscn::PackedScene::4858428580396994248::1724002910::0::1::::<><>::res://Scripts/main_menu.gd<>uid://dphvgwk2npmoq::::res://SPRITES/Assets Descargados/stringstar fields/background_0.png<>uid://7v2kawm2qawy::::res://SPRITES/Assets Descargados/alagard/alagard.ttf<>uid://d0kupslrb2qsc::::res://SPRITES/Assets Descargados/stringstar fields/background_1.png<>uid://doe3a35dolnl3::::res://SPRITES/Assets Descargados/stringstar fields/background_2.png<>uid://ba3kbkecxa5v1::::res://SPRITES/Player.png<>uid://cf3dnxrnu7cav::::res://SPRITES/Assets Descargados/DARK - Dog Companion/Doggo-Run.png<>uid://c3mkgp6e5y5d::::res://SPRITES/Assets Descargados/Ultimate Dark Fantasy UI set v1.2/scalable screen/Variations/Type 1/Screen2.png
 mushroom_enemy.tscn::PackedScene::8492637030010626102::1721377416::0::1::::<><>::uid://bme87qhiy0bs8::::res://SPRITES/enemie 4/Run.png<>res://Scripts/mushroom_enemy.gd<>uid://bhhw8r14g135b::::res://SPRITES/enemie 4/Idle.png<>uid://cymmwui1dsk8i::::res://Scenes/bullet.tscn<>uid://cskhnaweqla66::::res://SPRITES/enemie 4/Take Hit.png<>uid://bcdixii2wd0nh::::res://SPRITES/enemie 4/Death.png<>uid://c434axjp5xnx7::::res://SPRITES/enemie 4/Attack.png<>res://Scripts/bullet.gd<>uid://6y4tavmdnlay::::res://SPRITES/bullet/bullet.png
 patrol_enemy.tscn::PackedScene::2558834806619661401::1721377416::0::1::::<><>::uid://bfclj52pge8r8::::res://SPRITES/enemie 3/Run.png<>res://Scripts/patrol_enemy.gd<>uid://dika8fx3fjq1e::::res://SPRITES/enemie 3/Attack.png<>uid://bp3xj8cixl5fj::::res://SPRITES/enemie 3/Death.png<>uid://28874njc7csd::::res://SPRITES/enemie 3/Take Hit.png<>uid://ps5bvrnoaegf::::res://SPRITES/enemie 3/Idle.png
-player.tscn::PackedScene::6103653191951528368::1723113898::0::1::::<><>::res://Scripts/Player.gd<>uid://ba3kbkecxa5v1::::res://SPRITES/Player.png<>uid://cockllsiskbge::::res://SPRITES/Assets Descargados/Hearts n Bars/Hearts n Bars/Bars_Animations/Bar2.png
-Save_Statue.tscn::PackedScene::9112869733440545119::1723113899::0::1::::<><>::uid://b5vvq5r0sc0fh::::res://SPRITES/Assets Descargados/gothicvania-cemetery-files/gothicvania-cemetery-files/PNG/Environment/sliced-objects/statue.png
+player.tscn::PackedScene::6103653191951528368::1724002908::0::1::::<><>::res://Scripts/Player.gd<>uid://ba3kbkecxa5v1::::res://SPRITES/Player.png<>uid://cockllsiskbge::::res://SPRITES/Assets Descargados/Hearts n Bars/Hearts n Bars/Bars_Animations/Bar2.png
+Save_Statue.tscn::PackedScene::9112869733440545119::1724002910::0::1::::<><>::uid://b5vvq5r0sc0fh::::res://SPRITES/Assets Descargados/gothicvania-cemetery-files/gothicvania-cemetery-files/PNG/Environment/sliced-objects/statue.png
 skeleton.tscn::PackedScene::8092514068096586539::1721377416::0::1::::<><>::uid://boy4yv5yeacos::::res://SPRITES/enemie 5/Idle.png<>res://Scripts/skeleton.gd<>uid://5r57yooc0g86::::res://SPRITES/enemie 5/Death.png<>uid://dd8vycc0s6lo2::::res://SPRITES/enemie 5/Attack.png<>uid://tnd4g55ejg70::::res://SPRITES/enemie 5/Walk.png<>uid://78o0sbexdigw::::res://SPRITES/enemie 5/Take Hit.png
 try_scene.tscn::PackedScene::343827145287394733::1721376795::0::1::::<><>::uid://cs7wjnol0uw3q::::res://Scenes/player.tscn<>uid://b5ony53qtqnjo::::res://SPRITES/Parallax and tiles/tiles/grass tileset.png<>uid://c2drhko8d5vya::::res://Scenes/flying_enemy.tscn<>uid://bcprvuslm7am8::::res://Scenes/patrol_enemy.tscn<>uid://dnkcr3f4dwsqd::::res://Scenes/skeleton.tscn
-village.tscn::PackedScene::6807829560321558413::1723113899::0::1::::<><>::uid://dcbx1u3yhii42::::res://SPRITES/Assets Descargados/GothicVania-town-files/GothicVania-town-files/PNG/environment/layers/background.png<>res://Scripts/VillageZone.gd<>uid://e1abt3jsvbtd::::res://SPRITES/Assets Descargados/GothicVania-town-files/GothicVania-town-files/PNG/environment/layers/middleground.png<>uid://c4d8iml15eyup::::res://SPRITES/Assets Descargados/GothicVania-town-files/GothicVania-town-files/PNG/environment/layers/tileset.png<>uid://cs7wjnol0uw3q::::res://Scenes/player.tscn<>uid://dm43bbnmah5tg::::res://SPRITES/Assets Descargados/GothicVania-town-files/GothicVania-town-files/code/phaser-code/assets/atlas/atlas-props.png<>uid://ucdw30nv2qai::::res://SPRITES/Assets Descargados/GothicVania-town-files/GothicVania-town-files/PNG/environment/props/houses.png<>uid://btuxeqfgg6147::::res://SPRITES/Assets Descargados/GothicVania-town-files/GothicVania-town-files/PNG/environment/props/props.png<>uid://d23lvr4qd0sgt::::res://Scenes/Save_Statue.tscn
+village.tscn::PackedScene::6807829560321558413::1724002909::0::1::::<><>::uid://dcbx1u3yhii42::::res://SPRITES/Assets Descargados/GothicVania-town-files/GothicVania-town-files/PNG/environment/layers/background.png<>res://Scripts/VillageZone.gd<>uid://e1abt3jsvbtd::::res://SPRITES/Assets Descargados/GothicVania-town-files/GothicVania-town-files/PNG/environment/layers/middleground.png<>uid://c4d8iml15eyup::::res://SPRITES/Assets Descargados/GothicVania-town-files/GothicVania-town-files/PNG/environment/layers/tileset.png<>uid://cs7wjnol0uw3q::::res://Scenes/player.tscn<>uid://dm43bbnmah5tg::::res://SPRITES/Assets Descargados/GothicVania-town-files/GothicVania-town-files/code/phaser-code/assets/atlas/atlas-props.png<>uid://ucdw30nv2qai::::res://SPRITES/Assets Descargados/GothicVania-town-files/GothicVania-town-files/PNG/environment/props/houses.png<>uid://btuxeqfgg6147::::res://SPRITES/Assets Descargados/GothicVania-town-files/GothicVania-town-files/PNG/environment/props/props.png<>uid://d23lvr4qd0sgt::::res://Scenes/Save_Statue.tscn
 ::res://Scripts/::1722494488
 bullet.gd::GDScript::-1::1718789459::0::1::::<>Area2D<>::
 flying_enemy.gd::GDScript::-1::1721232817::0::1::::<>CharacterBody2D<>::
@@ -55,6 +55,150 @@ Doggo-Walk Sniff.png::CompressedTexture2D::320229336593327775::1722181580::17221
 Doggo-Walk.png::CompressedTexture2D::2124366738591594935::1722181580::1722181603::1::::<><>::
 Eat.png::CompressedTexture2D::6830247745124358029::1722181580::1722181603::1::::<><>::
 ::res://SPRITES/Assets Descargados/gothicvania-cemetery-files/::1719127982
+::res://SPRITES/Assets Descargados/gothicvania-cemetery-files/__MACOSX/::1719127982
+::res://SPRITES/Assets Descargados/gothicvania-cemetery-files/__MACOSX/gothicvania-cemetery-files/::1719127982
+._public-license.txt::TextFile::-1::1711394213::0::1::::<><>::
+::res://SPRITES/Assets Descargados/gothicvania-cemetery-files/__MACOSX/gothicvania-cemetery-files/demo/::1719127982
+::res://SPRITES/Assets Descargados/gothicvania-cemetery-files/__MACOSX/gothicvania-cemetery-files/demo/assets/::1719127982
+::res://SPRITES/Assets Descargados/gothicvania-cemetery-files/__MACOSX/gothicvania-cemetery-files/demo/assets/atlas/::1723825592
+._atlas-props.json::JSON::-1::1711394214::0::1::::<><>::
+._atlas-props.png::CompressedTexture2D::6228563813382079980::1711394214::1723825592::0::::<><>::
+._atlas.json::JSON::-1::1711394214::0::1::::<><>::
+._atlas.png::CompressedTexture2D::8260634541558936328::1711394214::1723825592::0::::<><>::
+::res://SPRITES/Assets Descargados/gothicvania-cemetery-files/__MACOSX/gothicvania-cemetery-files/demo/assets/environment/::1723825592
+._bg-graveyard.png::CompressedTexture2D::6724641630292113229::1711394214::1723825592::0::::<><>::
+._bg-moon.png::CompressedTexture2D::2209269117632983623::1711394214::1723825592::0::::<><>::
+._bg-mountains.png::CompressedTexture2D::6429510879593497043::1711394214::1723825592::0::::<><>::
+._objects.png::CompressedTexture2D::427523475425421923::1711394214::1723825592::0::::<><>::
+._tileset.png::CompressedTexture2D::2563911467052644598::1711394214::1723825592::0::::<><>::
+::res://SPRITES/Assets Descargados/gothicvania-cemetery-files/__MACOSX/gothicvania-cemetery-files/demo/assets/maps/::1719127982
+._map.json::JSON::-1::1711394214::0::1::::<><>::
+::res://SPRITES/Assets Descargados/gothicvania-cemetery-files/__MACOSX/gothicvania-cemetery-files/demo/assets/sounds/::1723825592
+._attack.ogg::AudioStreamOggVorbis::5097491757103598882::1711394214::1723825592::0::::<><>::
+._hurt.ogg::AudioStreamOggVorbis::4804330602931998424::1711394214::1723825592::0::::<><>::
+._jump.ogg::AudioStreamOggVorbis::2871281113475511160::1711394214::1723825592::0::::<><>::
+._kill.ogg::AudioStreamOggVorbis::7371866471206718159::1711394214::1723825592::0::::<><>::
+._rise.ogg::AudioStreamOggVorbis::4036200668600479326::1711394214::1723825592::0::::<><>::
+._sci_fi_platformer04_main_loop.ogg::AudioStreamOggVorbis::3528926993056058853::1711394214::1723825592::0::::<><>::
+::res://SPRITES/Assets Descargados/gothicvania-cemetery-files/__MACOSX/gothicvania-cemetery-files/demo/assets/sprites/::1723825592
+._credits-text.png::CompressedTexture2D::7694990461481914049::1711394214::1723825592::0::::<><>::
+._game-over.png::CompressedTexture2D::9204132578491236936::1711394214::1723825592::0::::<><>::
+._instructions.png::CompressedTexture2D::5347076268524120172::1711394214::1723825592::0::::<><>::
+._loading.png::CompressedTexture2D::8605688885222969969::1711394214::1723825592::0::::<><>::
+._press-enter-text.png::CompressedTexture2D::5043922811492986418::1711394214::1723825592::0::::<><>::
+._title-screen.png::CompressedTexture2D::4010510277202507352::1711394214::1723825592::0::::<><>::
+::res://SPRITES/Assets Descargados/gothicvania-cemetery-files/__MACOSX/gothicvania-cemetery-files/GIFS/::1719127982
+::res://SPRITES/Assets Descargados/gothicvania-cemetery-files/__MACOSX/gothicvania-cemetery-files/GIFS/ghost/::1719127982
+::res://SPRITES/Assets Descargados/gothicvania-cemetery-files/__MACOSX/gothicvania-cemetery-files/GIFS/hell-gato/::1719127982
+::res://SPRITES/Assets Descargados/gothicvania-cemetery-files/__MACOSX/gothicvania-cemetery-files/GIFS/hero/::1719127982
+::res://SPRITES/Assets Descargados/gothicvania-cemetery-files/__MACOSX/gothicvania-cemetery-files/GIFS/misc/::1719127982
+::res://SPRITES/Assets Descargados/gothicvania-cemetery-files/__MACOSX/gothicvania-cemetery-files/GIFS/skeleton/::1719127982
+::res://SPRITES/Assets Descargados/gothicvania-cemetery-files/__MACOSX/gothicvania-cemetery-files/PNG/::1719127982
+::res://SPRITES/Assets Descargados/gothicvania-cemetery-files/__MACOSX/gothicvania-cemetery-files/PNG/Environment/::1723825592
+._background.png::CompressedTexture2D::2182300830930562578::1711394215::1723825592::0::::<><>::
+._graveyard.png::CompressedTexture2D::6885659011760467143::1711394215::1723825592::0::::<><>::
+._mountains.png::CompressedTexture2D::7970413175521855213::1711394215::1723825592::0::::<><>::
+._objects.png::CompressedTexture2D::2089622497472744977::1711394215::1723825592::0::::<><>::
+._tileset-sliced.png::CompressedTexture2D::4839600823516664872::1711394215::1723825592::0::::<><>::
+._tileset.png::CompressedTexture2D::4522235779324423196::1711394215::1723825592::0::::<><>::
+::res://SPRITES/Assets Descargados/gothicvania-cemetery-files/__MACOSX/gothicvania-cemetery-files/PNG/Environment/sliced-objects/::1723825592
+._bush-large.png::CompressedTexture2D::8208081112941852731::1711394215::1723825592::0::::<><>::
+._bush-small.png::CompressedTexture2D::7639036208990241059::1711394215::1723825592::0::::<><>::
+._statue.png::CompressedTexture2D::6581503019656786959::1711394215::1723825592::0::::<><>::
+._stone-1.png::CompressedTexture2D::5225924426071223953::1711394215::1723825592::0::::<><>::
+._stone-2.png::CompressedTexture2D::6454342706041387531::1711394215::1723825592::0::::<><>::
+._stone-3.png::CompressedTexture2D::5372283880193114792::1711394215::1723825592::0::::<><>::
+._stone-4.png::CompressedTexture2D::3183628472188248978::1711394215::1723825592::0::::<><>::
+._tree-1.png::CompressedTexture2D::1188648238467005794::1711394215::1723825592::0::::<><>::
+._tree-2.png::CompressedTexture2D::6174903913252504382::1711394215::1723825592::0::::<><>::
+._tree-3.png::CompressedTexture2D::8558981111433156676::1711394215::1723825592::0::::<><>::
+::res://SPRITES/Assets Descargados/gothicvania-cemetery-files/__MACOSX/gothicvania-cemetery-files/PNG/Sprites/::1719127982
+::res://SPRITES/Assets Descargados/gothicvania-cemetery-files/__MACOSX/gothicvania-cemetery-files/PNG/Sprites/enemy-death/::1723825592
+._enemy-death-1.png::CompressedTexture2D::2943887008594557218::1711394215::1723825592::0::::<><>::
+._enemy-death-2.png::CompressedTexture2D::1294133498959902584::1711394215::1723825592::0::::<><>::
+._enemy-death-3.png::CompressedTexture2D::731081908417398753::1711394215::1723825592::0::::<><>::
+._enemy-death-4.png::CompressedTexture2D::4536856474122374711::1711394215::1723825592::0::::<><>::
+._enemy-death-5.png::CompressedTexture2D::7884253602998695259::1711394215::1723825592::0::::<><>::
+::res://SPRITES/Assets Descargados/gothicvania-cemetery-files/__MACOSX/gothicvania-cemetery-files/PNG/Sprites/ghost/::1723825592
+._ghost-1.png::CompressedTexture2D::8266072086499881389::1711394215::1723825592::0::::<><>::
+._ghost-2.png::CompressedTexture2D::1830893845970474761::1711394215::1723825592::0::::<><>::
+._ghost-3.png::CompressedTexture2D::3931351627590265057::1711394215::1723825592::0::::<><>::
+._ghost-4.png::CompressedTexture2D::11071748091304600::1711394215::1723825592::0::::<><>::
+::res://SPRITES/Assets Descargados/gothicvania-cemetery-files/__MACOSX/gothicvania-cemetery-files/PNG/Sprites/ghost-halo/::1723825592
+._ghost-halo-1.png::CompressedTexture2D::9014938474499728476::1711394215::1723825592::0::::<><>::
+._ghost-halo-2.png::CompressedTexture2D::2470041743697010992::1711394215::1723825592::0::::<><>::
+._ghost-halo-3.png::CompressedTexture2D::6553054825319977373::1711394215::1723825592::0::::<><>::
+._ghost-halo-4.png::CompressedTexture2D::2757233204534351205::1711394215::1723825592::0::::<><>::
+::res://SPRITES/Assets Descargados/gothicvania-cemetery-files/__MACOSX/gothicvania-cemetery-files/PNG/Sprites/hell-gato/::1723825592
+._hell-gato-1.png::CompressedTexture2D::1161317740465278984::1711394215::1723825592::0::::<><>::
+._hell-gato-2.png::CompressedTexture2D::7938434846378764841::1711394215::1723825592::0::::<><>::
+._hell-gato-3.png::CompressedTexture2D::2343383404173293644::1711394215::1723825592::0::::<><>::
+._hell-gato-4.png::CompressedTexture2D::4757363120696917971::1711394215::1723825592::0::::<><>::
+::res://SPRITES/Assets Descargados/gothicvania-cemetery-files/__MACOSX/gothicvania-cemetery-files/PNG/Sprites/hero/::1719127982
+::res://SPRITES/Assets Descargados/gothicvania-cemetery-files/__MACOSX/gothicvania-cemetery-files/PNG/Sprites/hero/hero-attack/::1723825592
+._hero-attack-1.png::CompressedTexture2D::5771251154399405287::1711394216::1723825592::0::::<><>::
+._hero-attack-2.png::CompressedTexture2D::5102000988899365582::1711394216::1723825592::0::::<><>::
+._hero-attack-3.png::CompressedTexture2D::4310787196606755329::1711394216::1723825592::0::::<><>::
+._hero-attack-4.png::CompressedTexture2D::532045665909155231::1711394216::1723825592::0::::<><>::
+._hero-attack-5.png::CompressedTexture2D::7241715220631728153::1711394216::1723825592::0::::<><>::
+::res://SPRITES/Assets Descargados/gothicvania-cemetery-files/__MACOSX/gothicvania-cemetery-files/PNG/Sprites/hero/hero-crouch/::1723825592
+._hero-crouch.png::CompressedTexture2D::6478819293811160604::1711394216::1723825592::0::::<><>::
+::res://SPRITES/Assets Descargados/gothicvania-cemetery-files/__MACOSX/gothicvania-cemetery-files/PNG/Sprites/hero/hero-hurt/::1723825592
+._hero-hurt.png::CompressedTexture2D::4013749752957746194::1711394216::1723825592::0::::<><>::
+::res://SPRITES/Assets Descargados/gothicvania-cemetery-files/__MACOSX/gothicvania-cemetery-files/PNG/Sprites/hero/hero-idle/::1723825592
+._hero-idle-1.png::CompressedTexture2D::1289827863040931576::1711394216::1723825592::0::::<><>::
+._hero-idle-2.png::CompressedTexture2D::1468331361351042652::1711394216::1723825592::0::::<><>::
+._hero-idle-3.png::CompressedTexture2D::5149543005345789994::1711394216::1723825592::0::::<><>::
+._hero-idle-4.png::CompressedTexture2D::5728657270095870393::1711394216::1723825592::0::::<><>::
+::res://SPRITES/Assets Descargados/gothicvania-cemetery-files/__MACOSX/gothicvania-cemetery-files/PNG/Sprites/hero/hero-jump/::1723825592
+._hero-jump-1.png::CompressedTexture2D::2364095745725947673::1711394216::1723825592::0::::<><>::
+._hero-jump-2.png::CompressedTexture2D::6112584889279381368::1711394216::1723825592::0::::<><>::
+._hero-jump-3.png::CompressedTexture2D::4479078366723119424::1711394216::1723825592::0::::<><>::
+._hero-jump-4.png::CompressedTexture2D::181916150274046287::1711394216::1723825592::0::::<><>::
+::res://SPRITES/Assets Descargados/gothicvania-cemetery-files/__MACOSX/gothicvania-cemetery-files/PNG/Sprites/hero/hero-run/::1723825592
+._hero-run-1.png::CompressedTexture2D::43401878090403120::1711394216::1723825592::0::::<><>::
+._hero-run-2.png::CompressedTexture2D::8968346642592573008::1711394216::1723825592::0::::<><>::
+._hero-run-3.png::CompressedTexture2D::3444190337180804148::1711394216::1723825592::0::::<><>::
+._hero-run-4.png::CompressedTexture2D::2315431355122549977::1711394216::1723825592::0::::<><>::
+._hero-run-5.png::CompressedTexture2D::8492081579861676697::1711394216::1723825592::0::::<><>::
+._hero-run-6.png::CompressedTexture2D::205775079211336024::1711394216::1723825592::0::::<><>::
+::res://SPRITES/Assets Descargados/gothicvania-cemetery-files/__MACOSX/gothicvania-cemetery-files/PNG/Sprites/skeleton/::1723825592
+._skeleton-1.png::CompressedTexture2D::2541611088769465586::1711394216::1723825592::0::::<><>::
+._skeleton-2.png::CompressedTexture2D::3527171445623782080::1711394216::1723825592::0::::<><>::
+._skeleton-3.png::CompressedTexture2D::346457059177167695::1711394216::1723825592::0::::<><>::
+._skeleton-4.png::CompressedTexture2D::2313485106944414845::1711394216::1723825592::0::::<><>::
+._skeleton-5.png::CompressedTexture2D::6777875118551262343::1711394216::1723825592::0::::<><>::
+._skeleton-6.png::CompressedTexture2D::6781198756691666515::1711394216::1723825592::0::::<><>::
+._skeleton-7.png::CompressedTexture2D::5113815419829045888::1711394216::1723825592::0::::<><>::
+._skeleton-8.png::CompressedTexture2D::5844698649937701155::1711394216::1723825592::0::::<><>::
+::res://SPRITES/Assets Descargados/gothicvania-cemetery-files/__MACOSX/gothicvania-cemetery-files/PNG/Sprites/skeleton-clothed/::1723825592
+._skeleton-clothed-1.png::CompressedTexture2D::3550815309390473464::1711394216::1723825592::0::::<><>::
+._skeleton-clothed-2.png::CompressedTexture2D::4541916386933249612::1711394216::1723825592::0::::<><>::
+._skeleton-clothed-3.png::CompressedTexture2D::7708190860213811412::1711394216::1723825592::0::::<><>::
+._skeleton-clothed-4.png::CompressedTexture2D::2554791355621825373::1711394216::1723825592::0::::<><>::
+._skeleton-clothed-5.png::CompressedTexture2D::7307203349448011342::1711394216::1723825592::0::::<><>::
+._skeleton-clothed-6.png::CompressedTexture2D::5836468460943552685::1711394216::1723825592::0::::<><>::
+._skeleton-clothed-7.png::CompressedTexture2D::3161526816612360546::1711394216::1723825592::0::::<><>::
+._skeleton-clothed-8.png::CompressedTexture2D::7937320955885960825::1711394216::1723825592::0::::<><>::
+::res://SPRITES/Assets Descargados/gothicvania-cemetery-files/__MACOSX/gothicvania-cemetery-files/PNG/Sprites/skeleton-rise/::1723825592
+._skeleton-rise-1.png::CompressedTexture2D::6050597356173335068::1711394216::1723825592::0::::<><>::
+._skeleton-rise-2.png::CompressedTexture2D::7361466135936693737::1711394216::1723825592::0::::<><>::
+._skeleton-rise-3.png::CompressedTexture2D::6916455060466070817::1711394216::1723825592::0::::<><>::
+._skeleton-rise-4.png::CompressedTexture2D::8324596650994968837::1711394216::1723825592::0::::<><>::
+._skeleton-rise-5.png::CompressedTexture2D::7036430952238922214::1711394216::1723825592::0::::<><>::
+._skeleton-rise-6.png::CompressedTexture2D::6182402237826982409::1711394216::1723825592::0::::<><>::
+::res://SPRITES/Assets Descargados/gothicvania-cemetery-files/__MACOSX/gothicvania-cemetery-files/PNG/Sprites/skeleton-rise-clothed/::1723825592
+._skeleton-rise-clothed-1.png::CompressedTexture2D::3671042612305564852::1711394216::1723825592::0::::<><>::
+._skeleton-rise-clothed-2.png::CompressedTexture2D::3436052304226547519::1711394216::1723825592::0::::<><>::
+._skeleton-rise-clothed-3.png::CompressedTexture2D::7526408808788840301::1711394216::1723825592::0::::<><>::
+._skeleton-rise-clothed-4.png::CompressedTexture2D::1343718535927410717::1711394216::1723825592::0::::<><>::
+._skeleton-rise-clothed-5.png::CompressedTexture2D::3115984669777142729::1711394216::1723825592::0::::<><>::
+._skeleton-rise-clothed-6.png::CompressedTexture2D::1538184543833292622::1711394216::1723825592::0::::<><>::
+::res://SPRITES/Assets Descargados/gothicvania-cemetery-files/__MACOSX/gothicvania-cemetery-files/PSD/::1719127982
+::res://SPRITES/Assets Descargados/gothicvania-cemetery-files/__MACOSX/gothicvania-cemetery-files/PSD/environment/::1719127982
+::res://SPRITES/Assets Descargados/gothicvania-cemetery-files/__MACOSX/gothicvania-cemetery-files/PSD/misc/::1719127982
+::res://SPRITES/Assets Descargados/gothicvania-cemetery-files/__MACOSX/gothicvania-cemetery-files/PSD/sprites/::1719127982
+::res://SPRITES/Assets Descargados/gothicvania-cemetery-files/__MACOSX/gothicvania-cemetery-files/PSD/sprites/hero/::1719127982
 ::res://SPRITES/Assets Descargados/gothicvania-cemetery-files/gothicvania-cemetery-files/::1719127982
 public-license.txt::TextFile::-1::1711394210::0::1::::<><>::
 ::res://SPRITES/Assets Descargados/gothicvania-cemetery-files/gothicvania-cemetery-files/demo/::1719127981
@@ -200,151 +344,173 @@ skeleton-rise-clothed-6.png::CompressedTexture2D::9143471905781258886::171139421
 ::res://SPRITES/Assets Descargados/gothicvania-cemetery-files/gothicvania-cemetery-files/PSD/sprites/::1719127982
 ::res://SPRITES/Assets Descargados/gothicvania-cemetery-files/gothicvania-cemetery-files/PSD/sprites/hero/::1719127982
 ::res://SPRITES/Assets Descargados/gothicvania-cemetery-files/gothicvania-cemetery-files/PSD/sprites/skull/::1527187280
-::res://SPRITES/Assets Descargados/gothicvania-cemetery-files/__MACOSX/::1719127982
-::res://SPRITES/Assets Descargados/gothicvania-cemetery-files/__MACOSX/gothicvania-cemetery-files/::1719127982
-._public-license.txt::TextFile::-1::1711394213::0::1::::<><>::
-::res://SPRITES/Assets Descargados/gothicvania-cemetery-files/__MACOSX/gothicvania-cemetery-files/demo/::1719127982
-::res://SPRITES/Assets Descargados/gothicvania-cemetery-files/__MACOSX/gothicvania-cemetery-files/demo/assets/::1719127982
-::res://SPRITES/Assets Descargados/gothicvania-cemetery-files/__MACOSX/gothicvania-cemetery-files/demo/assets/atlas/::1719127982
-._atlas-props.json::JSON::-1::1711394214::0::1::::<><>::
-._atlas-props.png::::-1::0::0::0::::<><>::
-._atlas.json::JSON::-1::1711394214::0::1::::<><>::
-._atlas.png::::-1::0::0::0::::<><>::
-::res://SPRITES/Assets Descargados/gothicvania-cemetery-files/__MACOSX/gothicvania-cemetery-files/demo/assets/environment/::1719127982
-._bg-graveyard.png::::-1::0::0::0::::<><>::
-._bg-moon.png::::-1::0::0::0::::<><>::
-._bg-mountains.png::::-1::0::0::0::::<><>::
-._objects.png::::-1::0::0::0::::<><>::
-._tileset.png::::-1::0::0::0::::<><>::
-::res://SPRITES/Assets Descargados/gothicvania-cemetery-files/__MACOSX/gothicvania-cemetery-files/demo/assets/maps/::1719127982
-._map.json::JSON::-1::1711394214::0::1::::<><>::
-::res://SPRITES/Assets Descargados/gothicvania-cemetery-files/__MACOSX/gothicvania-cemetery-files/demo/assets/sounds/::1719127982
-._attack.ogg::::-1::0::0::0::::<><>::
-._hurt.ogg::::-1::0::0::0::::<><>::
-._jump.ogg::::-1::0::0::0::::<><>::
-._kill.ogg::::-1::0::0::0::::<><>::
-._rise.ogg::::-1::0::0::0::::<><>::
-._sci_fi_platformer04_main_loop.ogg::::-1::0::0::0::::<><>::
-::res://SPRITES/Assets Descargados/gothicvania-cemetery-files/__MACOSX/gothicvania-cemetery-files/demo/assets/sprites/::1719127982
-._credits-text.png::::-1::0::0::0::::<><>::
-._game-over.png::::-1::0::0::0::::<><>::
-._instructions.png::::-1::0::0::0::::<><>::
-._loading.png::::-1::0::0::0::::<><>::
-._press-enter-text.png::::-1::0::0::0::::<><>::
-._title-screen.png::::-1::0::0::0::::<><>::
-::res://SPRITES/Assets Descargados/gothicvania-cemetery-files/__MACOSX/gothicvania-cemetery-files/GIFS/::1719127982
-::res://SPRITES/Assets Descargados/gothicvania-cemetery-files/__MACOSX/gothicvania-cemetery-files/GIFS/ghost/::1719127982
-::res://SPRITES/Assets Descargados/gothicvania-cemetery-files/__MACOSX/gothicvania-cemetery-files/GIFS/hell-gato/::1719127982
-::res://SPRITES/Assets Descargados/gothicvania-cemetery-files/__MACOSX/gothicvania-cemetery-files/GIFS/hero/::1719127982
-::res://SPRITES/Assets Descargados/gothicvania-cemetery-files/__MACOSX/gothicvania-cemetery-files/GIFS/misc/::1719127982
-::res://SPRITES/Assets Descargados/gothicvania-cemetery-files/__MACOSX/gothicvania-cemetery-files/GIFS/skeleton/::1719127982
-::res://SPRITES/Assets Descargados/gothicvania-cemetery-files/__MACOSX/gothicvania-cemetery-files/PNG/::1719127982
-::res://SPRITES/Assets Descargados/gothicvania-cemetery-files/__MACOSX/gothicvania-cemetery-files/PNG/Environment/::1719127982
-._background.png::::-1::0::0::0::::<><>::
-._graveyard.png::::-1::0::0::0::::<><>::
-._mountains.png::::-1::0::0::0::::<><>::
-._objects.png::::-1::0::0::0::::<><>::
-._tileset-sliced.png::::-1::0::0::0::::<><>::
-._tileset.png::::-1::0::0::0::::<><>::
-::res://SPRITES/Assets Descargados/gothicvania-cemetery-files/__MACOSX/gothicvania-cemetery-files/PNG/Environment/sliced-objects/::1719127982
-._bush-large.png::::-1::0::0::0::::<><>::
-._bush-small.png::::-1::0::0::0::::<><>::
-._statue.png::::-1::0::0::0::::<><>::
-._stone-1.png::::-1::0::0::0::::<><>::
-._stone-2.png::::-1::0::0::0::::<><>::
-._stone-3.png::::-1::0::0::0::::<><>::
-._stone-4.png::::-1::0::0::0::::<><>::
-._tree-1.png::::-1::0::0::0::::<><>::
-._tree-2.png::::-1::0::0::0::::<><>::
-._tree-3.png::::-1::0::0::0::::<><>::
-::res://SPRITES/Assets Descargados/gothicvania-cemetery-files/__MACOSX/gothicvania-cemetery-files/PNG/Sprites/::1719127982
-::res://SPRITES/Assets Descargados/gothicvania-cemetery-files/__MACOSX/gothicvania-cemetery-files/PNG/Sprites/enemy-death/::1719127982
-._enemy-death-1.png::::-1::0::0::0::::<><>::
-._enemy-death-2.png::::-1::0::0::0::::<><>::
-._enemy-death-3.png::::-1::0::0::0::::<><>::
-._enemy-death-4.png::::-1::0::0::0::::<><>::
-._enemy-death-5.png::::-1::0::0::0::::<><>::
-::res://SPRITES/Assets Descargados/gothicvania-cemetery-files/__MACOSX/gothicvania-cemetery-files/PNG/Sprites/ghost/::1719127982
-._ghost-1.png::::-1::0::0::0::::<><>::
-._ghost-2.png::::-1::0::0::0::::<><>::
-._ghost-3.png::::-1::0::0::0::::<><>::
-._ghost-4.png::::-1::0::0::0::::<><>::
-::res://SPRITES/Assets Descargados/gothicvania-cemetery-files/__MACOSX/gothicvania-cemetery-files/PNG/Sprites/ghost-halo/::1719127982
-._ghost-halo-1.png::::-1::0::0::0::::<><>::
-._ghost-halo-2.png::::-1::0::0::0::::<><>::
-._ghost-halo-3.png::::-1::0::0::0::::<><>::
-._ghost-halo-4.png::::-1::0::0::0::::<><>::
-::res://SPRITES/Assets Descargados/gothicvania-cemetery-files/__MACOSX/gothicvania-cemetery-files/PNG/Sprites/hell-gato/::1719127982
-._hell-gato-1.png::::-1::0::0::0::::<><>::
-._hell-gato-2.png::::-1::0::0::0::::<><>::
-._hell-gato-3.png::::-1::0::0::0::::<><>::
-._hell-gato-4.png::::-1::0::0::0::::<><>::
-::res://SPRITES/Assets Descargados/gothicvania-cemetery-files/__MACOSX/gothicvania-cemetery-files/PNG/Sprites/hero/::1719127982
-::res://SPRITES/Assets Descargados/gothicvania-cemetery-files/__MACOSX/gothicvania-cemetery-files/PNG/Sprites/hero/hero-attack/::1719127982
-._hero-attack-1.png::::-1::0::0::0::::<><>::
-._hero-attack-2.png::::-1::0::0::0::::<><>::
-._hero-attack-3.png::::-1::0::0::0::::<><>::
-._hero-attack-4.png::::-1::0::0::0::::<><>::
-._hero-attack-5.png::::-1::0::0::0::::<><>::
-::res://SPRITES/Assets Descargados/gothicvania-cemetery-files/__MACOSX/gothicvania-cemetery-files/PNG/Sprites/hero/hero-crouch/::1719127982
-._hero-crouch.png::::-1::0::0::0::::<><>::
-::res://SPRITES/Assets Descargados/gothicvania-cemetery-files/__MACOSX/gothicvania-cemetery-files/PNG/Sprites/hero/hero-hurt/::1719127982
-._hero-hurt.png::::-1::0::0::0::::<><>::
-::res://SPRITES/Assets Descargados/gothicvania-cemetery-files/__MACOSX/gothicvania-cemetery-files/PNG/Sprites/hero/hero-idle/::1719127982
-._hero-idle-1.png::::-1::0::0::0::::<><>::
-._hero-idle-2.png::::-1::0::0::0::::<><>::
-._hero-idle-3.png::::-1::0::0::0::::<><>::
-._hero-idle-4.png::::-1::0::0::0::::<><>::
-::res://SPRITES/Assets Descargados/gothicvania-cemetery-files/__MACOSX/gothicvania-cemetery-files/PNG/Sprites/hero/hero-jump/::1719127982
-._hero-jump-1.png::::-1::0::0::0::::<><>::
-._hero-jump-2.png::::-1::0::0::0::::<><>::
-._hero-jump-3.png::::-1::0::0::0::::<><>::
-._hero-jump-4.png::::-1::0::0::0::::<><>::
-::res://SPRITES/Assets Descargados/gothicvania-cemetery-files/__MACOSX/gothicvania-cemetery-files/PNG/Sprites/hero/hero-run/::1719127982
-._hero-run-1.png::::-1::0::0::0::::<><>::
-._hero-run-2.png::::-1::0::0::0::::<><>::
-._hero-run-3.png::::-1::0::0::0::::<><>::
-._hero-run-4.png::::-1::0::0::0::::<><>::
-._hero-run-5.png::::-1::0::0::0::::<><>::
-._hero-run-6.png::::-1::0::0::0::::<><>::
-::res://SPRITES/Assets Descargados/gothicvania-cemetery-files/__MACOSX/gothicvania-cemetery-files/PNG/Sprites/skeleton/::1719127982
-._skeleton-1.png::::-1::0::0::0::::<><>::
-._skeleton-2.png::::-1::0::0::0::::<><>::
-._skeleton-3.png::::-1::0::0::0::::<><>::
-._skeleton-4.png::::-1::0::0::0::::<><>::
-._skeleton-5.png::::-1::0::0::0::::<><>::
-._skeleton-6.png::::-1::0::0::0::::<><>::
-._skeleton-7.png::::-1::0::0::0::::<><>::
-._skeleton-8.png::::-1::0::0::0::::<><>::
-::res://SPRITES/Assets Descargados/gothicvania-cemetery-files/__MACOSX/gothicvania-cemetery-files/PNG/Sprites/skeleton-clothed/::1719127982
-._skeleton-clothed-1.png::::-1::0::0::0::::<><>::
-._skeleton-clothed-2.png::::-1::0::0::0::::<><>::
-._skeleton-clothed-3.png::::-1::0::0::0::::<><>::
-._skeleton-clothed-4.png::::-1::0::0::0::::<><>::
-._skeleton-clothed-5.png::::-1::0::0::0::::<><>::
-._skeleton-clothed-6.png::::-1::0::0::0::::<><>::
-._skeleton-clothed-7.png::::-1::0::0::0::::<><>::
-._skeleton-clothed-8.png::::-1::0::0::0::::<><>::
-::res://SPRITES/Assets Descargados/gothicvania-cemetery-files/__MACOSX/gothicvania-cemetery-files/PNG/Sprites/skeleton-rise/::1719127982
-._skeleton-rise-1.png::::-1::0::0::0::::<><>::
-._skeleton-rise-2.png::::-1::0::0::0::::<><>::
-._skeleton-rise-3.png::::-1::0::0::0::::<><>::
-._skeleton-rise-4.png::::-1::0::0::0::::<><>::
-._skeleton-rise-5.png::::-1::0::0::0::::<><>::
-._skeleton-rise-6.png::::-1::0::0::0::::<><>::
-::res://SPRITES/Assets Descargados/gothicvania-cemetery-files/__MACOSX/gothicvania-cemetery-files/PNG/Sprites/skeleton-rise-clothed/::1719127982
-._skeleton-rise-clothed-1.png::::-1::0::0::0::::<><>::
-._skeleton-rise-clothed-2.png::::-1::0::0::0::::<><>::
-._skeleton-rise-clothed-3.png::::-1::0::0::0::::<><>::
-._skeleton-rise-clothed-4.png::::-1::0::0::0::::<><>::
-._skeleton-rise-clothed-5.png::::-1::0::0::0::::<><>::
-._skeleton-rise-clothed-6.png::::-1::0::0::0::::<><>::
-::res://SPRITES/Assets Descargados/gothicvania-cemetery-files/__MACOSX/gothicvania-cemetery-files/PSD/::1719127982
-::res://SPRITES/Assets Descargados/gothicvania-cemetery-files/__MACOSX/gothicvania-cemetery-files/PSD/environment/::1719127982
-::res://SPRITES/Assets Descargados/gothicvania-cemetery-files/__MACOSX/gothicvania-cemetery-files/PSD/misc/::1719127982
-::res://SPRITES/Assets Descargados/gothicvania-cemetery-files/__MACOSX/gothicvania-cemetery-files/PSD/sprites/::1719127982
-::res://SPRITES/Assets Descargados/gothicvania-cemetery-files/__MACOSX/gothicvania-cemetery-files/PSD/sprites/hero/::1719127982
 ::res://SPRITES/Assets Descargados/GothicVania-town-files/::1719127983
+::res://SPRITES/Assets Descargados/GothicVania-town-files/__MACOSX/::1719127983
+::res://SPRITES/Assets Descargados/GothicVania-town-files/__MACOSX/GothicVania-town-files/::1719127983
+._public-license.txt::TextFile::-1::1711394251::0::1::::<><>::
+::res://SPRITES/Assets Descargados/GothicVania-town-files/__MACOSX/GothicVania-town-files/code/::1719127983
+::res://SPRITES/Assets Descargados/GothicVania-town-files/__MACOSX/GothicVania-town-files/code/phaser-code/::1719127983
+::res://SPRITES/Assets Descargados/GothicVania-town-files/__MACOSX/GothicVania-town-files/code/phaser-code/assets/::1719127983
+::res://SPRITES/Assets Descargados/GothicVania-town-files/__MACOSX/GothicVania-town-files/code/phaser-code/assets/atlas/::1719127983
+._atlas.json::JSON::-1::1711394251::0::1::::<><>::
+::res://SPRITES/Assets Descargados/GothicVania-town-files/__MACOSX/GothicVania-town-files/code/phaser-code/assets/environment/::1723825592
+._background.png::CompressedTexture2D::3904676809439792384::1711394251::1723825592::0::::<><>::
+._middleground.png::CompressedTexture2D::3972092154445224610::1711394251::1723825592::0::::<><>::
+._tileset.png::CompressedTexture2D::7900399117741149589::1711394251::1723825592::0::::<><>::
+::res://SPRITES/Assets Descargados/GothicVania-town-files/__MACOSX/GothicVania-town-files/code/phaser-code/assets/sounds/::1723825592
+._rpg_village02_loop.mp3::AudioStreamMP3::8288138299069280480::1711394251::1723825592::0::::<><>::
+._rpg_village02__loop.ogg::AudioStreamOggVorbis::4501050423902443079::1711394251::1723825592::0::::<><>::
+::res://SPRITES/Assets Descargados/GothicVania-town-files/__MACOSX/GothicVania-town-files/code/phaser-code/assets/sprites/::1723825592
+._credits-text.png::CompressedTexture2D::2950499511262949663::1711394251::1723825592::0::::<><>::
+._instructions.png::CompressedTexture2D::6118886865194084581::1711394251::1723825592::0::::<><>::
+._loading.png::CompressedTexture2D::3823465787231438237::1711394251::1723825592::0::::<><>::
+._press-enter-text.png::CompressedTexture2D::3642774543655770441::1711394251::1723825592::0::::<><>::
+._title-screen.png::CompressedTexture2D::5735064495153674237::1711394251::1723825592::0::::<><>::
+::res://SPRITES/Assets Descargados/GothicVania-town-files/__MACOSX/GothicVania-town-files/GIF/::1719127983
+::res://SPRITES/Assets Descargados/GothicVania-town-files/__MACOSX/GothicVania-town-files/Music/::1723825592
+._readme.txt::TextFile::-1::1711394251::0::1::::<><>::
+._rpg_village02_loop.mp3::AudioStreamMP3::1840958383800516277::1711394251::1723825592::0::::<><>::
+._rpg_village02__loop.ogg::AudioStreamOggVorbis::7497884926541124713::1711394251::1723825592::0::::<><>::
+::res://SPRITES/Assets Descargados/GothicVania-town-files/__MACOSX/GothicVania-town-files/PNG/::1719127983
+::res://SPRITES/Assets Descargados/GothicVania-town-files/__MACOSX/GothicVania-town-files/PNG/environment/::1723825592
+._environment-preview.png::CompressedTexture2D::3273162821634013069::1711394252::1723825592::0::::<><>::
+::res://SPRITES/Assets Descargados/GothicVania-town-files/__MACOSX/GothicVania-town-files/PNG/environment/layers/::1723825592
+._background.png::CompressedTexture2D::2592448021059641566::1711394252::1723825592::0::::<><>::
+._middleground.png::CompressedTexture2D::4573686788845189068::1711394252::1723825592::0::::<><>::
+._tileset.png::CompressedTexture2D::6778152878377318144::1711394252::1723825592::0::::<><>::
+::res://SPRITES/Assets Descargados/GothicVania-town-files/__MACOSX/GothicVania-town-files/PNG/environment/layers/sliced-tileset/::1723825592
+._ground-b.png::CompressedTexture2D::7425072436113971350::1711394252::1723825592::0::::<><>::
+._ground-corner.png::CompressedTexture2D::363412057732068953::1711394252::1723825592::0::::<><>::
+._ground-right-corner.png::CompressedTexture2D::8065360129921953781::1711394252::1723825592::0::::<><>::
+._ground-shadow.png::CompressedTexture2D::2916042524150331717::1711394252::1723825592::0::::<><>::
+._ground-wall-b.png::CompressedTexture2D::7607296084438438774::1711394252::1723825592::0::::<><>::
+._ground-wall.png::CompressedTexture2D::8539237900075250666::1711394252::1723825592::0::::<><>::
+._ground-wood-legs.png::CompressedTexture2D::5221328033210167356::1711394252::1723825592::0::::<><>::
+._ground.png::CompressedTexture2D::7391729542683280155::1711394252::1723825592::0::::<><>::
+._left-corner.png::CompressedTexture2D::1288297501800077164::1711394252::1723825592::0::::<><>::
+._left-roof.png::CompressedTexture2D::6442979039382215891::1711394252::1723825592::0::::<><>::
+._left-slope.png::CompressedTexture2D::131793561530636098::1711394252::1723825592::0::::<><>::
+._right-corner.png::CompressedTexture2D::4933040913100422620::1711394252::1723825592::0::::<><>::
+._right-roof.png::CompressedTexture2D::6708239028597050899::1711394252::1723825592::0::::<><>::
+._right-slope.png::CompressedTexture2D::9149775022809437667::1711394252::1723825592::0::::<><>::
+._roof.png::CompressedTexture2D::7915199244429387349::1711394252::1723825592::0::::<><>::
+._shadow.png::CompressedTexture2D::4141101791667883692::1711394252::1723825592::0::::<><>::
+._slope.png::CompressedTexture2D::1121675335966257029::1711394252::1723825592::0::::<><>::
+._stairs-left.png::CompressedTexture2D::5553496590466539604::1711394252::1723825592::0::::<><>::
+._stairs-mirror-left.png::CompressedTexture2D::8618794163968298982::1711394252::1723825592::0::::<><>::
+._stairs-mirror-right.png::CompressedTexture2D::6743110247416719316::1711394252::1723825592::0::::<><>::
+._stairs-mirror.png::CompressedTexture2D::368447372989076721::1711394252::1723825592::0::::<><>::
+._stairs-right.png::CompressedTexture2D::4616908833225982461::1711394252::1723825592::0::::<><>::
+._stairs-wall-left.png::CompressedTexture2D::5362822964022501695::1711394252::1723825592::0::::<><>::
+._stairs-wall-mirror-left.png::CompressedTexture2D::5994970079165158993::1711394252::1723825592::0::::<><>::
+._stairs-wall-mirror-right.png::CompressedTexture2D::5312889897065206412::1711394252::1723825592::0::::<><>::
+._stairs-wall-mirror.png::CompressedTexture2D::6169703604067815283::1711394252::1723825592::0::::<><>::
+._stairs-wall-right.png::CompressedTexture2D::4164288571996562520::1711394252::1723825592::0::::<><>::
+._stairs-wall.png::CompressedTexture2D::4193317313006729738::1711394252::1723825592::0::::<><>::
+._stairs.png::CompressedTexture2D::591351969964886679::1711394252::1723825592::0::::<><>::
+._top-left-wood.png::CompressedTexture2D::1584001362177324464::1711394252::1723825592::0::::<><>::
+._top-right-wood.png::CompressedTexture2D::2070507032153848057::1711394252::1723825592::0::::<><>::
+._top-wood.png::CompressedTexture2D::1580408394642102195::1711394252::1723825592::0::::<><>::
+._wall-b.png::CompressedTexture2D::2294536261571979516::1711394252::1723825592::0::::<><>::
+._wall.png::CompressedTexture2D::2471780807059841894::1711394252::1723825592::0::::<><>::
+._window-bars.png::CompressedTexture2D::7166511187418939809::1711394252::1723825592::0::::<><>::
+._window.png::CompressedTexture2D::4841264762781931372::1711394252::1723825592::0::::<><>::
+._wood-legs.png::CompressedTexture2D::2182125922588100129::1711394252::1723825592::0::::<><>::
+::res://SPRITES/Assets Descargados/GothicVania-town-files/__MACOSX/GothicVania-town-files/PNG/environment/props/::1723825592
+._houses.png::CompressedTexture2D::2045591177553398255::1711394252::1723825592::0::::<><>::
+._props.png::CompressedTexture2D::7606724967599052179::1711394252::1723825592::0::::<><>::
+::res://SPRITES/Assets Descargados/GothicVania-town-files/__MACOSX/GothicVania-town-files/PNG/environment/props-sliced/::1723825592
+._barrel.png::CompressedTexture2D::403987556481093038::1711394252::1723825592::0::::<><>::
+._crate-stack.png::CompressedTexture2D::7115583259309608417::1711394252::1723825592::0::::<><>::
+._crate.png::CompressedTexture2D::3602806308882559354::1711394252::1723825592::0::::<><>::
+._house-a.png::CompressedTexture2D::7417247902628427469::1711394252::1723825592::0::::<><>::
+._house-b.png::CompressedTexture2D::1741200905083619189::1711394252::1723825592::0::::<><>::
+._house-c.png::CompressedTexture2D::8425565263009803108::1711394252::1723825592::0::::<><>::
+._sign.png::CompressedTexture2D::6793922396253276464::1711394252::1723825592::0::::<><>::
+._street-lamp.png::CompressedTexture2D::5286600520926128978::1711394252::1723825592::0::::<><>::
+._wagon.png::CompressedTexture2D::3858141093955151992::1711394252::1723825592::0::::<><>::
+._well.png::CompressedTexture2D::4862508764792272551::1711394252::1723825592::0::::<><>::
+::res://SPRITES/Assets Descargados/GothicVania-town-files/__MACOSX/GothicVania-town-files/PNG/sprites/::1719127983
+::res://SPRITES/Assets Descargados/GothicVania-town-files/__MACOSX/GothicVania-town-files/PNG/sprites/bearded-idle/::1723825592
+._bearded-idle-1.png::CompressedTexture2D::2191713955439388394::1711394253::1723825592::0::::<><>::
+._bearded-idle-2.png::CompressedTexture2D::1650278503155893679::1711394253::1723825592::0::::<><>::
+._bearded-idle-3.png::CompressedTexture2D::2431318841115658505::1711394253::1723825592::0::::<><>::
+._bearded-idle-4.png::CompressedTexture2D::9201779184515099948::1711394253::1723825592::0::::<><>::
+._bearded-idle-5.png::CompressedTexture2D::4854119644358227896::1711394253::1723825592::0::::<><>::
+::res://SPRITES/Assets Descargados/GothicVania-town-files/__MACOSX/GothicVania-town-files/PNG/sprites/bearded-walk/::1723825592
+._bearded-walk-1.png::CompressedTexture2D::4094046975307054898::1711394253::1723825592::0::::<><>::
+._bearded-walk-2.png::CompressedTexture2D::4296210352430206530::1711394253::1723825592::0::::<><>::
+._bearded-walk-3.png::CompressedTexture2D::3362434526049165957::1711394253::1723825592::0::::<><>::
+._bearded-walk-4.png::CompressedTexture2D::9010487070048553769::1711394253::1723825592::0::::<><>::
+._bearded-walk-5.png::CompressedTexture2D::1304194484310876386::1711394253::1723825592::0::::<><>::
+._bearded-walk-6.png::CompressedTexture2D::1614987755411480956::1711394253::1723825592::0::::<><>::
+::res://SPRITES/Assets Descargados/GothicVania-town-files/__MACOSX/GothicVania-town-files/PNG/sprites/hat-man-idle/::1723825592
+._hat-man-idle-1.png::CompressedTexture2D::5325892189220935604::1711394253::1723825592::0::::<><>::
+._hat-man-idle-2.png::CompressedTexture2D::7862934884468732567::1711394253::1723825592::0::::<><>::
+._hat-man-idle-3.png::CompressedTexture2D::1713085431257436061::1711394253::1723825592::0::::<><>::
+._hat-man-idle-4.png::CompressedTexture2D::5956685975706226627::1711394253::1723825592::0::::<><>::
+::res://SPRITES/Assets Descargados/GothicVania-town-files/__MACOSX/GothicVania-town-files/PNG/sprites/hat-man-walk/::1723825592
+._hat-man-walk-1.png::CompressedTexture2D::4118699306313608248::1711394253::1723825592::0::::<><>::
+._hat-man-walk-2.png::CompressedTexture2D::2015245445301975489::1711394253::1723825592::0::::<><>::
+._hat-man-walk-3.png::CompressedTexture2D::3919812102074940013::1711394253::1723825592::0::::<><>::
+._hat-man-walk-4.png::CompressedTexture2D::2248833327780790997::1711394253::1723825592::0::::<><>::
+._hat-man-walk-5.png::CompressedTexture2D::4591491605509908247::1711394253::1723825592::0::::<><>::
+._hat-man-walk-6.png::CompressedTexture2D::789566462103473386::1711394253::1723825592::0::::<><>::
+::res://SPRITES/Assets Descargados/GothicVania-town-files/__MACOSX/GothicVania-town-files/PNG/sprites/oldman-idle/::1723825592
+._oldman-idle-1.png::CompressedTexture2D::9119343524838901108::1711394253::1723825592::0::::<><>::
+._oldman-idle-2.png::CompressedTexture2D::230716654061567631::1711394253::1723825592::0::::<><>::
+._oldman-idle-3.png::CompressedTexture2D::8586880703294649382::1711394253::1723825592::0::::<><>::
+._oldman-idle-4.png::CompressedTexture2D::1275432504355303534::1711394253::1723825592::0::::<><>::
+._oldman-idle-5.png::CompressedTexture2D::4616120104194771834::1711394253::1723825592::0::::<><>::
+._oldman-idle-6.png::CompressedTexture2D::9147563416825845798::1711394253::1723825592::0::::<><>::
+._oldman-idle-7.png::CompressedTexture2D::3356182302749417921::1711394253::1723825592::0::::<><>::
+._oldman-idle-8.png::CompressedTexture2D::2335368340361798377::1711394253::1723825592::0::::<><>::
+::res://SPRITES/Assets Descargados/GothicVania-town-files/__MACOSX/GothicVania-town-files/PNG/sprites/oldman-walk/::1723825592
+._oldman-walk-1.png::CompressedTexture2D::5837659722040573100::1711394253::1723825592::0::::<><>::
+._oldman-walk-2.png::CompressedTexture2D::891026097666402963::1711394253::1723825592::0::::<><>::
+._oldman-walk-3.png::CompressedTexture2D::5791817190367080473::1711394253::1723825592::0::::<><>::
+._oldman-walk-4.png::CompressedTexture2D::6931409928342312563::1711394253::1723825592::0::::<><>::
+._oldman-walk-5.png::CompressedTexture2D::3393054033194473554::1711394253::1723825592::0::::<><>::
+._oldman-walk-6.png::CompressedTexture2D::4607983557475463318::1711394253::1723825592::0::::<><>::
+._oldman-walk-7.png::CompressedTexture2D::5128790348125257545::1711394253::1723825592::0::::<><>::
+._oldman-walk-8.png::CompressedTexture2D::5644819856237427853::1711394253::1723825592::0::::<><>::
+._oldman-walk-9.png::CompressedTexture2D::7770104772617510173::1711394253::1723825592::0::::<><>::
+._oldman-walk-10.png::CompressedTexture2D::1696055568472591987::1711394253::1723825592::0::::<><>::
+._oldman-walk-11.png::CompressedTexture2D::1545127360972554827::1711394253::1723825592::0::::<><>::
+._oldman-walk-12.png::CompressedTexture2D::9176961985649456650::1711394253::1723825592::0::::<><>::
+::res://SPRITES/Assets Descargados/GothicVania-town-files/__MACOSX/GothicVania-town-files/PNG/sprites/woman-idle/::1723825592
+._woman-idle-1.png::CompressedTexture2D::5203005762459609499::1711394253::1723825592::0::::<><>::
+._woman-idle-2.png::CompressedTexture2D::5874881777404185526::1711394253::1723825592::0::::<><>::
+._woman-idle-3.png::CompressedTexture2D::5165699695863037574::1711394253::1723825592::0::::<><>::
+._woman-idle-4.png::CompressedTexture2D::7968664315661757101::1711394253::1723825592::0::::<><>::
+._woman-idle-5.png::CompressedTexture2D::1379319686339769065::1711394253::1723825592::0::::<><>::
+._woman-idle-6.png::CompressedTexture2D::659141122641283759::1711394253::1723825592::0::::<><>::
+._woman-idle-7.png::CompressedTexture2D::1613768544219529740::1711394253::1723825592::0::::<><>::
+::res://SPRITES/Assets Descargados/GothicVania-town-files/__MACOSX/GothicVania-town-files/PNG/sprites/woman-walk/::1723825592
+._woman-walk-1.png::CompressedTexture2D::4986716058097249155::1711394253::1723825592::0::::<><>::
+._woman-walk-2.png::CompressedTexture2D::6207882476267147497::1711394253::1723825592::0::::<><>::
+._woman-walk-3.png::CompressedTexture2D::5568875981471841330::1711394253::1723825592::0::::<><>::
+._woman-walk-4.png::CompressedTexture2D::2439821171126574088::1711394253::1723825592::0::::<><>::
+._woman-walk-5.png::CompressedTexture2D::6025309454031494033::1711394253::1723825592::0::::<><>::
+._woman-walk-6.png::CompressedTexture2D::7907124802844872110::1711394253::1723825592::0::::<><>::
+::res://SPRITES/Assets Descargados/GothicVania-town-files/__MACOSX/GothicVania-town-files/PNG/spritesheets/::1723825592
+._bearded-idle.png::CompressedTexture2D::1185812905632429176::1711394252::1723825592::0::::<><>::
+._bearded-walk.png::CompressedTexture2D::7253220944910303592::1711394252::1723825592::0::::<><>::
+._hat-man-idle.png::CompressedTexture2D::6422104795364892728::1711394252::1723825592::0::::<><>::
+._hat-man-walk.png::CompressedTexture2D::2484620418534007822::1711394252::1723825592::0::::<><>::
+._oldman-idle.png::CompressedTexture2D::1197573542496428025::1711394252::1723825592::0::::<><>::
+._oldman-walk.png::CompressedTexture2D::1738055898083139904::1711394252::1723825592::0::::<><>::
+._woman-idle.png::CompressedTexture2D::6304437693863863692::1711394252::1723825592::0::::<><>::
+._woman-walk.png::CompressedTexture2D::7924113523516114499::1711394252::1723825592::0::::<><>::
+::res://SPRITES/Assets Descargados/GothicVania-town-files/__MACOSX/GothicVania-town-files/PNG/title-screen/::1723825592
+._credits-text.png::CompressedTexture2D::549129603724358675::1711394252::1723825592::0::::<><>::
+._instructions.png::CompressedTexture2D::1086700110015505755::1711394251::1723825592::0::::<><>::
+._press-enter-text.png::CompressedTexture2D::7800532466653975483::1711394252::1723825592::0::::<><>::
+._title-screen.png::CompressedTexture2D::6043988277956470165::1711394252::1723825592::0::::<><>::
+::res://SPRITES/Assets Descargados/GothicVania-town-files/__MACOSX/GothicVania-town-files/PSD/::1719127983
+::res://SPRITES/Assets Descargados/GothicVania-town-files/__MACOSX/GothicVania-town-files/PSD/environment/::1719127983
+::res://SPRITES/Assets Descargados/GothicVania-town-files/__MACOSX/GothicVania-town-files/PSD/sprites/::1719127983
+::res://SPRITES/Assets Descargados/GothicVania-town-files/__MACOSX/GothicVania-town-files/PSD/titlescreen/::1719127983
 ::res://SPRITES/Assets Descargados/GothicVania-town-files/GothicVania-town-files/::1719127983
 public-license.txt::TextFile::-1::1711394248::0::1::::<><>::
 ::res://SPRITES/Assets Descargados/GothicVania-town-files/GothicVania-town-files/code/::1719127982
@@ -516,172 +682,6 @@ title-screen.png::CompressedTexture2D::1286778340952453258::1711394249::17191280
 ::res://SPRITES/Assets Descargados/GothicVania-town-files/GothicVania-town-files/PSD/environment/::1719127983
 ::res://SPRITES/Assets Descargados/GothicVania-town-files/GothicVania-town-files/PSD/sprites/::1719127983
 ::res://SPRITES/Assets Descargados/GothicVania-town-files/GothicVania-town-files/PSD/titlescreen/::1719127983
-::res://SPRITES/Assets Descargados/GothicVania-town-files/__MACOSX/::1719127983
-::res://SPRITES/Assets Descargados/GothicVania-town-files/__MACOSX/GothicVania-town-files/::1719127983
-._public-license.txt::TextFile::-1::1711394251::0::1::::<><>::
-::res://SPRITES/Assets Descargados/GothicVania-town-files/__MACOSX/GothicVania-town-files/code/::1719127983
-::res://SPRITES/Assets Descargados/GothicVania-town-files/__MACOSX/GothicVania-town-files/code/phaser-code/::1719127983
-::res://SPRITES/Assets Descargados/GothicVania-town-files/__MACOSX/GothicVania-town-files/code/phaser-code/assets/::1719127983
-::res://SPRITES/Assets Descargados/GothicVania-town-files/__MACOSX/GothicVania-town-files/code/phaser-code/assets/atlas/::1719127983
-._atlas.json::JSON::-1::1711394251::0::1::::<><>::
-::res://SPRITES/Assets Descargados/GothicVania-town-files/__MACOSX/GothicVania-town-files/code/phaser-code/assets/environment/::1719127983
-._background.png::::-1::0::0::0::::<><>::
-._middleground.png::::-1::0::0::0::::<><>::
-._tileset.png::::-1::0::0::0::::<><>::
-::res://SPRITES/Assets Descargados/GothicVania-town-files/__MACOSX/GothicVania-town-files/code/phaser-code/assets/sounds/::1719127983
-._rpg_village02_loop.mp3::::-1::0::0::0::::<><>::
-._rpg_village02__loop.ogg::::-1::0::0::0::::<><>::
-::res://SPRITES/Assets Descargados/GothicVania-town-files/__MACOSX/GothicVania-town-files/code/phaser-code/assets/sprites/::1719127983
-._credits-text.png::::-1::0::0::0::::<><>::
-._instructions.png::::-1::0::0::0::::<><>::
-._loading.png::::-1::0::0::0::::<><>::
-._press-enter-text.png::::-1::0::0::0::::<><>::
-._title-screen.png::::-1::0::0::0::::<><>::
-::res://SPRITES/Assets Descargados/GothicVania-town-files/__MACOSX/GothicVania-town-files/GIF/::1719127983
-::res://SPRITES/Assets Descargados/GothicVania-town-files/__MACOSX/GothicVania-town-files/Music/::1719127983
-._readme.txt::TextFile::-1::1711394251::0::1::::<><>::
-._rpg_village02_loop.mp3::::-1::0::0::0::::<><>::
-._rpg_village02__loop.ogg::::-1::0::0::0::::<><>::
-::res://SPRITES/Assets Descargados/GothicVania-town-files/__MACOSX/GothicVania-town-files/PNG/::1719127983
-::res://SPRITES/Assets Descargados/GothicVania-town-files/__MACOSX/GothicVania-town-files/PNG/environment/::1719127983
-._environment-preview.png::::-1::0::0::0::::<><>::
-::res://SPRITES/Assets Descargados/GothicVania-town-files/__MACOSX/GothicVania-town-files/PNG/environment/layers/::1719127983
-._background.png::::-1::0::0::0::::<><>::
-._middleground.png::::-1::0::0::0::::<><>::
-._tileset.png::::-1::0::0::0::::<><>::
-::res://SPRITES/Assets Descargados/GothicVania-town-files/__MACOSX/GothicVania-town-files/PNG/environment/layers/sliced-tileset/::1719127983
-._ground-b.png::::-1::0::0::0::::<><>::
-._ground-corner.png::::-1::0::0::0::::<><>::
-._ground-right-corner.png::::-1::0::0::0::::<><>::
-._ground-shadow.png::::-1::0::0::0::::<><>::
-._ground-wall-b.png::::-1::0::0::0::::<><>::
-._ground-wall.png::::-1::0::0::0::::<><>::
-._ground-wood-legs.png::::-1::0::0::0::::<><>::
-._ground.png::::-1::0::0::0::::<><>::
-._left-corner.png::::-1::0::0::0::::<><>::
-._left-roof.png::::-1::0::0::0::::<><>::
-._left-slope.png::::-1::0::0::0::::<><>::
-._right-corner.png::::-1::0::0::0::::<><>::
-._right-roof.png::::-1::0::0::0::::<><>::
-._right-slope.png::::-1::0::0::0::::<><>::
-._roof.png::::-1::0::0::0::::<><>::
-._shadow.png::::-1::0::0::0::::<><>::
-._slope.png::::-1::0::0::0::::<><>::
-._stairs-left.png::::-1::0::0::0::::<><>::
-._stairs-mirror-left.png::::-1::0::0::0::::<><>::
-._stairs-mirror-right.png::::-1::0::0::0::::<><>::
-._stairs-mirror.png::::-1::0::0::0::::<><>::
-._stairs-right.png::::-1::0::0::0::::<><>::
-._stairs-wall-left.png::::-1::0::0::0::::<><>::
-._stairs-wall-mirror-left.png::::-1::0::0::0::::<><>::
-._stairs-wall-mirror-right.png::::-1::0::0::0::::<><>::
-._stairs-wall-mirror.png::::-1::0::0::0::::<><>::
-._stairs-wall-right.png::::-1::0::0::0::::<><>::
-._stairs-wall.png::::-1::0::0::0::::<><>::
-._stairs.png::::-1::0::0::0::::<><>::
-._top-left-wood.png::::-1::0::0::0::::<><>::
-._top-right-wood.png::::-1::0::0::0::::<><>::
-._top-wood.png::::-1::0::0::0::::<><>::
-._wall-b.png::::-1::0::0::0::::<><>::
-._wall.png::::-1::0::0::0::::<><>::
-._window-bars.png::::-1::0::0::0::::<><>::
-._window.png::::-1::0::0::0::::<><>::
-._wood-legs.png::::-1::0::0::0::::<><>::
-::res://SPRITES/Assets Descargados/GothicVania-town-files/__MACOSX/GothicVania-town-files/PNG/environment/props/::1719127983
-._houses.png::::-1::0::0::0::::<><>::
-._props.png::::-1::0::0::0::::<><>::
-::res://SPRITES/Assets Descargados/GothicVania-town-files/__MACOSX/GothicVania-town-files/PNG/environment/props-sliced/::1719127983
-._barrel.png::::-1::0::0::0::::<><>::
-._crate-stack.png::::-1::0::0::0::::<><>::
-._crate.png::::-1::0::0::0::::<><>::
-._house-a.png::::-1::0::0::0::::<><>::
-._house-b.png::::-1::0::0::0::::<><>::
-._house-c.png::::-1::0::0::0::::<><>::
-._sign.png::::-1::0::0::0::::<><>::
-._street-lamp.png::::-1::0::0::0::::<><>::
-._wagon.png::::-1::0::0::0::::<><>::
-._well.png::::-1::0::0::0::::<><>::
-::res://SPRITES/Assets Descargados/GothicVania-town-files/__MACOSX/GothicVania-town-files/PNG/sprites/::1719127983
-::res://SPRITES/Assets Descargados/GothicVania-town-files/__MACOSX/GothicVania-town-files/PNG/sprites/bearded-idle/::1719127983
-._bearded-idle-1.png::::-1::0::0::0::::<><>::
-._bearded-idle-2.png::::-1::0::0::0::::<><>::
-._bearded-idle-3.png::::-1::0::0::0::::<><>::
-._bearded-idle-4.png::::-1::0::0::0::::<><>::
-._bearded-idle-5.png::::-1::0::0::0::::<><>::
-::res://SPRITES/Assets Descargados/GothicVania-town-files/__MACOSX/GothicVania-town-files/PNG/sprites/bearded-walk/::1719127983
-._bearded-walk-1.png::::-1::0::0::0::::<><>::
-._bearded-walk-2.png::::-1::0::0::0::::<><>::
-._bearded-walk-3.png::::-1::0::0::0::::<><>::
-._bearded-walk-4.png::::-1::0::0::0::::<><>::
-._bearded-walk-5.png::::-1::0::0::0::::<><>::
-._bearded-walk-6.png::::-1::0::0::0::::<><>::
-::res://SPRITES/Assets Descargados/GothicVania-town-files/__MACOSX/GothicVania-town-files/PNG/sprites/hat-man-idle/::1719127983
-._hat-man-idle-1.png::::-1::0::0::0::::<><>::
-._hat-man-idle-2.png::::-1::0::0::0::::<><>::
-._hat-man-idle-3.png::::-1::0::0::0::::<><>::
-._hat-man-idle-4.png::::-1::0::0::0::::<><>::
-::res://SPRITES/Assets Descargados/GothicVania-town-files/__MACOSX/GothicVania-town-files/PNG/sprites/hat-man-walk/::1719127983
-._hat-man-walk-1.png::::-1::0::0::0::::<><>::
-._hat-man-walk-2.png::::-1::0::0::0::::<><>::
-._hat-man-walk-3.png::::-1::0::0::0::::<><>::
-._hat-man-walk-4.png::::-1::0::0::0::::<><>::
-._hat-man-walk-5.png::::-1::0::0::0::::<><>::
-._hat-man-walk-6.png::::-1::0::0::0::::<><>::
-::res://SPRITES/Assets Descargados/GothicVania-town-files/__MACOSX/GothicVania-town-files/PNG/sprites/oldman-idle/::1719127983
-._oldman-idle-1.png::::-1::0::0::0::::<><>::
-._oldman-idle-2.png::::-1::0::0::0::::<><>::
-._oldman-idle-3.png::::-1::0::0::0::::<><>::
-._oldman-idle-4.png::::-1::0::0::0::::<><>::
-._oldman-idle-5.png::::-1::0::0::0::::<><>::
-._oldman-idle-6.png::::-1::0::0::0::::<><>::
-._oldman-idle-7.png::::-1::0::0::0::::<><>::
-._oldman-idle-8.png::::-1::0::0::0::::<><>::
-::res://SPRITES/Assets Descargados/GothicVania-town-files/__MACOSX/GothicVania-town-files/PNG/sprites/oldman-walk/::1719127983
-._oldman-walk-1.png::::-1::0::0::0::::<><>::
-._oldman-walk-2.png::::-1::0::0::0::::<><>::
-._oldman-walk-3.png::::-1::0::0::0::::<><>::
-._oldman-walk-4.png::::-1::0::0::0::::<><>::
-._oldman-walk-5.png::::-1::0::0::0::::<><>::
-._oldman-walk-6.png::::-1::0::0::0::::<><>::
-._oldman-walk-7.png::::-1::0::0::0::::<><>::
-._oldman-walk-8.png::::-1::0::0::0::::<><>::
-._oldman-walk-9.png::::-1::0::0::0::::<><>::
-._oldman-walk-10.png::::-1::0::0::0::::<><>::
-._oldman-walk-11.png::::-1::0::0::0::::<><>::
-._oldman-walk-12.png::::-1::0::0::0::::<><>::
-::res://SPRITES/Assets Descargados/GothicVania-town-files/__MACOSX/GothicVania-town-files/PNG/sprites/woman-idle/::1719127983
-._woman-idle-1.png::::-1::0::0::0::::<><>::
-._woman-idle-2.png::::-1::0::0::0::::<><>::
-._woman-idle-3.png::::-1::0::0::0::::<><>::
-._woman-idle-4.png::::-1::0::0::0::::<><>::
-._woman-idle-5.png::::-1::0::0::0::::<><>::
-._woman-idle-6.png::::-1::0::0::0::::<><>::
-._woman-idle-7.png::::-1::0::0::0::::<><>::
-::res://SPRITES/Assets Descargados/GothicVania-town-files/__MACOSX/GothicVania-town-files/PNG/sprites/woman-walk/::1719127983
-._woman-walk-1.png::::-1::0::0::0::::<><>::
-._woman-walk-2.png::::-1::0::0::0::::<><>::
-._woman-walk-3.png::::-1::0::0::0::::<><>::
-._woman-walk-4.png::::-1::0::0::0::::<><>::
-._woman-walk-5.png::::-1::0::0::0::::<><>::
-._woman-walk-6.png::::-1::0::0::0::::<><>::
-::res://SPRITES/Assets Descargados/GothicVania-town-files/__MACOSX/GothicVania-town-files/PNG/spritesheets/::1719127983
-._bearded-idle.png::::-1::0::0::0::::<><>::
-._bearded-walk.png::::-1::0::0::0::::<><>::
-._hat-man-idle.png::::-1::0::0::0::::<><>::
-._hat-man-walk.png::::-1::0::0::0::::<><>::
-._oldman-idle.png::::-1::0::0::0::::<><>::
-._oldman-walk.png::::-1::0::0::0::::<><>::
-._woman-idle.png::::-1::0::0::0::::<><>::
-._woman-walk.png::::-1::0::0::0::::<><>::
-::res://SPRITES/Assets Descargados/GothicVania-town-files/__MACOSX/GothicVania-town-files/PNG/title-screen/::1719127983
-._credits-text.png::::-1::0::0::0::::<><>::
-._instructions.png::::-1::0::0::0::::<><>::
-._press-enter-text.png::::-1::0::0::0::::<><>::
-._title-screen.png::::-1::0::0::0::::<><>::
-::res://SPRITES/Assets Descargados/GothicVania-town-files/__MACOSX/GothicVania-town-files/PSD/::1719127983
-::res://SPRITES/Assets Descargados/GothicVania-town-files/__MACOSX/GothicVania-town-files/PSD/environment/::1719127983
-::res://SPRITES/Assets Descargados/GothicVania-town-files/__MACOSX/GothicVania-town-files/PSD/sprites/::1719127983
-::res://SPRITES/Assets Descargados/GothicVania-town-files/__MACOSX/GothicVania-town-files/PSD/titlescreen/::1719127983
 ::res://SPRITES/Assets Descargados/Health Bar Asset Pack 2 by Adwit Rahman/::1719127983
 ::res://SPRITES/Assets Descargados/Health Bar Asset Pack 2 by Adwit Rahman/Health Bar Asset Pack 2 by Adwit Rahman/::1719127983
 ::res://SPRITES/Assets Descargados/Health Bar Asset Pack 2 by Adwit Rahman/Health Bar Asset Pack 2 by Adwit Rahman/Health Bar Asset Pack 2 by Adwit Rahman/::1719128033

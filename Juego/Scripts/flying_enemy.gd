@@ -11,6 +11,8 @@ var speed
 var is_attacking
 var is_moving
 
+var points = 5
+
 func _ready():
 	MC_Detector_A = $MC_detector_A
 	MC_Detector_B = $MC_detector_B
@@ -72,11 +74,12 @@ func _physics_process(delta):
 	
 	move_and_slide()
 
-func hit():
+func hit(body):
 	health_bar.value -= 40
 	if health_bar.value < 100:
 		health_bar.visible = true
 	if health_bar.value <= 0:
+		body.add_points(points)
 		dead()
 
 func dead():

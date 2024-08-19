@@ -1,11 +1,16 @@
-[gd_scene load_steps=3 format=3 uid="uid://d23lvr4qd0sgt"]
+[gd_scene load_steps=6 format=3 uid="uid://d23lvr4qd0sgt"]
 
 [ext_resource type="Texture2D" uid="uid://b5vvq5r0sc0fh" path="res://SPRITES/Assets Descargados/gothicvania-cemetery-files/gothicvania-cemetery-files/PNG/Environment/sliced-objects/statue.png" id="1_7vu1h"]
+[ext_resource type="Script" path="res://Scripts/save_statue.gd" id="1_8jsmq"]
+[ext_resource type="FontFile" uid="uid://7v2kawm2qawy" path="res://SPRITES/Assets Descargados/alagard/alagard.ttf" id="2_j8lg8"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4bbys"]
 size = Vector2(49, 77)
 
-[node name="Node2D" type="Node2D"]
+[sub_resource type="LabelSettings" id="LabelSettings_syfd7"]
+
+[node name="Statue" type="Node2D"]
+script = ExtResource("1_8jsmq")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_7vu1h")
@@ -15,3 +20,19 @@ texture = ExtResource("1_7vu1h")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2(8.5, -0.5)
 shape = SubResource("RectangleShape2D_4bbys")
+
+[node name="Label" type="Label" parent="."]
+offset_left = -27.0
+offset_top = -55.0
+offset_right = 43.0
+offset_bottom = -40.0
+theme_override_fonts/font = ExtResource("2_j8lg8")
+theme_override_font_sizes/font_size = 0
+text = "INTERACT"
+label_settings = SubResource("LabelSettings_syfd7")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="ready" from="." to="." method="_on_ready"]
+[connection signal="body_shape_entered" from="Area2D" to="." method="_on_area_2d_body_shape_entered"]
+[connection signal="body_shape_exited" from="Area2D" to="." method="_on_area_2d_body_shape_exited"]

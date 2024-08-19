@@ -15,6 +15,8 @@ var direction
 var is_waiting 
 var life_amount
 
+var points = 30
+
 func _ready():
 	sprite = $Sprite2D
 	raycastDL = $raycastDL
@@ -83,25 +85,26 @@ func _player_body_detected(body):
 	if body.name == "Player":
 		body.damage("skeleton")
 
-func hit():
+func hit(body):
 	set_physics_process(false)
 	health_bar.value -= 40
 	if health_bar.value < 100:
 		health_bar.visible = true
 	if health_bar.value <= 0:
-		dead()
+		dead(body)
 		return
 	animation.play("take_hit")
 	await animation.animation_finished
 	set_physics_process(true)
 	
 
-func dead():
+func dead(body):
 	life_amount -= 1
 	set_physics_process(false)
 	animation.play("death")
 	await animation.animation_finished
 	if life_amount == 0:
+		body.add_points(points)
 		self.queue_free()
 	else: 
 		skeleton_body.disabled = true

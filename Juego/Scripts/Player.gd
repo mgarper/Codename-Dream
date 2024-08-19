@@ -6,8 +6,13 @@ var attack_detection
 var health_sprite
 var health_bar
 var camera
+var score
 
 var max_speed = 200
+var max_life = 5
+var max_strength = 1
+var current_points = 0
+var level = 1
 var jump = 200
 var gravity = 450
 var life = 5
@@ -18,6 +23,8 @@ var is_dashing = false
 var is_double_jump = false
 var can_double_jump = true
 
+var check_castle = false
+
 func _ready():
 	anim = $AnimationPlayer
 	sprite = $Sprite2D
@@ -26,7 +33,9 @@ func _ready():
 	health_sprite = get_node("../CanvasLayer/Sprite2D")
 	health_bar = get_node("../CanvasLayer/health_bar")
 	health_sprite.frame = 0
-	
+	score = get_node("../CanvasLayer2/Label")
+	score.text = "0"
+
 #Bucle que se repite cada delta tiempo, procesando fisicas
 func _physics_process(delta):
 	#Positivo y negativo estan invertidos en el eje y de Godot Engine
@@ -123,13 +132,10 @@ func _input(event):
 		await anim.animation_finished #Espera a que la animación termine
 		set_physics_process(true)
 
+
 func _on_detector_body_entered(body):
-	if body.name == "flying_enemy":
-		body.hit()
-	elif body.name == "patrol_enemy":
-		body.hit()
-	elif body.name == "skeleton":
-		body.hit()
+	if body.is_in_group("Enemy"):
+		body.hit(self)
 
 func damage(source_name):
 	life -= 1
@@ -152,3 +158,37 @@ func dead():
 	anim.play("DEAD")
 	await anim.animation_finished
 	self.queue_free()
+
+func set_attributes(life, strength, points, level, castle):
+	max_life = life
+	max_strength = strength
+	current_points = points
+	level = level
+	check_castle = castle
+	update_points()
+
+func add_points(points):
+	current_points = current_points + points
+	update_points()
+	General.update_points(points)
+
+func update_points():
+	score.text = "" + str(current_points)
+
+func save(last_place):
+	var save_dict = {
+		"last_place" : last_place,
+		"max_life" : max_life,
+		"max_strength" : max_strength,
+		"current_points" : current_points,
+		"level" : level,
+		"check_castle" : check_castle
+	}
+	return save_dict
+
+
+func _on_player_ready():
+	if General.load_game:
+		General.load_game = false
+	
+	set_attributes(General.max_life,General.max_strength,General.current_points,General.level,General.check_castle)

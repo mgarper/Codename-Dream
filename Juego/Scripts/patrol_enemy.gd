@@ -13,6 +13,8 @@ var speed
 var is_waiting 
 var direction
 
+var points = 10
+
 func _ready():
 	sprite = $Sprite2D
 	raycastDL = $DownLeft
@@ -84,18 +86,17 @@ func _player_body_detected(body):
 	if body.name == "Player":
 		body.damage("patrol_enemy")
 
-func hit():
+func hit(body):
 	set_physics_process(false)
 	health_bar.value -= 30
 	if health_bar.value < 100:
 		health_bar.visible = true
 	if health_bar.value <= 0:
+		body.add_points(points)
 		dead()
-		return
 	animation.play("take_hit")
 	await animation.animation_finished
 	set_physics_process(true)
-	
 
 func dead():
 	set_physics_process(false)
