@@ -1,10 +1,9 @@
-[gd_scene load_steps=29 format=3 uid="uid://cs7wjnol0uw3q"]
+[gd_scene load_steps=28 format=3 uid="uid://cs7wjnol0uw3q"]
 
 [ext_resource type="Script" path="res://Scripts/Player.gd" id="1_bqfmn"]
 [ext_resource type="Texture2D" uid="uid://ba3kbkecxa5v1" path="res://SPRITES/Player.png" id="1_d5dl5"]
 [ext_resource type="Texture2D" uid="uid://cockllsiskbge" path="res://SPRITES/Assets Descargados/Hearts n Bars/Hearts n Bars/Bars_Animations/Bar2.png" id="3_pdkvx"]
 [ext_resource type="FontFile" uid="uid://7v2kawm2qawy" path="res://SPRITES/Assets Descargados/alagard/alagard.ttf" id="4_aewq0"]
-[ext_resource type="PackedScene" uid="uid://onfm8dspoao3" path="res://Scenes/pause_menu.tscn" id="5_wlo4x"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8k3ul"]
 size = Vector2(20.0691, 52.3768)
@@ -471,10 +470,6 @@ offset_bottom = 68.0
 theme_override_fonts/font = ExtResource("4_aewq0")
 theme_override_font_sizes/font_size = 40
 text = "0"
-
-[node name="pause_menu" parent="." instance=ExtResource("5_wlo4x")]
-scale = Vector2(1.7, 1.7)
-transform = Transform2D(1.7, 0, 0, 1.7, 0, 0)
 
 [connection signal="ready" from="." to="Player" method="_on_player_ready"]
 [connection signal="body_entered" from="Player/Attack_Detector" to="Player" method="_on_detector_body_entered"]

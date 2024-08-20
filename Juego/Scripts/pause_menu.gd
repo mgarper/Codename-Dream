@@ -1,33 +1,27 @@
 extends CanvasLayer
 
-
-var layer1
-var layer2
-var layer3
-
-# Called when the node enters the scene tree for the first time.
 func _ready():
-	$CanvasLayer.visible = false
-	$CanvasLayer/VBoxContainer/Button.grab_focus()
+	self.get_node("./CanvasLayer/VBoxContainer/Button").grab_focus()
+	if !get_tree().paused:
+		get_tree().paused = true
+	print(get_tree().paused)
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	if Input.is_action_just_pressed("pause"):
-		_toggle_pause()
-
-func _toggle_pause():
-	get_tree().paused = not get_tree().paused
-	$CanvasLayer.visible = not $CanvasLayer.visible
-
+func _input(event):
+	if Input.is_action_just_pressed("accept"):
+		if $CanvasLayer/VBoxContainer/Button.has_focus():
+			$CanvasLayer/VBoxContainer/Button.emit_signal("pressed")
+		elif $CanvasLayer/VBoxContainer/Button2.has_focus():
+			$CanvasLayer/VBoxContainer/Button2.emit_signal("pressed")
+		else:
+			$CanvasLayer/VBoxContainer/Button3.emit_signal("pressed")
 
 func _on_button_pressed():
-	_toggle_pause()
-
+	get_tree().paused = not get_tree().paused
+	self.queue_free()
 
 func _on_button_2_pressed():
-	pass # Replace with function body.
-
+	General._check_character_stats()
+	self.queue_free()
 
 func _on_button_3_pressed():
 	var path = get_parent().get_parent()

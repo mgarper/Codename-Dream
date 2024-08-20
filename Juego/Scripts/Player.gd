@@ -9,10 +9,6 @@ var camera
 var score
 
 var max_speed = 200
-var max_life = 5
-var max_strength = 1
-var current_points = 0
-var level = 1
 var jump = 200
 var gravity = 450
 var life = 5
@@ -23,6 +19,10 @@ var is_dashing = false
 var is_double_jump = false
 var can_double_jump = true
 
+var max_life = 1
+var max_strength = 1
+var current_points = 0
+var level = 1
 var check_castle = false
 
 func _ready():
@@ -40,6 +40,7 @@ func _ready():
 func _physics_process(delta):
 	#Positivo y negativo estan invertidos en el eje y de Godot Engine
 	velocity.y += gravity*delta
+	
 	
 	#Bloque de control para la interaccion con mando/teclado
 	if Input.is_action_pressed("move_right"):
@@ -159,8 +160,8 @@ func dead():
 	await anim.animation_finished
 	self.queue_free()
 
-func set_attributes(life, strength, points, level, castle):
-	max_life = life
+func set_attributes(m_life, strength, points, level, castle):
+	max_life = m_life
 	max_strength = strength
 	current_points = points
 	level = level

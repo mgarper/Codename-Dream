@@ -1,0 +1,149 @@
+[gd_scene load_steps=11 format=3 uid="uid://d048g3lliolog"]
+
+[ext_resource type="FontFile" uid="uid://7v2kawm2qawy" path="res://SPRITES/Assets Descargados/alagard/alagard.ttf" id="1_q2ngd"]
+[ext_resource type="Script" path="res://Scripts/character_stats.gd" id="1_whsdn"]
+[ext_resource type="Texture2D" uid="uid://daao4ofakwg5n" path="res://SPRITES/Assets Descargados/Ultimate Dark Fantasy UI set v1.2/scalable screen/Variations/Type 1/Screen8.png" id="2_k53v3"]
+[ext_resource type="Texture2D" uid="uid://ba3kbkecxa5v1" path="res://SPRITES/Player.png" id="3_2rhfc"]
+[ext_resource type="Texture2D" uid="uid://c3mkgp6e5y5d" path="res://SPRITES/Assets Descargados/Ultimate Dark Fantasy UI set v1.2/scalable screen/Variations/Type 1/Screen2.png" id="4_316f6"]
+[ext_resource type="Texture2D" uid="uid://bul607jeda7u4" path="res://SPRITES/Assets Descargados/Ultimate Dark Fantasy UI set v1.2/Gothic patterns/Pattern01 x1.png" id="5_g7x5y"]
+[ext_resource type="Texture2D" uid="uid://brljaekpqmhjb" path="res://SPRITES/Assets Descargados/an-8-bit-retro-styled-pixel-art-illustration-of-a-white-stone-sword-with-vines-and-leaves-wrapped-around-the-handle-free-png.webp" id="6_8ur8x"]
+[ext_resource type="Texture2D" uid="uid://d101f7khnwxvx" path="res://SPRITES/Assets Descargados/Hearts n Bars/Hearts n Bars/Hearts_Animations/Heart1.itchio.png" id="6_j6bes"]
+[ext_resource type="Texture2D" uid="uid://4xgndgrkwufx" path="res://SPRITES/Assets Descargados/Ultimate Dark Fantasy UI set v1.2/Skill Tree/Tree/circle.png" id="7_55vj8"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jveyv"]
+bg_color = Color(0.745137, 0.557563, 0.378819, 1)
+
+[node name="character_stats" type="CanvasLayer"]
+process_mode = 3
+script = ExtResource("1_whsdn")
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="Node2D"]
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(28.764, 16.2746)
+color = Color(0.491836, 0.341552, 0.207072, 1)
+
+[node name="Button" type="Button" parent="Node2D"]
+offset_left = 45.2752
+offset_top = 34.7759
+offset_right = 75.2752
+offset_bottom = 76.7759
+scale = Vector2(2.85862, 2.0473)
+theme_override_colors/font_hover_color = Color(0.835294, 0.854902, 0.160784, 0.996078)
+theme_override_fonts/font = ExtResource("1_q2ngd")
+theme_override_font_sizes/font_size = 25
+text = "◄"
+
+[node name="BackFrame" type="Sprite2D" parent="Node2D"]
+position = Vector2(86.2752, 77.7759)
+scale = Vector2(3.2672, 3.17349)
+texture = ExtResource("2_k53v3")
+
+[node name="Label" type="Label" parent="Node2D"]
+offset_left = 446.0
+offset_top = 62.0
+offset_right = 560.0
+offset_bottom = 85.0
+scale = Vector2(2.39181, 2.69556)
+theme_override_fonts/font = ExtResource("1_q2ngd")
+text = "Character Stats"
+
+[node name="Character_look" type="Sprite2D" parent="Node2D"]
+position = Vector2(223, 322)
+scale = Vector2(5, 5)
+texture = ExtResource("3_2rhfc")
+hframes = 7
+vframes = 11
+
+[node name="CharacterFrame" type="Sprite2D" parent="Node2D"]
+position = Vector2(224, 338)
+scale = Vector2(10, 10)
+texture = ExtResource("4_316f6")
+
+[node name="Strength" type="Sprite2D" parent="Node2D"]
+position = Vector2(871, 262)
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("6_8ur8x")
+
+[node name="StrengthFrame" type="Sprite2D" parent="Node2D"]
+position = Vector2(872, 261)
+scale = Vector2(5, 5)
+texture = ExtResource("4_316f6")
+
+[node name="Life" type="Sprite2D" parent="Node2D"]
+position = Vector2(871, 426)
+scale = Vector2(4, 4)
+texture = ExtResource("6_j6bes")
+hframes = 4
+vframes = 2
+
+[node name="LifeFrame" type="Sprite2D" parent="Node2D"]
+position = Vector2(871, 425)
+scale = Vector2(5, 5)
+texture = ExtResource("4_316f6")
+
+[node name="StrengthLevel" type="Label" parent="Node2D"]
+offset_left = 971.0
+offset_top = 231.0
+offset_right = 1011.0
+offset_bottom = 254.0
+scale = Vector2(3.10139, 2.64419)
+theme_override_fonts/font = ExtResource("1_q2ngd")
+theme_override_styles/normal = SubResource("StyleBoxFlat_jveyv")
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LifeLevel" type="Label" parent="Node2D"]
+offset_left = 972.0
+offset_top = 393.0
+offset_right = 1012.0
+offset_bottom = 416.0
+scale = Vector2(3.10139, 2.64419)
+theme_override_fonts/font = ExtResource("1_q2ngd")
+theme_override_styles/normal = SubResource("StyleBoxFlat_jveyv")
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LowerFrame" type="Sprite2D" parent="Node2D"]
+position = Vector2(580, 648)
+scale = Vector2(20, 10)
+texture = ExtResource("5_g7x5y")
+
+[node name="UpperFrame" type="Sprite2D" parent="Node2D"]
+position = Vector2(580, -0.999939)
+scale = Vector2(20, 10)
+texture = ExtResource("5_g7x5y")
+flip_v = true
+
+[node name="LevelTitle" type="Label" parent="Node2D"]
+offset_left = 502.0
+offset_top = 180.0
+offset_right = 542.0
+offset_bottom = 203.0
+scale = Vector2(3.9807, 2.66405)
+theme_override_fonts/font = ExtResource("1_q2ngd")
+theme_override_styles/normal = SubResource("StyleBoxFlat_jveyv")
+text = "Level"
+horizontal_alignment = 1
+
+[node name="Level" type="Label" parent="Node2D"]
+offset_left = 477.0
+offset_top = 285.0
+offset_right = 517.0
+offset_bottom = 308.0
+scale = Vector2(5.21197, 4.64934)
+theme_override_fonts/font = ExtResource("1_q2ngd")
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LevelFrame" type="Sprite2D" parent="Node2D"]
+position = Vector2(581, 339)
+scale = Vector2(15, 15)
+texture = ExtResource("7_55vj8")
+
+[connection signal="pressed" from="Node2D/Button" to="." method="_on_button_pressed"]

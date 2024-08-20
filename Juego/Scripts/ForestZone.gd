@@ -9,6 +9,9 @@ func _ready():
 	mc = SceneToLoad.instantiate()
 	add_child(mc)
 	
+	General.current_scene = get_tree().current_scene
+	General.player_node = General.current_scene.get_node("./player")
+	
 	marker = $Marker2D
 	statue = $Node2D
 	_player_set_up()

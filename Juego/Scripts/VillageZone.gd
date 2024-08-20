@@ -12,6 +12,9 @@ func _ready():
 	mc = SceneToLoad.instantiate()
 	add_child(mc)
 	
+	General.current_scene = get_tree().current_scene
+	General.player_node = General.current_scene.get_node("./player")
+	
 	player_camera = $player/Player/Camera2D
 	player_camera.limit_left = 0
 	player_camera.limit_right = 4480

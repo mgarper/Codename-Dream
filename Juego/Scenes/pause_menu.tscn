@@ -1,6 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://onfm8dspoao3"]
+[gd_scene load_steps=5 format=3 uid="uid://onfm8dspoao3"]
 
 [ext_resource type="Script" path="res://Scripts/pause_menu.gd" id="1_u0n1s"]
+[ext_resource type="Texture2D" uid="uid://daao4ofakwg5n" path="res://SPRITES/Assets Descargados/Ultimate Dark Fantasy UI set v1.2/scalable screen/Variations/Type 1/Screen8.png" id="3_uf1hv"]
+[ext_resource type="Texture2D" uid="uid://bul607jeda7u4" path="res://SPRITES/Assets Descargados/Ultimate Dark Fantasy UI set v1.2/Gothic patterns/Pattern01 x1.png" id="4_1lv8u"]
 [ext_resource type="FontFile" uid="uid://7v2kawm2qawy" path="res://SPRITES/Assets Descargados/alagard/alagard.ttf" id="4_atu35"]
 
 [node name="pause_menu" type="CanvasLayer"]
@@ -8,6 +10,12 @@ process_mode = 3
 script = ExtResource("1_u0n1s")
 
 [node name="CanvasLayer" type="Node2D" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(28.764, 16.2746)
+color = Color(0.491836, 0.341552, 0.207072, 1)
 
 [node name="Label" type="Label" parent="CanvasLayer"]
 offset_left = 123.0
@@ -41,18 +49,45 @@ text = "Player Stats"
 
 [node name="Button3" type="Button" parent="CanvasLayer/VBoxContainer"]
 layout_mode = 2
+theme_override_colors/font_hover_color = Color(0.835294, 0.854902, 0.160784, 0.996078)
 theme_override_fonts/font = ExtResource("4_atu35")
 theme_override_font_sizes/font_size = 0
 text = "Main Menu"
 
 [node name="Label2" type="Label" parent="CanvasLayer"]
-offset_left = 433.0
-offset_top = 38.0
-offset_right = 528.0
-offset_bottom = 130.0
+offset_left = 435.0
+offset_top = 64.0
+offset_right = 530.0
+offset_bottom = 156.0
 scale = Vector2(2.79532, 3.19239)
 theme_override_fonts/font = ExtResource("4_atu35")
 text = "Game paused"
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer"]
+position = Vector2(827, 269)
+scale = Vector2(11.5513, 2.42982)
+texture = ExtResource("3_uf1hv")
+
+[node name="Sprite2D2" type="Sprite2D" parent="CanvasLayer"]
+position = Vector2(827, 363)
+scale = Vector2(11.5513, 2.42982)
+texture = ExtResource("3_uf1hv")
+
+[node name="Sprite2D3" type="Sprite2D" parent="CanvasLayer"]
+position = Vector2(827, 455)
+scale = Vector2(11.5513, 2.42982)
+texture = ExtResource("3_uf1hv")
+
+[node name="LowerFrame" type="Sprite2D" parent="CanvasLayer"]
+position = Vector2(580, 648)
+scale = Vector2(20, 10)
+texture = ExtResource("4_1lv8u")
+
+[node name="UpperFrame" type="Sprite2D" parent="CanvasLayer"]
+position = Vector2(580, -0.999939)
+scale = Vector2(20, 10)
+texture = ExtResource("4_1lv8u")
+flip_v = true
 
 [connection signal="pressed" from="CanvasLayer/VBoxContainer/Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="CanvasLayer/VBoxContainer/Button2" to="." method="_on_button_2_pressed"]
