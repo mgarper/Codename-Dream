@@ -1,5 +1,6 @@
-[gd_scene load_steps=13 format=3 uid="uid://b45yxdeu3xxcg"]
+[gd_scene load_steps=14 format=3 uid="uid://b45yxdeu3xxcg"]
 
+[ext_resource type="Script" path="res://Scripts/castle.gd" id="1_1x304"]
 [ext_resource type="Texture2D" uid="uid://cas4lo7hiqpry" path="res://SPRITES/Assets Descargados/SSW_CastlePack_v1.0/_PNG/MainLevBuild.png" id="1_hlxlg"]
 [ext_resource type="Texture2D" uid="uid://cbx1pi0grwy1i" path="res://SPRITES/Assets Descargados/SSW_CastlePack_v1.0/_PNG/Decoratives.png" id="2_ofdgy"]
 [ext_resource type="Texture2D" uid="uid://bthdan5v1nnjf" path="res://SPRITES/Assets Descargados/SSW_CastlePack_v1.0/_PNG/Background1.png" id="3_exg4j"]
@@ -7,7 +8,9 @@
 [ext_resource type="Texture2D" uid="uid://dd1tuj1uoppv7" path="res://SPRITES/Assets Descargados/SSW_CastlePack_v1.0/_PNG/Background3.png" id="5_r377g"]
 [ext_resource type="Texture2D" uid="uid://cpuyu6wqt3rqa" path="res://SPRITES/Assets Descargados/SSW_CastlePack_v1.0/_PNG/Background4.png" id="6_pcouj"]
 [ext_resource type="Texture2D" uid="uid://daw0mo382ivf2" path="res://SPRITES/Assets Descargados/SSW_CastlePack_v1.0/_PNG/Background5.png" id="7_wyu88"]
-[ext_resource type="PackedScene" uid="uid://cs7wjnol0uw3q" path="res://Scenes/player.tscn" id="8_pacav"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_myrv3"]
+size = Vector2(221, 248)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_clkkp"]
 texture = ExtResource("1_hlxlg")
@@ -4711,6 +4714,14 @@ texture = ExtResource("2_ofdgy")
 sources/0 = SubResource("TileSetAtlasSource_if37f")
 
 [node name="castle" type="Node2D"]
+script = ExtResource("1_1x304")
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(-108, 300)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(100.5, 114)
+shape = SubResource("RectangleShape2D_myrv3")
 
 [node name="Structures" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_322a5")
@@ -4778,5 +4789,7 @@ motion_mirroring = Vector2(640, 0)
 texture = ExtResource("7_wyu88")
 centered = false
 
-[node name="MAIN_CHARACTER" parent="." instance=ExtResource("8_pacav")]
-position = Vector2(-38, 208)
+[node name="Marker2D" type="Marker2D" parent="."]
+position = Vector2(183, 476)
+
+[connection signal="body_shape_entered" from="Area2D" to="." method="_on_to_village_body_shape_entered"]

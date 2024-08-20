@@ -242,6 +242,25 @@ scale = Vector2(10.701, 10.701)
 texture = ExtResource("5_0hmc0")
 centered = false
 
+[node name="ToVillage" type="Area2D" parent="."]
+position = Vector2(4492, 1026)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ToVillage"]
+position = Vector2(218, -9)
+shape = SubResource("RectangleShape2D_tdjog")
+
+[node name="Marker2D" type="Marker2D" parent="."]
+position = Vector2(4340, 1015)
+
+[node name="start" type="Marker2D" parent="."]
+position = Vector2(134, 108)
+
+[node name="spawnpoint" type="Marker2D" parent="."]
+position = Vector2(464, 105)
+
+[node name="Node2D" parent="." instance=ExtResource("9_13ltq")]
+position = Vector2(525, 107)
+
 [node name="skeleton" parent="." instance=ExtResource("6_2mri1")]
 position = Vector2(1691, 181)
 scale = Vector2(0.648943, 0.552284)
@@ -271,18 +290,5 @@ scale = Vector2(0.67514, 0.748535)
 [node name="FLYING_ENEMY5" parent="." instance=ExtResource("8_yn2fj")]
 position = Vector2(3627, 865)
 scale = Vector2(0.67514, 0.748535)
-
-[node name="ToVillage" type="Area2D" parent="."]
-position = Vector2(4492, 1026)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ToVillage"]
-position = Vector2(218, -9)
-shape = SubResource("RectangleShape2D_tdjog")
-
-[node name="Marker2D" type="Marker2D" parent="."]
-position = Vector2(4340, 1015)
-
-[node name="Node2D" parent="." instance=ExtResource("9_13ltq")]
-position = Vector2(525, 107)
 
 [connection signal="body_shape_entered" from="ToVillage" to="." method="_on_to_village_body_shape_entered"]

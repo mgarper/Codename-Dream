@@ -1,9 +1,8 @@
 extends Node
 
-var position
 var dead 
-var first_load
-var load_game
+var first_load 
+var load_game 
 
 var max_life
 var max_strength
@@ -15,14 +14,22 @@ var current_scene
 var player_node
 var pause_menu
 
-func _ready():
-	first_load = true
-	load_game = false
-	dead = false
-	
+var up
+var down
+var left
+var right
+
 
 # Called when the node enters the scene tree for the first time.
-func change_scene(from, to):
+func change_scene(s_first_load,s_load_game,s_dead,from, to, p_up, p_down, p_left, p_right):
+	first_load = s_first_load
+	load_game = s_load_game
+	dead = s_dead
+	
+	up = p_up
+	down = p_up
+	left = p_left
+	right = p_right
 	
 	var file = ""
 	match to:
@@ -32,8 +39,11 @@ func change_scene(from, to):
 			file = "res://Scenes/beginning.tscn"
 		"village":
 			file = "res://Scenes/village.tscn"
+		"castle":
+			file = "res://Scenes/castle.tscn"
 	
 	get_tree().change_scene_to_file(file)
+	
 
 func _input(event):
 	if Input.is_action_just_pressed("pause"):

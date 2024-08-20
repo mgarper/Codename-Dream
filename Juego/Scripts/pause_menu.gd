@@ -26,4 +26,4 @@ func _on_button_2_pressed():
 func _on_button_3_pressed():
 	var path = get_parent().get_parent()
 	get_tree().paused = not get_tree().paused
-	General.change_scene(path.name,"main_menu")
+	General.change_scene(false,false,false,path.name,"main_menu","false","false","false","false")

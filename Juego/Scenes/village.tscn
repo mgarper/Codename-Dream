@@ -1424,7 +1424,7 @@ size = Vector2(178, 106)
 [node name="village" type="Node2D"]
 script = ExtResource("1_gqdb4")
 
-[node name="Node2D" parent="." instance=ExtResource("9_pb6rh")]
+[node name="Statue" parent="." instance=ExtResource("9_pb6rh")]
 position = Vector2(660, 550)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
@@ -1467,10 +1467,21 @@ position = Vector2(115, 548)
 position = Vector2(-29, -8)
 shape = SubResource("RectangleShape2D_p6sh6")
 
-[node name="Marker2DB" type="Marker2D" parent="."]
-position = Vector2(4440, 468)
+[node name="ToCastle" type="Area2D" parent="."]
+position = Vector2(115, 548)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ToCastle"]
+position = Vector2(4449, -91)
+shape = SubResource("RectangleShape2D_p6sh6")
 
 [node name="Marker2DA" type="Marker2D" parent="."]
 position = Vector2(277, 533)
 
+[node name="Marker2DB" type="Marker2D" parent="."]
+position = Vector2(4427, 466)
+
+[node name="Spawnpoint" type="Marker2D" parent="."]
+position = Vector2(601, 549)
+
 [connection signal="body_shape_entered" from="ToForest" to="." method="_on_to_forest_body_shape_entered"]
+[connection signal="body_shape_entered" from="ToCastle" to="." method="_on_to_castle_body_shape_entered"]

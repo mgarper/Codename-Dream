@@ -1,10 +1,8 @@
 extends Node2D
 
 var mc
-var player_camera 
+var player_camera
 var markerA
-var markerB
-var spawnpoint
 var statue
 
 var first_load
@@ -27,20 +25,17 @@ func _ready():
 	var SceneToLoad = preload("res://Scenes/player.tscn")
 	mc = SceneToLoad.instantiate()
 	add_child(mc)
+	
 	General.current_scene = get_tree().current_scene
 	General.player_node = General.current_scene.get_node("./player")
 	
 	player_camera = $player/Player/Camera2D
 	player_camera.limit_left = 0
-	player_camera.limit_right = 4480
-	player_camera.limit_bottom = get_viewport().size.y - 50
+	#player_camera.limit_right = 4480
+	#player_camera.limit_bottom = get_viewport().size.y - 50
 	
-	markerA = get_node("Marker2DA")
-	markerB = get_node("Marker2DB")
-	spawnpoint = get_node("Spawnpoint")
-	statue = $Statue
-	
-	
+	markerA = $Marker2D
+	#statue = $Node2D
 	
 	_player_set_up()
 
@@ -52,24 +47,21 @@ func _player_set_up():
 		else:
 			if left:
 				mc.position = Vector2(markerA.position.x - 240, markerA.position.y - 150)
-			elif right:
-				mc.position = Vector2(markerB.position.x - 240, markerB.position.y - 150)
 	else:
+		pass
 		General.first_load = false
 		General.load_game = false
-		mc.position = Vector2(spawnpoint.position.x - 300, spawnpoint.position.y - 170)
+		mc.position = Vector2(statue.position.x - 240, statue.position.y - 170)
 	
-	var camera = mc.get_node("Player/Camera2D")
-	
-	camera.position_smoothing_enabled = false
+	player_camera.position_smoothing_enabled = false
 	await get_tree().create_timer(2.0).timeout
-	camera.position_smoothing_enabled = true
+	player_camera.position_smoothing_enabled = true
 
-func _on_to_forest_body_shape_entered(body_rid, body, body_shape_index, local_shape_index):
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	pass
+
+
+func _on_to_village_body_shape_entered(body_rid, body, body_shape_index, local_shape_index):
 	if body.name == "Player":
-		General.change_scene(false,false,false,"village","beginning",false,false,false,false)
-
-
-func _on_to_castle_body_shape_entered(body_rid, body, body_shape_index, local_shape_index):
-	if body.name == "Player":
-		General.change_scene(false,false,false,"village","castle",false,false,true,false)
+		General.change_scene(false,false,false,"castle","village",false,false,false,true)
