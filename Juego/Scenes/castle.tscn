@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://b45yxdeu3xxcg"]
+[gd_scene load_steps=16 format=3 uid="uid://b45yxdeu3xxcg"]
 
 [ext_resource type="Script" path="res://Scripts/castle.gd" id="1_1x304"]
 [ext_resource type="Texture2D" uid="uid://cas4lo7hiqpry" path="res://SPRITES/Assets Descargados/SSW_CastlePack_v1.0/_PNG/MainLevBuild.png" id="1_hlxlg"]
@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://dd1tuj1uoppv7" path="res://SPRITES/Assets Descargados/SSW_CastlePack_v1.0/_PNG/Background3.png" id="5_r377g"]
 [ext_resource type="Texture2D" uid="uid://cpuyu6wqt3rqa" path="res://SPRITES/Assets Descargados/SSW_CastlePack_v1.0/_PNG/Background4.png" id="6_pcouj"]
 [ext_resource type="Texture2D" uid="uid://daw0mo382ivf2" path="res://SPRITES/Assets Descargados/SSW_CastlePack_v1.0/_PNG/Background5.png" id="7_wyu88"]
+[ext_resource type="PackedScene" uid="uid://d23lvr4qd0sgt" path="res://Scenes/Save_Statue.tscn" id="9_o8hc6"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_myrv3"]
 size = Vector2(221, 248)
@@ -4713,13 +4714,16 @@ texture = ExtResource("2_ofdgy")
 [sub_resource type="TileSet" id="TileSet_xhb4q"]
 sources/0 = SubResource("TileSetAtlasSource_if37f")
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_msj5e"]
+size = Vector2(83, 163)
+
 [node name="castle" type="Node2D"]
 script = ExtResource("1_1x304")
 
-[node name="Area2D" type="Area2D" parent="."]
+[node name="ToVillage" type="Area2D" parent="."]
 position = Vector2(-108, 300)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ToVillage"]
 position = Vector2(100.5, 114)
 shape = SubResource("RectangleShape2D_myrv3")
 
@@ -4748,7 +4752,7 @@ layer_1/tile_data = PackedInt32Array(2031617, 0, 24, 2097153, 0, 25, 2031618, 65
 [node name="ParallaxLayer" type="ParallaxLayer" parent="CanvasLayer/ParallaxBackground"]
 scale = Vector2(1.8, 1.35)
 motion_scale = Vector2(0.2, 0.2)
-motion_mirroring = Vector2(640, 0)
+motion_mirroring = Vector2(355, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/ParallaxBackground/ParallaxLayer"]
 texture = ExtResource("3_exg4j")
@@ -4757,7 +4761,7 @@ centered = false
 [node name="ParallaxLayer2" type="ParallaxLayer" parent="CanvasLayer/ParallaxBackground"]
 scale = Vector2(1.8, 1.35)
 motion_scale = Vector2(0.4, 0.4)
-motion_mirroring = Vector2(640, 0)
+motion_mirroring = Vector2(355, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/ParallaxBackground/ParallaxLayer2"]
 texture = ExtResource("4_cd2fb")
@@ -4766,7 +4770,7 @@ centered = false
 [node name="ParallaxLayer3" type="ParallaxLayer" parent="CanvasLayer/ParallaxBackground"]
 scale = Vector2(1.8, 1.35)
 motion_scale = Vector2(0.6, 0.6)
-motion_mirroring = Vector2(640, 0)
+motion_mirroring = Vector2(355, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/ParallaxBackground/ParallaxLayer3"]
 texture = ExtResource("5_r377g")
@@ -4775,7 +4779,7 @@ centered = false
 [node name="ParallaxLayer4" type="ParallaxLayer" parent="CanvasLayer/ParallaxBackground"]
 scale = Vector2(1.8, 1.35)
 motion_scale = Vector2(0.8, 0.8)
-motion_mirroring = Vector2(640, 0)
+motion_mirroring = Vector2(355, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/ParallaxBackground/ParallaxLayer4"]
 texture = ExtResource("6_pcouj")
@@ -4783,7 +4787,7 @@ centered = false
 
 [node name="ParallaxLayer5" type="ParallaxLayer" parent="CanvasLayer/ParallaxBackground"]
 scale = Vector2(1.8, 1.35)
-motion_mirroring = Vector2(640, 0)
+motion_mirroring = Vector2(355, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/ParallaxBackground/ParallaxLayer5"]
 texture = ExtResource("7_wyu88")
@@ -4792,4 +4796,18 @@ centered = false
 [node name="Marker2D" type="Marker2D" parent="."]
 position = Vector2(183, 476)
 
-[connection signal="body_shape_entered" from="Area2D" to="." method="_on_to_village_body_shape_entered"]
+[node name="Statue" parent="." instance=ExtResource("9_o8hc6")]
+position = Vector2(3263, 839)
+
+[node name="ToBossFight" type="Area2D" parent="."]
+position = Vector2(4292, 807)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ToBossFight"]
+position = Vector2(17, -10.5)
+shape = SubResource("RectangleShape2D_msj5e")
+
+[node name="Marker2D2" type="Marker2D" parent="."]
+position = Vector2(4203, 819)
+
+[connection signal="body_shape_entered" from="ToVillage" to="." method="_on_to_village_body_shape_entered"]
+[connection signal="body_shape_entered" from="ToBossFight" to="." method="_on_to_boss_fight_body_shape_entered"]

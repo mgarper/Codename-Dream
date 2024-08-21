@@ -3,6 +3,7 @@ extends Node2D
 var mc
 var player_camera
 var markerA
+var markerB
 var statue
 
 var first_load
@@ -31,11 +32,12 @@ func _ready():
 	
 	player_camera = $player/Player/Camera2D
 	player_camera.limit_left = 0
-	#player_camera.limit_right = 4480
+	player_camera.limit_right = 4330
 	#player_camera.limit_bottom = get_viewport().size.y - 50
 	
 	markerA = $Marker2D
-	#statue = $Node2D
+	markerB = $Marker2D2
+	statue = $Statue
 	
 	_player_set_up()
 
@@ -47,6 +49,8 @@ func _player_set_up():
 		else:
 			if left:
 				mc.position = Vector2(markerA.position.x - 240, markerA.position.y - 150)
+			elif right:
+				mc.position = Vector2(markerB.position.x - 240, markerB.position.y - 150)
 	else:
 		pass
 		General.first_load = false
@@ -65,3 +69,8 @@ func _process(delta):
 func _on_to_village_body_shape_entered(body_rid, body, body_shape_index, local_shape_index):
 	if body.name == "Player":
 		General.change_scene(false,false,false,"castle","village",false,false,false,true)
+
+
+func _on_to_boss_fight_body_shape_entered(body_rid, body, body_shape_index, local_shape_index):
+	if body.name == "Player":
+		General.change_scene(false,false,false,"castle","final_boss",false,false,true,false)

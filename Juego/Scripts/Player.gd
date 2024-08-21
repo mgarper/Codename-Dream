@@ -137,6 +137,8 @@ func _input(event):
 func _on_detector_body_entered(body):
 	if body.is_in_group("Enemy"):
 		body.hit(self)
+	elif body.is_in_group("BossEnemy"):
+		body.get_parent().hit(self)
 
 func damage(source_name):
 	life -= 1

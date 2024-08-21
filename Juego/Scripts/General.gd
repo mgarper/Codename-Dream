@@ -41,6 +41,8 @@ func change_scene(s_first_load,s_load_game,s_dead,from, to, p_up, p_down, p_left
 			file = "res://Scenes/village.tscn"
 		"castle":
 			file = "res://Scenes/castle.tscn"
+		"final_boss":
+			file = "res://Scenes/final_boss.tscn"
 	
 	get_tree().change_scene_to_file(file)
 	

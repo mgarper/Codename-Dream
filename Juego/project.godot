@@ -28,6 +28,7 @@ window/size/borderless=true
 
 Persist="Groups that need data to be stored"
 Enemy="Group for mobs and bosses"
+BossEnemy=""
 
 [input]
 
