@@ -1,13 +1,1 @@
 res://Scenes/final_boss.tscn
-res://Scripts/final_boss.gd
-res://Scenes/Save_Statue.tscn
-res://Scenes/village.tscn
-res://Scenes/castle.tscn
-res://Scenes/beginning.tscn
-res://Scenes/player.tscn
-res://Scenes/skeleton.tscn
-res://Scripts/castle.gd
-res://Scenes/flying_enemy.tscn
-res://Scenes/patrol_enemy.tscn
-res://Scripts/Player.gd
-res://Scenes/character_stats.tscn
