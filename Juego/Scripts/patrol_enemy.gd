@@ -84,7 +84,7 @@ func attack():
 
 func _player_body_detected(body):
 	if body.name == "Player":
-		body.damage("patrol_enemy")
+		body.damage()
 
 func hit(body):
 	set_physics_process(false)

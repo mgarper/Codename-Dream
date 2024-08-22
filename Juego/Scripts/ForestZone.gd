@@ -8,11 +8,13 @@ var statue
 var first_load
 var load_game
 var dead
+var check_castle
 
 func _ready():
 	first_load = General.first_load
 	load_game = General.load_game
 	dead = General.dead
+	check_castle = General.check_castle
 	
 	DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_FULLSCREEN)
 	var SceneToLoad = preload("res://Scenes/player.tscn")

@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=3 uid="uid://bd66p2xpxso2w"]
+[gd_scene load_steps=35 format=3 uid="uid://bd66p2xpxso2w"]
 
 [ext_resource type="Texture2D" uid="uid://bthdan5v1nnjf" path="res://SPRITES/Assets Descargados/SSW_CastlePack_v1.0/_PNG/Background1.png" id="1_h0thh"]
 [ext_resource type="Script" path="res://Scripts/final_boss.gd" id="1_hb1l1"]
@@ -11,6 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://rjlhgh27fdt6" path="res://SPRITES/Boss 2.png" id="8_wi2f3"]
 [ext_resource type="Texture2D" uid="uid://cc8bbf4bqy8iv" path="res://SPRITES/Assets Descargados/Ultimate Dark Fantasy UI set v1.2/Boss bar/boss_bar x1.png" id="10_lwqn2"]
 [ext_resource type="FontFile" uid="uid://7v2kawm2qawy" path="res://SPRITES/Assets Descargados/alagard/alagard.ttf" id="11_b00uk"]
+[ext_resource type="PackedScene" uid="uid://d23lvr4qd0sgt" path="res://Scenes/Save_Statue.tscn" id="12_70a83"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_85w5r"]
 texture = ExtResource("6_yq28q")
@@ -4828,7 +4829,99 @@ radius = 19.0
 height = 108.0
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_fnqg2"]
-radius = 57.0088
+radius = 48.3378
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1v1mb"]
+size = Vector2(20, 98.1666)
+
+[sub_resource type="Animation" id="Animation_c87ef"]
+resource_name = "Summon"
+length = 1.4
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Magic_hand:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CollisionShape2D2:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.7, 0.9),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [true, false, true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Magic_hand:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+
+[sub_resource type="Animation" id="Animation_ufvof"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Magic_hand:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [48]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CollisionShape2D2:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Magic_hand:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ovi1c"]
+_data = {
+"RESET": SubResource("Animation_ufvof"),
+"Summon": SubResource("Animation_c87ef")
+}
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2msly"]
+size = Vector2(45, 20)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ep20m"]
 size = Vector2(31, 60)
@@ -4901,26 +4994,56 @@ shape = SubResource("CapsuleShape2D_h8w3i")
 disabled = true
 
 [node name="move_left" type="RayCast2D" parent="CharacterBody2D"]
-position = Vector2(70, 79)
+position = Vector2(70, 40)
+rotation = -0.0872665
 target_position = Vector2(-462, 0)
 
 [node name="move_right" type="RayCast2D" parent="CharacterBody2D"]
-position = Vector2(70, 79)
+position = Vector2(70, 40)
+rotation = 0.0872665
 target_position = Vector2(462, 0)
 
 [node name="left_attacks" type="RayCast2D" parent="CharacterBody2D"]
-position = Vector2(70, 79)
+position = Vector2(70, 0)
+rotation = -0.471239
 target_position = Vector2(-181, -1)
 
 [node name="right_attacks" type="RayCast2D" parent="CharacterBody2D"]
-position = Vector2(70, 79)
+position = Vector2(70, 0)
+rotation = 0.471239
 target_position = Vector2(181, -1)
 
 [node name="attack_area" type="Area2D" parent="CharacterBody2D" groups=["Enemy"]]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D/attack_area"]
-position = Vector2(-54, 35)
+position = Vector2(-65, 41.5)
 shape = SubResource("CircleShape2D_fnqg2")
+
+[node name="Magic_hand" type="Sprite2D" parent="CharacterBody2D"]
+visible = false
+position = Vector2(14.333, 1.5)
+scale = Vector2(2, 2)
+texture = ExtResource("8_wi2f3")
+hframes = 8
+vframes = 8
+frame = 48
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(4.333, 41.5)
+scale = Vector2(1.76567, 1)
+shape = SubResource("RectangleShape2D_1v1mb")
+disabled = true
+
+[node name="HandAnimation" type="AnimationPlayer" parent="CharacterBody2D"]
+libraries = {
+"": SubResource("AnimationLibrary_ovi1c")
+}
+
+[node name="Prox_detection" type="Area2D" parent="CharacterBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D/Prox_detection"]
+position = Vector2(17.667, 79)
+shape = SubResource("RectangleShape2D_2msly")
 
 [node name="Marker2D" type="Marker2D" parent="."]
 position = Vector2(112.5, 511.667)
@@ -4970,5 +5093,9 @@ position = Vector2(69.1667, 490)
 position = Vector2(0, 22.5)
 shape = SubResource("RectangleShape2D_mdw2y")
 
+[node name="Statue" parent="." instance=ExtResource("12_70a83")]
+position = Vector2(578.333, 315)
+
 [connection signal="body_entered" from="CharacterBody2D/attack_area" to="." method="_on_attack_area_body_entered"]
+[connection signal="body_shape_entered" from="CharacterBody2D/Prox_detection" to="." method="_on_prox_detection_body_shape_entered"]
 [connection signal="body_shape_entered" from="Area2D" to="." method="_on_area_2d_body_shape_entered"]

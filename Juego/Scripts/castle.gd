@@ -9,7 +9,7 @@ var statue
 var first_load
 var load_game
 var dead
-
+var check_castle
 var left
 var right
 
@@ -18,7 +18,7 @@ func _ready():
 	first_load = General.first_load
 	load_game = General.load_game
 	dead = General.dead
-	
+	check_castle = General.check_castle
 	left = General.left
 	right = General.right
 	

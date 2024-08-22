@@ -140,7 +140,7 @@ func _on_detector_body_entered(body):
 	elif body.is_in_group("BossEnemy"):
 		body.get_parent().hit(self)
 
-func damage(source_name):
+func damage():
 	life -= 1
 	if life == 0:
 		dead()

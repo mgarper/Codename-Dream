@@ -7,11 +7,15 @@ var dead
 var left
 var right
 
+var check_castle
+
 var mc
 var player_camera
 var markerA
 var health_bar
 var health
+
+var statue
 
 var reaper
 var move_left
@@ -23,10 +27,16 @@ var enemy_asset
 var enemy_body
 var attack
 
+var hand
+var hand_col
+var hand_anim
+var prox
+
 var speed
 var is_attacking
 var is_moving
 var points
+var player_close
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -37,6 +47,8 @@ func _ready():
 	
 	left = General.left
 	right = General.right
+	
+	check_castle = General.check_castle
 	
 	DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_FULLSCREEN)
 	var SceneToLoad = preload("res://Scenes/player.tscn")
@@ -56,6 +68,8 @@ func _ready():
 	health = health_bar.get_node("ProgressBar")
 	health.value = 100
 	
+	statue = $Statue
+	
 	reaper = $CharacterBody2D
 	enemy_sprite = reaper.get_node("AnimationPlayer")
 	enemy_asset = reaper.get_node("Sprite2D")
@@ -66,8 +80,20 @@ func _ready():
 	attack_right = reaper.get_node("right_attacks")
 	attack = reaper.get_node("attack_area/CollisionShape2D")
 	
-	attack.disabled = true
-	enemy_body.disabled = false
+	hand = reaper.get_node("Magic_hand")
+	hand_col = reaper.get_node("CollisionShape2D2")
+	hand_anim = reaper.get_node("HandAnimation")
+	prox = reaper.get_node("Prox_detection/CollisionShape2D")
+	
+	
+	if !check_castle:
+		statue.visible = false
+		attack.disabled = true
+		enemy_body.disabled = false
+	else:
+		reaper.queue_free()
+		$TileMap.clear_layer(2)
+		$StaticBody2D/CollisionShape2D.disabled = true
 	
 	markerA = $Marker2D
 	
@@ -75,54 +101,51 @@ func _ready():
 	is_attacking = false
 	is_moving = false
 	points = 200
+	player_close = false
 	
 	_player_set_up()
 
 func _player_set_up():
 	mc.scale = Vector2(0.7, 0.7)
-	if dead:
-		pass
-	else:
-		if left:
-			mc.position = Vector2(markerA.position.x - 240, markerA.position.y - 200)
-		elif right:
+	if !load:
+		if dead:
 			pass
+		else:
+			if left:
+				mc.position = Vector2(markerA.position.x - 240, markerA.position.y - 200)
+			elif right:
+				pass
+	else:
+		mc.position = Vector2(markerA.position.x - 240, markerA.position.y - 200)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(delta):
 	var collision
 	
-	if attack_right.is_colliding():
-		collision = attack_right.get_collider()
-		if collision.name == "Player":
-			enemy_asset.flip_h = true
-			reaper.velocity.x = 0
-			is_moving = false
-			is_attacking = true
-	elif attack_left.is_colliding():
-		collision = attack_left.get_collider()
-		if collision.name == "Player":
-			enemy_asset.flip_h = false
-			reaper.velocity.x = 0
-			is_moving = false
-			is_attacking = true
+	if attack_right.is_colliding() && attack_right.get_collider() != null && attack_right.get_collider().is_in_group("Persist"):
+		enemy_asset.flip_h = true
+		reaper.velocity.x = 0
+		is_moving = false
+		is_attacking = true
+	elif attack_left.is_colliding() && attack_left.get_collider() != null && attack_left.get_collider().is_in_group("Persist"):
+		enemy_asset.flip_h = false
+		reaper.velocity.x = 0
+		is_moving = false
+		is_attacking = true
 	else:
 		is_attacking = false
+		attack.disabled = true
 	
-	if move_right.is_colliding() && !is_attacking:
-		collision = move_right.get_collider()
-		if collision != null and collision.name == "Player":
-			enemy_asset.flip_h = true
-			reaper.velocity.x = speed
-			is_attacking = false
-			is_moving = true
-	elif move_left.is_colliding() && !is_attacking:
-		collision = move_left.get_collider()
-		if collision != null and collision.name == "Player":
-			enemy_asset.flip_h = false
-			reaper.velocity.x = -speed
-			is_attacking = false
-			is_moving = true
+	if move_right.is_colliding() && !is_attacking && move_right.get_collider().is_in_group("Persist"):
+		enemy_asset.flip_h = true
+		reaper.velocity.x = speed
+		is_attacking = false
+		is_moving = true
+	elif move_left.is_colliding() && !is_attacking && move_left.get_collider().is_in_group("Persist"):
+		enemy_asset.flip_h = false
+		reaper.velocity.x = -speed
+		is_attacking = false
+		is_moving = true
 		
 		if !health_bar.visible:
 			health_bar.visible = true
@@ -149,10 +172,16 @@ func _play_animation():
 func _set_colliders_and_detectors():
 	if enemy_asset.flip_h:
 		enemy_asset.position.x = 142
-		attack.position.x = 209
+		attack.position.x = 212
+		hand.position.x = 134.333
+		hand_col.position.x = 124.333
+		prox.position.x = 117.667
 	else:
 		enemy_asset.position.x = 0
-		attack.position.x = -54
+		attack.position.x = -65
+		hand.position.x = 14.333
+		hand_col.position.x = 4.333
+		prox.position.x = 17.667
 
 func hit(body):
 	set_physics_process(false)
@@ -173,11 +202,21 @@ func death():
 	set_physics_process(false)
 	$TileMap.clear_layer(2)
 	$StaticBody2D/CollisionShape2D.disabled = true
+	General.check_castle = true
+	statue.visible = true
 
 func _on_attack_area_body_entered(body):
 	if body.name == "Player":
-		body.damage("skeleton")
+		body.damage()
 	
 func _on_area_2d_body_shape_entered(body_rid, body, body_shape_index, local_shape_index):
 	if body.name == "Player":
 		General.change_scene(false,false,false,"final_boss","castle",false,false,false,true)
+
+func _on_prox_detection_body_shape_entered(body_rid, body, body_shape_index, local_shape_index):
+	if body.name == "Player":
+		set_physics_process(false)
+		enemy_sprite.play("summon")
+		hand_anim.play("Summon")
+		await hand_anim.animation_finished
+		set_physics_process(true)
