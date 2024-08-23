@@ -4,6 +4,7 @@ var dead
 var first_load 
 var load_game 
 
+var last_save
 var max_life
 var max_strength
 var current_points
@@ -41,9 +42,8 @@ func change_scene(s_first_load,s_load_game,s_dead,from, to, p_up, p_down, p_left
 			file = "res://Scenes/village.tscn"
 		"castle":
 			file = "res://Scenes/castle.tscn"
-		"final_boss":
+		"final_boss_area_1":
 			file = "res://Scenes/final_boss.tscn"
-	
 	get_tree().change_scene_to_file(file)
 	
 
@@ -64,7 +64,8 @@ func _check_character_stats():
 	player_node.add_child(cstats)
 	player_node.get_node("./character_stats").offset = Vector2(385,200)
 
-func set_player_attributes(life, strength, points, m_level, castle):
+func set_player_attributes(last_place, life, strength, points, m_level, castle):
+	last_save = last_place
 	max_life = life
 	max_strength = strength
 	current_points = points
@@ -73,3 +74,34 @@ func set_player_attributes(life, strength, points, m_level, castle):
 
 func update_points(points):
 	current_points += points
+
+func retry():
+	General.first_load = false
+	General.load_game = true
+	var save_nodes = get_tree().get_nodes_in_group("Persist")
+	for i in save_nodes:
+		i.queue_free()
+
+	# Load the file line by line and process that dictionary to restore
+	# the object it represents.
+	var save_file = FileAccess.open("C:/Users/USUARIO/Documents/ONIROS/Save_Files/savegame.save", FileAccess.READ)
+	while save_file.get_position() < save_file.get_length():
+		var json_string = save_file.get_line()
+
+		# Creates the helper class to interact with JSON
+		var json = JSON.new()
+
+		# Check if there is any error while parsing the JSON string, skip in case of failure
+		var parse_result = json.parse(json_string)
+		if not parse_result == OK:
+			print("JSON Parse Error: ", json.get_error_message(), " in ", json_string, " at line ", json.get_error_line())
+			continue
+
+		# Get the data from the JSON object
+		var node_data = json.get_data()
+
+		# Firstly, we need to create the object and add it to the tree and set its position.
+		var path =  node_data["last_place"].replace("/root/", "")
+		
+		General.set_player_attributes(path, node_data["max_life"],node_data["max_strength"],0,node_data["level"],node_data["check_castle"])
+		General.change_scene(false,true,false,"",path,false,false,false,false)

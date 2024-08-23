@@ -37,6 +37,7 @@ var is_attacking
 var is_moving
 var points
 var player_close
+var cooldown
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -102,6 +103,7 @@ func _ready():
 	is_moving = false
 	points = 200
 	player_close = false
+	cooldown = false
 	
 	_player_set_up()
 
@@ -122,43 +124,46 @@ func _player_set_up():
 func _physics_process(delta):
 	var collision
 	
-	if attack_right.is_colliding() && attack_right.get_collider() != null && attack_right.get_collider().is_in_group("Persist"):
-		enemy_asset.flip_h = true
-		reaper.velocity.x = 0
-		is_moving = false
-		is_attacking = true
-	elif attack_left.is_colliding() && attack_left.get_collider() != null && attack_left.get_collider().is_in_group("Persist"):
-		enemy_asset.flip_h = false
-		reaper.velocity.x = 0
-		is_moving = false
-		is_attacking = true
-	else:
-		is_attacking = false
-		attack.disabled = true
-	
-	if move_right.is_colliding() && !is_attacking && move_right.get_collider().is_in_group("Persist"):
-		enemy_asset.flip_h = true
-		reaper.velocity.x = speed
-		is_attacking = false
-		is_moving = true
-	elif move_left.is_colliding() && !is_attacking && move_left.get_collider().is_in_group("Persist"):
-		enemy_asset.flip_h = false
-		reaper.velocity.x = -speed
-		is_attacking = false
-		is_moving = true
+	if reaper != null:
+		if attack_right.is_colliding() && attack_right.get_collider() != null && attack_right.get_collider().is_in_group("Persist"):
+			enemy_asset.flip_h = true
+			reaper.velocity.x = 0
+			is_moving = false
+			is_attacking = true
+		elif attack_left.is_colliding() && attack_left.get_collider() != null && attack_left.get_collider().is_in_group("Persist"):
+			enemy_asset.flip_h = false
+			reaper.velocity.x = 0
+			is_moving = false
+			is_attacking = true
+		else:
+			is_attacking = false
+			attack.disabled = true
 		
-		if !health_bar.visible:
-			health_bar.visible = true
+		if move_right.is_colliding() && !is_attacking && move_right.get_collider() != null && move_right.get_collider().is_in_group("Persist"):
+			enemy_asset.flip_h = true
+			reaper.velocity.x = speed
+			is_attacking = false
+			is_moving = true
+			enemy_body.disabled = false
+		elif move_left.is_colliding() && !is_attacking && move_left.get_collider() != null && move_left.get_collider().is_in_group("Persist"):
+			enemy_asset.flip_h = false
+			reaper.velocity.x = -speed
+			is_attacking = false
+			is_moving = true
+			enemy_body.disabled = false
+			if !health_bar.visible:
+				health_bar.visible = true
+				
+		else:
+			is_moving = false
+		
+		if !is_moving && !is_attacking:
+			reaper.velocity.x = 0
+			enemy_body.disabled = false
 			
-	else:
-		is_moving = false
-	
-	if !is_moving && !is_attacking:
-		reaper.velocity.x = 0
-		
-	_set_colliders_and_detectors()
-	_play_animation()
-	reaper.move_and_slide()
+		_set_colliders_and_detectors()
+		_play_animation()
+		reaper.move_and_slide()
 
 func _play_animation():
 	if is_moving:
@@ -190,7 +195,7 @@ func hit(body):
 		body.add_points(points)
 		death()
 	else:
-		enemy_sprite.play("hit")
+		enemy_sprite.play("take_hit")
 		await enemy_sprite.animation_finished
 		set_physics_process(true)
 
@@ -211,12 +216,17 @@ func _on_attack_area_body_entered(body):
 	
 func _on_area_2d_body_shape_entered(body_rid, body, body_shape_index, local_shape_index):
 	if body.name == "Player":
-		General.change_scene(false,false,false,"final_boss","castle",false,false,false,true)
+		General.change_scene(false,false,false,"final_boss_area_1","castle",false,false,false,true)
 
 func _on_prox_detection_body_shape_entered(body_rid, body, body_shape_index, local_shape_index):
-	if body.name == "Player":
+	if body.name == "Player" && !cooldown:
+		cooldown = true
 		set_physics_process(false)
 		enemy_sprite.play("summon")
 		hand_anim.play("Summon")
 		await hand_anim.animation_finished
+		if reaper.get_node("Prox_detection").get_overlapping_bodies().has(body):
+			body.damage()
 		set_physics_process(true)
+		await get_tree().create_timer(3.0).timeout
+		cooldown = false

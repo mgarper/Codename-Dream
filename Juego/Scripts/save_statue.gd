@@ -14,6 +14,9 @@ func _on_area_2d_body_shape_exited(body_rid, body, body_shape_index, local_shape
 func _input(event):
 	if Input.is_action_just_pressed("interaction") && $Label.visible == true:
 		_save_game()
+		var mc = get_parent().get_node("player/Player")
+		mc.loading_feedback()
+		mc.restore_life()
 
 func _save_game():
 	var save_file = FileAccess.open("C:/Users/USUARIO/Documents/ONIROS/Save_Files/savegame.save", FileAccess.WRITE)

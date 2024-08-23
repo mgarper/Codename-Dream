@@ -39,7 +39,7 @@ func _on_button_2_pressed():
 
 func load_game():
 	if not FileAccess.file_exists("C:/Users/USUARIO/Documents/ONIROS/Save_Files/savegame.save"):
-		General.set_player_attributes(1,1,0,1,false)
+		General.set_player_attributes("beginning",5,1,0,1,false)
 		General.change_scene(true,false,false,"main_menu","beginning",false,false,false,false)
 	else:
 		General.first_load = false
@@ -53,7 +53,6 @@ func load_game():
 		var save_file = FileAccess.open("C:/Users/USUARIO/Documents/ONIROS/Save_Files/savegame.save", FileAccess.READ)
 		while save_file.get_position() < save_file.get_length():
 			var json_string = save_file.get_line()
-
 			# Creates the helper class to interact with JSON
 			var json = JSON.new()
 
@@ -68,6 +67,5 @@ func load_game():
 
 			# Firstly, we need to create the object and add it to the tree and set its position.
 			var path =  node_data["last_place"].replace("/root/", "")
-			
-			General.set_player_attributes(node_data["max_life"],node_data["max_strength"],node_data["current_points"],node_data["level"],node_data["check_castle"])
+			General.set_player_attributes(path, node_data["max_life"],node_data["max_strength"],node_data["current_points"],node_data["level"],node_data["check_castle"])
 			General.change_scene(false,true,false,"main_menu",path,false,false,false,false)

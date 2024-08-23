@@ -73,4 +73,4 @@ func _on_to_village_body_shape_entered(body_rid, body, body_shape_index, local_s
 
 func _on_to_boss_fight_body_shape_entered(body_rid, body, body_shape_index, local_shape_index):
 	if body.name == "Player":
-		General.change_scene(false,false,false,"castle","final_boss",false,false,true,false)
+		General.change_scene(false,false,false,"castle","final_boss_area_1",false,false,true,false)

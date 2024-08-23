@@ -7,6 +7,17 @@ var health_sprite
 var health_bar
 var camera
 var score
+var death_view
+var you_dead
+var container
+var retry
+var frameR
+var to_menu
+var frameM
+var fade
+var load_feedback
+var player_anim
+var dog_anim
 
 var max_speed = 200
 var jump = 200
@@ -19,22 +30,42 @@ var is_dashing = false
 var is_double_jump = false
 var can_double_jump = true
 
-var max_life = 1
+var max_life = 5
 var max_strength = 1
 var current_points = 0
 var level = 1
 var check_castle = false
 
 func _ready():
-	anim = $AnimationPlayer
-	sprite = $Sprite2D
-	attack_detection = $Attack_Detector
-	camera = $Camera2D
+	anim = get_node("AnimationPlayer")
+	sprite = get_node("Sprite2D")
+	attack_detection = get_node("Attack_Detector")
+	camera = get_node("Camera2D")
 	health_sprite = get_node("../CanvasLayer/Sprite2D")
 	health_bar = get_node("../CanvasLayer/health_bar")
 	health_sprite.frame = 0
 	score = get_node("../CanvasLayer2/Label")
 	score.text = "0"
+	death_view = get_node("../Death_View/ColorRect")
+	death_view.modulate.a = 0
+	you_dead = get_node("../Death_View/Label")
+	you_dead.modulate.a = 0
+	container = get_node("../Death_View/HBoxContainer")
+	container.modulate.a = 0
+	retry = get_node("../Death_View/HBoxContainer/Button")
+	retry.disabled = true
+	frameR = get_node("../Death_View/Sprite2D")
+	frameR.modulate.a = 0
+	to_menu = get_node("../Death_View/HBoxContainer/Button2")
+	to_menu.disabled = true
+	frameM = get_node("../Death_View/Sprite2D2")
+	frameM.modulate.a = 0
+	fade = get_node("../Death_View/fade")
+	load_feedback = get_node("../LoadingFeedback")
+	load_feedback.visible = false
+	player_anim = get_node("../LoadingFeedback/MC_Moves")
+	dog_anim = get_node("../LoadingFeedback/Dog_Moves")
+	
 
 #Bucle que se repite cada delta tiempo, procesando fisicas
 func _physics_process(delta):
@@ -109,36 +140,35 @@ func _apply_animation():
 
 #Funcion predefinida de Godot para gestionar eventos de input fuera de physics process
 func _input(event):
-	
-	if Input.is_action_just_pressed("attack") && is_on_floor():
-		#Para el bucle de procesamiento de fisicas
-		set_physics_process(false)
-		if !switch_attacks:
-			anim.play("ATTACK_A")
-			switch_attacks = true
-		else:
-			anim.play("ATTACK_B")
-			switch_attacks = false
-		await anim.animation_finished #Espera a que la animación termine
-		set_physics_process(true)
-		
-	if Input.is_action_just_pressed("move_left"):
-		sprite.flip_h = true
-	elif Input.is_action_just_pressed("move_right"):
-		sprite.flip_h = false
-		
-	if Input.is_action_just_pressed("block") && is_on_floor():
-		set_physics_process(false)
-		anim.play("BLOCK")
-		await anim.animation_finished #Espera a que la animación termine
-		set_physics_process(true)
-
-
-func _on_detector_body_entered(body):
-	if body.is_in_group("Enemy"):
-		body.hit(self)
-	elif body.is_in_group("BossEnemy"):
-		body.get_parent().hit(self)
+	if sprite != null:
+		if Input.is_action_just_pressed("attack") && is_on_floor():
+			#Para el bucle de procesamiento de fisicas
+			set_physics_process(false)
+			if !switch_attacks:
+				anim.play("ATTACK_A")
+				switch_attacks = true
+			else:
+				anim.play("ATTACK_B")
+				switch_attacks = false
+			await anim.animation_finished #Espera a que la animación termine
+			set_physics_process(true)
+			
+		if Input.is_action_just_pressed("move_left"):
+			sprite.flip_h = true
+		elif Input.is_action_just_pressed("move_right"):
+			sprite.flip_h = false
+			
+		if Input.is_action_just_pressed("block") && is_on_floor():
+			set_physics_process(false)
+			anim.play("BLOCK")
+			await anim.animation_finished #Espera a que la animación termine
+			set_physics_process(true)
+	else:
+		if Input.is_action_just_pressed("accept"):
+			if retry.has_focus():
+				retry.emit_signal("pressed")
+			else:
+				to_menu.emit_signal("pressed")
 
 func damage():
 	life -= 1
@@ -160,7 +190,20 @@ func dead():
 	health_bar.play("death")
 	anim.play("DEAD")
 	await anim.animation_finished
-	self.queue_free()
+	fade.play("fade_in")
+	await fade.animation_finished
+	retry.disabled = false
+	to_menu.disabled = false
+	retry.grab_focus()
+	sprite.queue_free()
+	current_points = 0
+	var save_file = FileAccess.open("C:/Users/USUARIO/Documents/ONIROS/Save_Files/savegame.save", FileAccess.WRITE)
+	# Call the node's save function.
+	var node_data = save("/root/" + General.last_save)
+	# JSON provides a static method to serialized JSON string.
+	var json_string = JSON.stringify(node_data)
+	# Store the save dictionary as a new line in the save file.
+	save_file.store_line(json_string)
 
 func set_attributes(m_life, strength, points, level, castle):
 	max_life = m_life
@@ -189,9 +232,30 @@ func save(last_place):
 	}
 	return save_dict
 
+func restore_life():
+	life = max_life
+	health_bar.play("restore")
+
+func loading_feedback():
+	load_feedback.visible = true
+	dog_anim.play("RUN")
+	player_anim.play("RUN")
+	await get_tree().create_timer(3.0).timeout
+	load_feedback.visible = false
 
 func _on_player_ready():
 	if General.load_game:
 		General.load_game = false
-	
 	set_attributes(General.max_life,General.max_strength,General.current_points,General.level,General.check_castle)
+
+func _on_detector_body_entered(body):
+	if body.is_in_group("Enemy"):
+		body.hit(self)
+	elif body.is_in_group("BossEnemy"):
+		body.get_parent().hit(self)
+
+func _on_button_pressed():
+	General.retry()
+
+func _on_button_2_pressed():
+	General.change_scene(false,false,false,"path.name","main_menu","false","false","false","false")
