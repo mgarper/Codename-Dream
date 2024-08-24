@@ -182,7 +182,6 @@ func damage():
 	await anim.animation_finished
 	velocity = Vector2.ZERO
 	hit = false
-		
 
 func dead():
 	set_physics_process(false)
@@ -224,17 +223,34 @@ func update_points():
 func save(last_place):
 	var save_dict = {
 		"last_place" : last_place,
-		"max_life" : max_life,
-		"max_strength" : max_strength,
+		"max_life" : General.max_life,
+		"max_strength" : General.max_strength,
 		"current_points" : current_points,
-		"level" : level,
-		"check_castle" : check_castle
+		"level" : General.level,
+		"check_castle" : General.check_castle
 	}
 	return save_dict
 
+func get_life():
+	return life
+
 func restore_life():
-	life = max_life
-	health_bar.play("restore")
+	if life != max_life:
+		#0.2 + (life - 1) + 0.3
+		var frame = 0.0
+		match int(life):
+			1:
+				frame = 0.2
+			2:
+				frame = 0.5
+			3:
+				frame = 0.8
+			4:
+				frame = 1.1
+		health_bar.play("restore")
+		health_bar.seek(frame)
+		await health_bar.animation_finished
+		life = max_life
 
 func loading_feedback():
 	load_feedback.visible = true

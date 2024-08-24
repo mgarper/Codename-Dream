@@ -3,6 +3,8 @@ extends Node2D
 var layer1
 var layer2
 var layer3
+var background
+var anim_background
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -11,10 +13,15 @@ func _ready():
 	$Dog_Moves.play("RUN")
 	var camera = $Camera2D
 	
-	layer1 = $CanvasLayer/ParallaxBackground/ParallaxLayer
-	layer2 = $CanvasLayer/ParallaxBackground/ParallaxLayer2
-	layer3 = $CanvasLayer/ParallaxBackground/ParallaxLayer3
+	layer1 = get_node("CanvasLayer/ParallaxBackground/ParallaxLayer")
+	layer2 = get_node("CanvasLayer/ParallaxBackground/ParallaxLayer2")
+	layer3 = get_node("CanvasLayer/ParallaxBackground/ParallaxLayer3")
+	background = get_node("Black/ColorRect")
+	background.modulate.a = 255
+	anim_background = get_node("Black/Fade")
 	
+	anim_background.play("fade_out")
+	background.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	$VBoxContainer/Button.grab_focus()
 
 
@@ -40,6 +47,8 @@ func _on_button_2_pressed():
 func load_game():
 	if not FileAccess.file_exists("C:/Users/USUARIO/Documents/ONIROS/Save_Files/savegame.save"):
 		General.set_player_attributes("beginning",5,1,0,1,false)
+		anim_background.play("fade_in")
+		await anim_background.animation_finished
 		General.change_scene(true,false,false,"main_menu","beginning",false,false,false,false)
 	else:
 		General.first_load = false
@@ -68,4 +77,6 @@ func load_game():
 			# Firstly, we need to create the object and add it to the tree and set its position.
 			var path =  node_data["last_place"].replace("/root/", "")
 			General.set_player_attributes(path, node_data["max_life"],node_data["max_strength"],node_data["current_points"],node_data["level"],node_data["check_castle"])
+			anim_background.play("fade_in")
+			await anim_background.animation_finished
 			General.change_scene(false,true,false,"main_menu",path,false,false,false,false)

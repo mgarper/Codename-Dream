@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://b45yxdeu3xxcg"]
+[gd_scene load_steps=20 format=3 uid="uid://b45yxdeu3xxcg"]
 
 [ext_resource type="Script" path="res://Scripts/castle.gd" id="1_1x304"]
 [ext_resource type="Texture2D" uid="uid://cas4lo7hiqpry" path="res://SPRITES/Assets Descargados/SSW_CastlePack_v1.0/_PNG/MainLevBuild.png" id="1_hlxlg"]
@@ -4717,6 +4717,62 @@ sources/0 = SubResource("TileSetAtlasSource_if37f")
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_msj5e"]
 size = Vector2(83, 163)
 
+[sub_resource type="Animation" id="Animation_p3vl6"]
+resource_name = "fade_in"
+length = 0.5
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_ua4jq"]
+resource_name = "fade_out"
+length = 0.5
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_ar32c"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_vhm1u"]
+_data = {
+"RESET": SubResource("Animation_ar32c"),
+"fade_in": SubResource("Animation_p3vl6"),
+"fade_out": SubResource("Animation_ua4jq")
+}
+
 [node name="castle" type="Node2D"]
 script = ExtResource("1_1x304")
 
@@ -4808,6 +4864,20 @@ shape = SubResource("RectangleShape2D_msj5e")
 
 [node name="Marker2D2" type="Marker2D" parent="."]
 position = Vector2(4203, 819)
+
+[node name="Black" type="CanvasLayer" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="Black"]
+offset_left = -1714.0
+offset_top = -695.0
+offset_right = 7564.0
+offset_bottom = 4196.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fade" type="AnimationPlayer" parent="Black"]
+libraries = {
+"": SubResource("AnimationLibrary_vhm1u")
+}
 
 [connection signal="body_shape_entered" from="ToVillage" to="." method="_on_to_village_body_shape_entered"]
 [connection signal="body_shape_entered" from="ToBossFight" to="." method="_on_to_boss_fight_body_shape_entered"]

@@ -6,6 +6,8 @@ var markerA
 var markerB
 var spawnpoint
 var statue
+var background
+var anim_background
 
 var first_load
 var load_game
@@ -30,7 +32,7 @@ func _ready():
 	General.current_scene = get_tree().current_scene
 	General.player_node = General.current_scene.get_node("./player")
 	
-	player_camera = $player/Player/Camera2D
+	player_camera = get_node("player/Player/Camera2D")
 	player_camera.limit_left = 0
 	player_camera.limit_right = 4480
 	player_camera.limit_bottom = get_viewport().size.y - 50
@@ -38,7 +40,10 @@ func _ready():
 	markerA = get_node("Marker2DA")
 	markerB = get_node("Marker2DB")
 	spawnpoint = get_node("Spawnpoint")
-	statue = $Statue
+	background = get_node("Black/ColorRect")
+	background.modulate.a = 255
+	anim_background = get_node("Black/Fade")
+	statue = get_node("Statue")
 	
 	
 	
@@ -60,16 +65,20 @@ func _player_set_up():
 		mc.position = Vector2(spawnpoint.position.x - 300, spawnpoint.position.y - 170)
 	
 	var camera = mc.get_node("Player/Camera2D")
-	
+	anim_background.play("fade_out")
 	camera.position_smoothing_enabled = false
 	await get_tree().create_timer(2.0).timeout
 	camera.position_smoothing_enabled = true
 
 func _on_to_forest_body_shape_entered(body_rid, body, body_shape_index, local_shape_index):
 	if body.name == "Player":
+		anim_background.play("fade_in")
+		await anim_background.animation_finished
 		General.change_scene(false,false,false,"village","beginning",false,false,false,false)
 
 
 func _on_to_castle_body_shape_entered(body_rid, body, body_shape_index, local_shape_index):
 	if body.name == "Player":
+		anim_background.play("fade_in")
+		await anim_background.animation_finished
 		General.change_scene(false,false,false,"village","castle",false,false,true,false)

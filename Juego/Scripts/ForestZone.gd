@@ -4,6 +4,9 @@ var start
 var spawnpoint
 var marker
 var statue
+var background
+var anim_background
+var pre_spikes
 
 var first_load
 var load_game
@@ -26,8 +29,12 @@ func _ready():
 	
 	start = get_node("start")
 	spawnpoint = get_node("spawnpoint")
-	marker = $Marker2D
-	statue = $Node2D
+	marker = get_node("Marker2D")
+	statue = get_node("Node2D")
+	background = get_node("Black/ColorRect")
+	background.modulate.a = 255
+	anim_background = get_node("Black/Fade")
+	pre_spikes = get_node("SpikesSpawn")
 	_player_set_up()
 
 # Sets up the scale, position and camera of the player
@@ -47,7 +54,7 @@ func _player_set_up():
 		mc.position = Vector2(spawnpoint.position.x - 240, spawnpoint.position.y - 170)
 	
 	var camera = mc.get_node("Player/Camera2D")
-	
+	anim_background.play("fade_out")
 	camera.position_smoothing_enabled = false
 	await get_tree().create_timer(2.0).timeout
 	camera.position_smoothing_enabled = true
@@ -55,4 +62,17 @@ func _player_set_up():
 # Moving to the Village
 func _on_to_village_body_shape_entered(body_rid, body, body_shape_index, local_shape_index):
 	if body.name == "Player":
+		anim_background.play("fade_in")
+		await anim_background.animation_finished
 		General.change_scene(false,false,false,"beginning","village",false,false,true,false)
+
+
+func _on_spikes_body_entered(body):
+	if body.name == "Player":
+		body.damage()
+		if body.get_life() != 0:
+			anim_background.play("fade_in")
+			await anim_background.animation_finished
+			body.position = Vector2(pre_spikes.position.x - 50, pre_spikes.position.y + 200)
+			anim_background.play("fade_out")
+			await anim_background.animation_finished

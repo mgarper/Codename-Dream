@@ -6,6 +6,7 @@ var Attack_Detector_A
 var Attack_Detector_B
 var enemy_sprite
 var health_bar
+var attack_area
 
 var speed
 var is_attacking
@@ -14,14 +15,15 @@ var is_moving
 var points = 5
 
 func _ready():
-	MC_Detector_A = $MC_detector_A
-	MC_Detector_B = $MC_detector_B
-	Attack_Detector_A = $Attack_detector_A
-	Attack_Detector_B = $Attack_detector_B
-	enemy_sprite = $AnimatedSprite2D
-	health_bar = $ProgressBar
+	MC_Detector_A = get_node("MC_detector_A")
+	MC_Detector_B = get_node("MC_detector_B")
+	Attack_Detector_A = get_node("Attack_detector_A")
+	Attack_Detector_B = get_node("Attack_detector_B")
+	enemy_sprite = get_node("AnimatedSprite2D")
+	health_bar = get_node("ProgressBar")
 	health_bar.value = 100
 	health_bar.visible = false
+	attack_area = get_node("Attack_Area/CollisionShape2D")
 	
 	speed = 50
 	is_attacking = false
@@ -75,15 +77,24 @@ func _physics_process(delta):
 	move_and_slide()
 
 func hit(body):
+	attack_area.disabled = true
 	health_bar.value -= 40
 	if health_bar.value < 100:
 		health_bar.visible = true
 	if health_bar.value <= 0:
 		body.add_points(points)
 		dead()
+	enemy_sprite.play("take_hit")
+	await enemy_sprite.animation_finished
+	attack_area.disabled = false
 
 func dead():
 	set_physics_process(false)
 	enemy_sprite.play("Death")
 	await enemy_sprite.animation_finished
 	self.queue_free()
+
+
+func _on_attack_area_body_entered(body):
+	if body.name == "Player":
+		body.damage()

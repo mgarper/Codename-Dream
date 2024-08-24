@@ -8,9 +8,12 @@ res://Scenes/character_stats.tscn
 res://Scenes/main_menu.tscn
 res://Scenes/flying_enemy.tscn
 res://Scenes/pause_menu.tscn
-res://Scripts/final_boss.gd
-res://Scripts/General.gd
-res://Scripts/castle.gd
 res://Scripts/Player.gd
+res://Scenes/beginning.tscn
+res://Scripts/ForestZone.gd
 res://Scripts/main_menu.gd
-res://Scripts/save_statue.gd
+res://Scenes/village.tscn
+res://Scripts/VillageZone.gd
+res://Scripts/castle.gd
+res://Scripts/final_boss.gd
+res://Scripts/flying_enemy.gd

@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://cbhpux4701bbc"]
+[gd_scene load_steps=19 format=3 uid="uid://cbhpux4701bbc"]
 
 [ext_resource type="Script" path="res://Scripts/main_menu.gd" id="1_2xij3"]
 [ext_resource type="Texture2D" uid="uid://dphvgwk2npmoq" path="res://SPRITES/Assets Descargados/stringstar fields/background_0.png" id="1_pidkb"]
@@ -8,6 +8,62 @@
 [ext_resource type="Texture2D" uid="uid://ba3kbkecxa5v1" path="res://SPRITES/Player.png" id="4_dr5pd"]
 [ext_resource type="Texture2D" uid="uid://cf3dnxrnu7cav" path="res://SPRITES/Assets Descargados/DARK - Dog Companion/Doggo-Run.png" id="4_fmecp"]
 [ext_resource type="Texture2D" uid="uid://c3mkgp6e5y5d" path="res://SPRITES/Assets Descargados/Ultimate Dark Fantasy UI set v1.2/scalable screen/Variations/Type 1/Screen2.png" id="8_t1ilr"]
+
+[sub_resource type="Animation" id="Animation_ar32c"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_p3vl6"]
+resource_name = "fade_in"
+length = 0.5
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_ua4jq"]
+resource_name = "fade_out"
+length = 0.5
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_vhm1u"]
+_data = {
+"RESET": SubResource("Animation_ar32c"),
+"fade_in": SubResource("Animation_p3vl6"),
+"fade_out": SubResource("Animation_ua4jq")
+}
 
 [sub_resource type="Animation" id="Animation_b614t"]
 length = 0.001
@@ -87,6 +143,21 @@ _data = {
 
 [node name="Main_menu" type="Node2D"]
 script = ExtResource("1_2xij3")
+
+[node name="Black" type="CanvasLayer" parent="."]
+layer = 0
+
+[node name="ColorRect" type="ColorRect" parent="Black"]
+offset_left = -1714.0
+offset_top = -695.0
+offset_right = 7564.0
+offset_bottom = 4196.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fade" type="AnimationPlayer" parent="Black"]
+libraries = {
+"": SubResource("AnimationLibrary_vhm1u")
+}
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 offset_left = 476.0

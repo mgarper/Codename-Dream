@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=3 uid="uid://c2drhko8d5vya"]
+[gd_scene load_steps=35 format=3 uid="uid://c2drhko8d5vya"]
 
 [ext_resource type="Texture2D" uid="uid://ciiuhesc5v1sm" path="res://SPRITES/enemie 2/Attack.png" id="1_lf402"]
 [ext_resource type="Script" path="res://Scripts/flying_enemy.gd" id="1_mypw8"]
@@ -206,6 +206,10 @@ bg_color = Color(0, 0, 0, 1)
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_46hah"]
 bg_color = Color(0.627451, 0, 0, 1)
 
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_lhy3u"]
+radius = 9.0
+height = 75.9984
+
 [node name="FLYING_ENEMY" type="Node2D"]
 
 [node name="flying_enemy" type="CharacterBody2D" parent="." groups=["Enemy"]]
@@ -223,7 +227,7 @@ shape = SubResource("RectangleShape2D_gwpd1")
 position = Vector2(156, 151)
 scale = Vector2(1.57667, 1.51333)
 sprite_frames = SubResource("SpriteFrames_8pstw")
-animation = &"Flight"
+animation = &"Take_hit"
 
 [node name="MC_detector_B" type="RayCast2D" parent="flying_enemy"]
 position = Vector2(162, 151)
@@ -247,3 +251,12 @@ theme_override_colors/font_color = Color(0, 0, 0, 0)
 theme_override_styles/background = SubResource("StyleBoxFlat_dtay0")
 theme_override_styles/fill = SubResource("StyleBoxFlat_46hah")
 value = 100.0
+
+[node name="Attack_Area" type="Area2D" parent="flying_enemy"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="flying_enemy/Attack_Area"]
+position = Vector2(156, 151)
+rotation = -1.56423
+shape = SubResource("CapsuleShape2D_lhy3u")
+
+[connection signal="body_entered" from="flying_enemy/Attack_Area" to="flying_enemy" method="_on_attack_area_body_entered"]
