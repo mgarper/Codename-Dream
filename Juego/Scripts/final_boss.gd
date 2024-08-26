@@ -223,6 +223,7 @@ func _on_area_2d_body_shape_entered(body_rid, body, body_shape_index, local_shap
 		anim_background.play("fade_in")
 		await anim_background.animation_finished
 		General.change_scene(false,false,false,"final_boss_area_1","castle",false,false,false,true)
+		General.current_life = mc.get_node("Player").get_life()
 
 func _on_prox_detection_body_shape_entered(body_rid, body, body_shape_index, local_shape_index):
 	if body.name == "Player" && !cooldown:

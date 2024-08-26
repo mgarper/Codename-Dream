@@ -24,6 +24,7 @@ func _ready():
 	health_bar.value = 100
 	health_bar.visible = false
 	attack_area = get_node("Attack_Area/CollisionShape2D")
+	attack_area.disabled = true
 	
 	speed = 50
 	is_attacking = false
@@ -38,18 +39,21 @@ func _physics_process(delta):
 		collision = Attack_Detector_A.get_collider()
 		if collision.name == "Player":
 			enemy_sprite.flip_h = false
-			velocity.x = speed + 10
+			velocity.x = 0
 			is_attacking = true
 			enemy_sprite.play("Attack")
+			attack_area.disabled = false
 	elif Attack_Detector_B.is_colliding():
 		collision = Attack_Detector_B.get_collider()
 		if collision.name == "Player":
 			enemy_sprite.flip_h = true
-			velocity.x = -speed - 10
+			velocity.x = 0
 			is_attacking = true
 			enemy_sprite.play("Attack")
+			attack_area.disabled = false
 	else:
 		is_attacking = false
+		attack_area.disabled = true
 		enemy_sprite.play("Flight")
 	
 	if MC_Detector_A.is_colliding() && !is_attacking:
@@ -77,7 +81,6 @@ func _physics_process(delta):
 	move_and_slide()
 
 func hit(body):
-	attack_area.disabled = true
 	health_bar.value -= 40
 	if health_bar.value < 100:
 		health_bar.visible = true
@@ -86,7 +89,6 @@ func hit(body):
 		dead()
 	enemy_sprite.play("take_hit")
 	await enemy_sprite.animation_finished
-	attack_area.disabled = false
 
 func dead():
 	set_physics_process(false)

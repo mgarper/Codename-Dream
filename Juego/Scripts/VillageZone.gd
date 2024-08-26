@@ -52,13 +52,10 @@ func _ready():
 func _player_set_up():
 	mc.scale = Vector2(0.7, 0.7)
 	if !load_game:
-		if dead:
-			pass
-		else:
-			if left:
-				mc.position = Vector2(markerA.position.x - 240, markerA.position.y - 150)
-			elif right:
-				mc.position = Vector2(markerB.position.x - 240, markerB.position.y - 150)
+		if left:
+			mc.position = Vector2(markerA.position.x - 240, markerA.position.y - 150)
+		elif right:
+			mc.position = Vector2(markerB.position.x - 240, markerB.position.y - 150)
 	else:
 		General.first_load = false
 		General.load_game = false
@@ -74,7 +71,8 @@ func _on_to_forest_body_shape_entered(body_rid, body, body_shape_index, local_sh
 	if body.name == "Player":
 		anim_background.play("fade_in")
 		await anim_background.animation_finished
-		General.change_scene(false,false,false,"village","beginning",false,false,false,false)
+		General.change_scene(false,false,false,"village","beginning",false,false,false,true)
+		General.current_life = mc.get_node("Player").get_life()
 
 
 func _on_to_castle_body_shape_entered(body_rid, body, body_shape_index, local_shape_index):
@@ -82,3 +80,4 @@ func _on_to_castle_body_shape_entered(body_rid, body, body_shape_index, local_sh
 		anim_background.play("fade_in")
 		await anim_background.animation_finished
 		General.change_scene(false,false,false,"village","castle",false,false,true,false)
+		General.current_life = mc.get_node("Player").get_life()

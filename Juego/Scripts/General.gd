@@ -11,6 +11,7 @@ var current_points
 var level
 var check_castle
 
+var current_life
 var current_scene
 var player_node
 var pause_menu
@@ -23,6 +24,7 @@ var right
 
 # Called when the node enters the scene tree for the first time.
 func change_scene(s_first_load,s_load_game,s_dead,from, to, p_up, p_down, p_left, p_right):
+	current_scene = get_tree().current_scene
 	first_load = s_first_load
 	load_game = s_load_game
 	dead = s_dead
@@ -44,6 +46,9 @@ func change_scene(s_first_load,s_load_game,s_dead,from, to, p_up, p_down, p_left
 			file = "res://Scenes/castle.tscn"
 		"final_boss_area_1":
 			file = "res://Scenes/final_boss.tscn"
+		"demo_end":
+			file = "res://Scenes/demo_end.tscn"
+			DirAccess.remove_absolute("C:/Users/USUARIO/Documents/ONIROS/Save_Files/savegame.save")
 	get_tree().change_scene_to_file(file)
 	
 
@@ -64,13 +69,14 @@ func _check_character_stats():
 	player_node.add_child(cstats)
 	player_node.get_node("./character_stats").offset = Vector2(385,200)
 
-func set_player_attributes(last_place, life, strength, points, m_level, castle):
+func set_player_attributes(last_place, life, strength, points, m_level, castle, curr_life):
 	last_save = last_place
 	max_life = life
 	max_strength = strength
 	current_points = points
 	level = m_level
 	check_castle = castle
+	current_life = curr_life
 
 func update_points(points):
 	current_points += points
@@ -103,5 +109,5 @@ func retry():
 		# Firstly, we need to create the object and add it to the tree and set its position.
 		var path =  node_data["last_place"].replace("/root/", "")
 		
-		General.set_player_attributes(path, node_data["max_life"],node_data["max_strength"],0,node_data["level"],node_data["check_castle"])
-		General.change_scene(false,true,false,"",path,false,false,false,false)
+		set_player_attributes(path, node_data["max_life"],node_data["max_strength"],0,node_data["level"],node_data["check_castle"], 5)
+		change_scene(false,true,false,"",path,false,false,false,false)

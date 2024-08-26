@@ -363,10 +363,12 @@ libraries = {
 }
 
 [node name="DownLeft" type="RayCast2D" parent="patrol_enemy"]
-position = Vector2(173, 148)
+position = Vector2(177, 148)
+target_position = Vector2(0, 27)
 
 [node name="DownRight" type="RayCast2D" parent="patrol_enemy"]
-position = Vector2(234, 148)
+position = Vector2(230, 148)
+target_position = Vector2(0, 27)
 
 [node name="Left" type="RayCast2D" parent="patrol_enemy"]
 position = Vector2(204, 140)

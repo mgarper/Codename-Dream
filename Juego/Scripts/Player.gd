@@ -22,7 +22,7 @@ var dog_anim
 var max_speed = 200
 var jump = 200
 var gravity = 450
-var life = 5
+var life
 
 var hit = false
 var switch_attacks = false
@@ -37,13 +37,14 @@ var level = 1
 var check_castle = false
 
 func _ready():
+	life = General.current_life
 	anim = get_node("AnimationPlayer")
 	sprite = get_node("Sprite2D")
 	attack_detection = get_node("Attack_Detector")
 	camera = get_node("Camera2D")
 	health_sprite = get_node("../CanvasLayer/Sprite2D")
 	health_bar = get_node("../CanvasLayer/health_bar")
-	health_sprite.frame = 0
+	health_sprite.frame = set_life_frame(false)
 	score = get_node("../CanvasLayer2/Label")
 	score.text = "0"
 	death_view = get_node("../Death_View/ColorRect")
@@ -234,10 +235,10 @@ func save(last_place):
 func get_life():
 	return life
 
-func restore_life():
-	if life != max_life:
-		#0.2 + (life - 1) + 0.3
-		var frame = 0.0
+func set_life_frame(action_type):
+	var frame
+	if action_type:
+		frame = 0.0
 		match int(life):
 			1:
 				frame = 0.2
@@ -247,8 +248,26 @@ func restore_life():
 				frame = 0.8
 			4:
 				frame = 1.1
+	else: 
+		frame = 0
+		match int(life):
+			1:
+				frame = 12
+			2:
+				frame = 9
+			3:
+				frame = 6
+			4:
+				frame = 3
+			5:
+				frame = 0
+	return frame
+
+func restore_life():
+	if life != max_life:
+		#0.2 + (life - 1) + 0.3
 		health_bar.play("restore")
-		health_bar.seek(frame)
+		health_bar.seek(set_life_frame(true))
 		await health_bar.animation_finished
 		life = max_life
 

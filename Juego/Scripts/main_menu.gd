@@ -46,7 +46,7 @@ func _on_button_2_pressed():
 
 func load_game():
 	if not FileAccess.file_exists("C:/Users/USUARIO/Documents/ONIROS/Save_Files/savegame.save"):
-		General.set_player_attributes("beginning",5,1,0,1,false)
+		General.set_player_attributes("beginning",5,1,0,1,false,5)
 		anim_background.play("fade_in")
 		await anim_background.animation_finished
 		General.change_scene(true,false,false,"main_menu","beginning",false,false,false,false)
@@ -76,7 +76,7 @@ func load_game():
 
 			# Firstly, we need to create the object and add it to the tree and set its position.
 			var path =  node_data["last_place"].replace("/root/", "")
-			General.set_player_attributes(path, node_data["max_life"],node_data["max_strength"],node_data["current_points"],node_data["level"],node_data["check_castle"])
+			General.set_player_attributes(path, node_data["max_life"],node_data["max_strength"],node_data["current_points"],node_data["level"],node_data["check_castle"],5)
 			anim_background.play("fade_in")
 			await anim_background.animation_finished
 			General.change_scene(false,true,false,"main_menu",path,false,false,false,false)

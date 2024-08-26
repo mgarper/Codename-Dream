@@ -1,0 +1,291 @@
+[gd_scene load_steps=15 format=3 uid="uid://cnaq1k5hnh1mo"]
+
+[ext_resource type="Script" path="res://Scripts/demo_end.gd" id="1_0f2rb"]
+[ext_resource type="FontFile" uid="uid://7v2kawm2qawy" path="res://SPRITES/Assets Descargados/alagard/alagard.ttf" id="1_5orh1"]
+[ext_resource type="Texture2D" uid="uid://bbim1y11ybyvy" path="res://SPRITES/Assets Descargados/Ultimate Dark Fantasy UI set v1.2/scalable screen/Variations/Type 1/ScreenxDouble8.png" id="2_l7nw3"]
+[ext_resource type="Texture2D" uid="uid://ba3kbkecxa5v1" path="res://SPRITES/Player.png" id="4_ya14c"]
+[ext_resource type="Texture2D" uid="uid://cf3dnxrnu7cav" path="res://SPRITES/Assets Descargados/DARK - Dog Companion/Doggo-Run.png" id="5_qpnkj"]
+
+[sub_resource type="Animation" id="Animation_b614t"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Main_Character:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [8]
+}
+
+[sub_resource type="Animation" id="Animation_uxaug"]
+resource_name = "RUN"
+length = 0.6
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Main_Character:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [8, 9, 10, 11, 12, 13]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_by3dh"]
+_data = {
+"RESET": SubResource("Animation_b614t"),
+"RUN": SubResource("Animation_uxaug")
+}
+
+[sub_resource type="Animation" id="Animation_v7htn"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Dog:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_42so8"]
+resource_name = "RUN"
+length = 0.8
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Dog:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ci7c0"]
+_data = {
+"RESET": SubResource("Animation_v7htn"),
+"RUN": SubResource("Animation_42so8")
+}
+
+[sub_resource type="Animation" id="Animation_ufkge"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer/Label:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CanvasLayer/Button:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CanvasLayer/Sprite2D:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("CanvasLayer/Main_Character:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("CanvasLayer/Dog:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_vfsjr"]
+resource_name = "fade_in"
+length = 1.5
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer/Label:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.6),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CanvasLayer/Button:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.6, 1.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CanvasLayer/Sprite2D:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.6, 1.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("CanvasLayer/Main_Character:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(1.1, 1.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("CanvasLayer/Dog:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(1.1, 1.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_4sm0r"]
+_data = {
+"RESET": SubResource("Animation_ufkge"),
+"fade_in": SubResource("Animation_vfsjr")
+}
+
+[node name="demo_end" type="Node2D"]
+script = ExtResource("1_0f2rb")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+offset_right = 1953.0
+offset_bottom = 1299.0
+color = Color(0, 0, 0, 1)
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+modulate = Color(1, 1, 1, 0)
+offset_left = 432.0
+offset_top = 360.0
+offset_right = 604.0
+offset_bottom = 383.0
+scale = Vector2(6.30479, 6.42361)
+theme_override_colors/font_color = Color(0.689437, 0.54326, 0.162158, 1)
+theme_override_fonts/font = ExtResource("1_5orh1")
+theme_override_font_sizes/font_size = 0
+text = "Thank you for playing!"
+
+[node name="Button" type="Button" parent="CanvasLayer"]
+modulate = Color(1, 1, 1, 0)
+offset_left = 846.556
+offset_top = 501.763
+offset_right = 976.556
+offset_bottom = 536.763
+scale = Vector2(2.18185, 2.86212)
+theme_override_colors/font_hover_color = Color(0.835294, 0.854902, 0.160784, 0.996078)
+theme_override_fonts/font = ExtResource("1_5orh1")
+theme_override_font_sizes/font_size = 0
+text = "Go back to menu"
+flat = true
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer"]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(984.144, 550.763)
+scale = Vector2(6.16075, 1.55509)
+texture = ExtResource("2_l7nw3")
+
+[node name="Main_Character" type="Sprite2D" parent="CanvasLayer"]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(1023.5, 666.5)
+scale = Vector2(3, 3)
+texture = ExtResource("4_ya14c")
+hframes = 7
+vframes = 11
+frame = 8
+
+[node name="Dog" type="Sprite2D" parent="CanvasLayer"]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(952.5, 672)
+scale = Vector2(3, 3)
+texture = ExtResource("5_qpnkj")
+hframes = 8
+
+[node name="MC_Moves" type="AnimationPlayer" parent="CanvasLayer"]
+libraries = {
+"": SubResource("AnimationLibrary_by3dh")
+}
+
+[node name="Dog_Moves" type="AnimationPlayer" parent="CanvasLayer"]
+libraries = {
+"": SubResource("AnimationLibrary_ci7c0")
+}
+
+[node name="fade" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_4sm0r")
+}
+
+[connection signal="pressed" from="CanvasLayer/Button" to="." method="_on_button_pressed"]

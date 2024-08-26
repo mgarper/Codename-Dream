@@ -704,7 +704,6 @@ text = "0"
 [node name="Death_View" type="CanvasLayer" parent="."]
 
 [node name="ColorRect" type="ColorRect" parent="Death_View"]
-visible = false
 modulate = Color(1, 1, 1, 0)
 offset_right = 1953.0
 offset_bottom = 1299.0

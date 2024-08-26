@@ -16,14 +16,14 @@ var direction
 var points = 10
 
 func _ready():
-	sprite = $Sprite2D
-	raycastDL = $DownLeft
-	raycastDR = $DownRight
-	animation = $AnimationPlayer
-	attack_detectorL = $Left
-	attack_detectorR = $Right
-	attack_area = $Area2D
-	health_bar = $ProgressBar
+	sprite = get_node("Sprite2D")
+	raycastDL = get_node("DownLeft")
+	raycastDR = get_node("DownRight")
+	animation = get_node("AnimationPlayer")
+	attack_detectorL = get_node("Left")
+	attack_detectorR = get_node("Right")
+	attack_area = get_node("Area2D")
+	health_bar = get_node("ProgressBar")
 	health_bar.value = 100
 	health_bar.visible = false
 	

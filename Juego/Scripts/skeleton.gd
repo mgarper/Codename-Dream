@@ -7,6 +7,7 @@ var animation
 var attack_detectorL
 var attack_detectorR
 var attack_area
+var attack_collision
 var health_bar
 var skeleton_body
 
@@ -18,15 +19,17 @@ var life_amount
 var points = 30
 
 func _ready():
-	sprite = $Sprite2D
-	raycastDL = $raycastDL
-	raycastDR = $raycastDR
-	animation = $AnimationPlayer
-	attack_detectorL = $attack_detectorL
-	attack_detectorR = $attack_detectorR
-	attack_area = $Area2D
-	health_bar = $ProgressBar
-	skeleton_body = $CollisionShape2D
+	sprite = get_node("Sprite2D")
+	raycastDL = get_node("raycastDL")
+	raycastDR = get_node("raycastDR")
+	animation = get_node("AnimationPlayer")
+	attack_detectorL = get_node("attack_detectorL")
+	attack_detectorR = get_node("attack_detectorR")
+	attack_area = get_node("Area2D")
+	attack_collision = get_node("Area2D/CollisionShape2D")
+	attack_collision.disabled = true
+	health_bar = get_node("ProgressBar")
+	skeleton_body = get_node("CollisionShape2D")
 	health_bar.value = 100
 	health_bar.visible = false
 	
@@ -70,6 +73,8 @@ func detection():
 			sprite.flip_h = false
 			attack_area.position.x = 261
 			attack()
+	else:
+		attack_collision.disabled = true
 
 func attack():
 	velocity.x = 0
@@ -100,14 +105,16 @@ func hit(body):
 
 func dead(body):
 	life_amount -= 1
-	set_physics_process(false)
 	animation.play("death")
 	await animation.animation_finished
 	if life_amount == 0:
+		set_physics_process(false)
 		body.add_points(points)
 		self.queue_free()
 	else: 
+		set_physics_process(false)
 		skeleton_body.disabled = true
+		attack_collision.disabled = true
 		health_bar.visible = false
 		set_life_color(life_amount)
 		await get_tree().create_timer(5.0).timeout
