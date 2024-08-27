@@ -197,9 +197,9 @@ func dead():
 	retry.grab_focus()
 	sprite.queue_free()
 	current_points = 0
-	var save_file = FileAccess.open("C:/Users/USUARIO/Documents/ONIROS/Save_Files/savegame.save", FileAccess.WRITE)
+	var save_file = FileAccess.open(OS.get_user_data_dir() + "/ONIROS/Save_Files/savegame.save", FileAccess.WRITE)
 	# Call the node's save function.
-	var node_data = save("/root/" + General.last_save)
+	var node_data = save(General.last_save)
 	# JSON provides a static method to serialized JSON string.
 	var json_string = JSON.stringify(node_data)
 	# Store the save dictionary as a new line in the save file.
@@ -230,6 +230,7 @@ func save(last_place):
 		"level" : General.level,
 		"check_castle" : General.check_castle
 	}
+	General.last_save = last_place
 	return save_dict
 
 func get_life():

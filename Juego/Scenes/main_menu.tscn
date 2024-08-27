@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://cbhpux4701bbc"]
+[gd_scene load_steps=20 format=3 uid="uid://cbhpux4701bbc"]
 
 [ext_resource type="Script" path="res://Scripts/main_menu.gd" id="1_2xij3"]
 [ext_resource type="Texture2D" uid="uid://dphvgwk2npmoq" path="res://SPRITES/Assets Descargados/stringstar fields/background_0.png" id="1_pidkb"]
@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://ba3kbkecxa5v1" path="res://SPRITES/Player.png" id="4_dr5pd"]
 [ext_resource type="Texture2D" uid="uid://cf3dnxrnu7cav" path="res://SPRITES/Assets Descargados/DARK - Dog Companion/Doggo-Run.png" id="4_fmecp"]
 [ext_resource type="Texture2D" uid="uid://c3mkgp6e5y5d" path="res://SPRITES/Assets Descargados/Ultimate Dark Fantasy UI set v1.2/scalable screen/Variations/Type 1/Screen2.png" id="8_t1ilr"]
+[ext_resource type="AudioStream" uid="uid://3e026q8yual4" path="res://Music/main_menu.mp3" id="9_fblop"]
 
 [sub_resource type="Animation" id="Animation_ar32c"]
 length = 0.001
@@ -252,6 +253,10 @@ text = "ONIROS"
 position = Vector2(566, 252)
 scale = Vector2(24.9947, 5.81084)
 texture = ExtResource("8_t1ilr")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("9_fblop")
+volume_db = -7.505
 
 [connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="VBoxContainer/Button2" to="." method="_on_button_2_pressed"]

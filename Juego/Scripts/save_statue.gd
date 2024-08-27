@@ -19,8 +19,19 @@ func _input(event):
 		mc.restore_life()
 
 func _save_game():
-	var save_file = FileAccess.open("C:/Users/USUARIO/Documents/ONIROS/Save_Files/savegame.save", FileAccess.WRITE)
+	var save_dir = OS.get_user_data_dir() + "/ONIROS/Save_Files/"
+	
+	if !DirAccess.dir_exists_absolute(save_dir):
+		DirAccess.make_dir_recursive_absolute(save_dir)
+	
+	var save_file = FileAccess.open(save_dir + "savegame.save", FileAccess.WRITE)
+	
+	if save_file == null:
+		print("Error: No se pudo abrir el archivo de guardado.")
+		return
+	
 	var save_nodes = get_tree().get_nodes_in_group("Persist")
+	
 	for node in save_nodes:
 		# Call the node's save function.
 		var node_data = node.save(get_parent().get_path())

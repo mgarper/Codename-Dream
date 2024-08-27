@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=3 uid="uid://b45yxdeu3xxcg"]
+[gd_scene load_steps=32 format=3 uid="uid://b45yxdeu3xxcg"]
 
 [ext_resource type="Script" path="res://Scripts/castle.gd" id="1_1x304"]
 [ext_resource type="Texture2D" uid="uid://cas4lo7hiqpry" path="res://SPRITES/Assets Descargados/SSW_CastlePack_v1.0/_PNG/MainLevBuild.png" id="1_hlxlg"]
@@ -13,6 +13,7 @@
 [ext_resource type="FontFile" uid="uid://7v2kawm2qawy" path="res://SPRITES/Assets Descargados/alagard/alagard.ttf" id="11_y55yb"]
 [ext_resource type="PackedScene" uid="uid://dnkcr3f4dwsqd" path="res://Scenes/skeleton.tscn" id="12_lj17q"]
 [ext_resource type="PackedScene" uid="uid://c2drhko8d5vya" path="res://Scenes/flying_enemy.tscn" id="13_mr58g"]
+[ext_resource type="AudioStream" uid="uid://brit6ckaitsbl" path="res://Music/castle.mp3" id="14_2dsiy"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_myrv3"]
 size = Vector2(221, 248)
@@ -5604,24 +5605,24 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="skeleton" parent="." instance=ExtResource("12_lj17q")]
-position = Vector2(1857, 129)
-scale = Vector2(0.75, 0.75)
+position = Vector2(1873, 154)
+scale = Vector2(0.6, 0.6)
 
 [node name="skeleton2" parent="." instance=ExtResource("12_lj17q")]
-position = Vector2(855, 849)
-scale = Vector2(0.75, 0.75)
+position = Vector2(864, 878)
+scale = Vector2(0.6, 0.6)
 
 [node name="skeleton3" parent="." instance=ExtResource("12_lj17q")]
-position = Vector2(2620, 1330)
-scale = Vector2(0.75, 0.75)
+position = Vector2(2614, 1355)
+scale = Vector2(0.6, 0.6)
 
 [node name="skeleton4" parent="." instance=ExtResource("12_lj17q")]
-position = Vector2(960, 1328)
-scale = Vector2(0.75, 0.75)
+position = Vector2(955, 1355)
+scale = Vector2(0.6, 0.6)
 
 [node name="skeleton5" parent="." instance=ExtResource("12_lj17q")]
-position = Vector2(273, 1329)
-scale = Vector2(0.75, 0.75)
+position = Vector2(282, 1356)
+scale = Vector2(0.6, 0.6)
 
 [node name="FLYING_ENEMY" parent="." instance=ExtResource("13_mr58g")]
 position = Vector2(1770, 949)
@@ -5634,6 +5635,10 @@ position = Vector2(2532, 949)
 
 [node name="FLYING_ENEMY4" parent="." instance=ExtResource("13_mr58g")]
 position = Vector2(2912, 949)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("14_2dsiy")
+volume_db = -11.794
 
 [connection signal="body_shape_entered" from="ToVillage" to="." method="_on_to_village_body_shape_entered"]
 [connection signal="body_shape_entered" from="ToBossFight" to="." method="_on_to_boss_fight_body_shape_entered"]

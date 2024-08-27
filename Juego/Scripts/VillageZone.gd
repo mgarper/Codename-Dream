@@ -45,7 +45,7 @@ func _ready():
 	anim_background = get_node("Black/Fade")
 	statue = get_node("Statue")
 	
-	
+	get_node("AudioStreamPlayer").playing = true
 	
 	_player_set_up()
 

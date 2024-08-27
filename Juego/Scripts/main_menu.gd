@@ -9,8 +9,9 @@ var anim_background
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_WINDOWED)
-	$MC_Moves.play("RUN")
-	$Dog_Moves.play("RUN")
+	get_node("MC_Moves").play("RUN")
+	get_node("Dog_Moves").play("RUN")
+	get_node("AudioStreamPlayer").playing = true
 	var camera = $Camera2D
 	
 	layer1 = get_node("CanvasLayer/ParallaxBackground/ParallaxLayer")
@@ -45,11 +46,11 @@ func _on_button_2_pressed():
 	get_tree().quit()
 
 func load_game():
-	if not FileAccess.file_exists("C:/Users/USUARIO/Documents/ONIROS/Save_Files/savegame.save"):
+	if not FileAccess.file_exists(OS.get_user_data_dir() + "/ONIROS/Save_Files/savegame.save"):
 		General.set_player_attributes("beginning",5,1,0,1,false,5)
 		anim_background.play("fade_in")
 		await anim_background.animation_finished
-		General.change_scene(true,false,false,"main_menu","beginning",false,false,false,false)
+		General.change_scene(true,false,false,"main_menu","beginning",false,false,true,false)
 	else:
 		General.first_load = false
 		General.load_game = true
@@ -59,7 +60,7 @@ func load_game():
 
 		# Load the file line by line and process that dictionary to restore
 		# the object it represents.
-		var save_file = FileAccess.open("C:/Users/USUARIO/Documents/ONIROS/Save_Files/savegame.save", FileAccess.READ)
+		var save_file = FileAccess.open(OS.get_user_data_dir() + "/ONIROS/Save_Files/savegame.save", FileAccess.READ)
 		while save_file.get_position() < save_file.get_length():
 			var json_string = save_file.get_line()
 			# Creates the helper class to interact with JSON

@@ -16,6 +16,9 @@ var health_bar
 var health
 var background
 var anim_background
+var bd_feedback
+var hint
+var anim_feedback
 
 var statue
 
@@ -75,6 +78,11 @@ func _ready():
 	background = get_node("Black/ColorRect")
 	background.modulate.a = 255
 	anim_background = get_node("Black/Fade")
+	bd_feedback = get_node("CanvasLayer2/Boss_Defeat_FB")
+	hint = get_node("CanvasLayer2/Hint")
+	anim_feedback = get_node("CanvasLayer2/DefeatFB")
+	bd_feedback.modulate.a = 0
+	hint.modulate.a = 0
 	
 	reaper = get_node("CharacterBody2D")
 	enemy_sprite = reaper.get_node("AnimationPlayer")
@@ -157,6 +165,7 @@ func _physics_process(delta):
 			enemy_body.disabled = false
 			if !health_bar.visible:
 				health_bar.visible = true
+				get_node("AudioStreamPlayer").playing = true
 				
 		else:
 			is_moving = false
@@ -213,6 +222,11 @@ func death():
 	$StaticBody2D/CollisionShape2D.disabled = true
 	General.check_castle = true
 	statue.visible = true
+	anim_feedback.play("fade_in")
+	await anim_feedback.animation_finished
+	anim_feedback.play("fade_out")
+	await anim_feedback.animation_finished
+	get_node("AudioStreamPlayer").playing = false
 
 func _on_attack_area_body_entered(body):
 	if body.name == "Player":

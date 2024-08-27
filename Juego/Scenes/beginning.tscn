@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://cnbkjjtlthmth"]
+[gd_scene load_steps=19 format=3 uid="uid://cnbkjjtlthmth"]
 
 [ext_resource type="Script" path="res://Scripts/ForestZone.gd" id="1_egs2e"]
 [ext_resource type="Texture2D" uid="uid://byyrga434sui1" path="res://SPRITES/Assets Descargados/stringstar fields/tileset.png" id="1_eyx68"]
@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://bcprvuslm7am8" path="res://Scenes/patrol_enemy.tscn" id="8_i7skf"]
 [ext_resource type="PackedScene" uid="uid://c2drhko8d5vya" path="res://Scenes/flying_enemy.tscn" id="8_yn2fj"]
 [ext_resource type="PackedScene" uid="uid://d23lvr4qd0sgt" path="res://Scenes/Save_Statue.tscn" id="9_13ltq"]
+[ext_resource type="AudioStream" uid="uid://dia1ee8is2v2k" path="res://Music/forest.ogg" id="10_57mvn"]
 
 [sub_resource type="Animation" id="Animation_ar32c"]
 length = 0.001
@@ -393,6 +394,10 @@ position = Vector2(1455, 897)
 
 [node name="SpikesSpawn2" type="Marker2D" parent="."]
 position = Vector2(4225, 1012)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("10_57mvn")
+volume_db = -11.258
 
 [connection signal="body_shape_entered" from="ToVillage" to="." method="_on_to_village_body_shape_entered"]
 [connection signal="body_entered" from="Spikes" to="." method="_on_spikes_body_entered"]

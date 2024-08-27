@@ -1,4 +1,4 @@
-[gd_scene load_steps=39 format=3 uid="uid://bd66p2xpxso2w"]
+[gd_scene load_steps=44 format=3 uid="uid://bd66p2xpxso2w"]
 
 [ext_resource type="Texture2D" uid="uid://bthdan5v1nnjf" path="res://SPRITES/Assets Descargados/SSW_CastlePack_v1.0/_PNG/Background1.png" id="1_h0thh"]
 [ext_resource type="Script" path="res://Scripts/final_boss.gd" id="1_hb1l1"]
@@ -12,6 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://cc8bbf4bqy8iv" path="res://SPRITES/Assets Descargados/Ultimate Dark Fantasy UI set v1.2/Boss bar/boss_bar x1.png" id="10_lwqn2"]
 [ext_resource type="FontFile" uid="uid://7v2kawm2qawy" path="res://SPRITES/Assets Descargados/alagard/alagard.ttf" id="11_b00uk"]
 [ext_resource type="PackedScene" uid="uid://d23lvr4qd0sgt" path="res://Scenes/Save_Statue.tscn" id="12_70a83"]
+[ext_resource type="AudioStream" uid="uid://dv6odh1mo25ts" path="res://Music/boss_fight.mp3" id="13_iu4rs"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_85w5r"]
 texture = ExtResource("6_yq28q")
@@ -4988,6 +4989,98 @@ _data = {
 "fade_out": SubResource("Animation_ua4jq")
 }
 
+[sub_resource type="Animation" id="Animation_3os01"]
+resource_name = "fade_in"
+length = 2.0
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer2/Boss_Defeat_FB:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.8),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CanvasLayer2/Hint:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.8, 1.6),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_1jrvd"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer2/Boss_Defeat_FB:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CanvasLayer2/Hint:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_el41f"]
+resource_name = "fade_out"
+length = 2.0
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer2/Boss_Defeat_FB:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.4, 1.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CanvasLayer2/Hint:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(1.2, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ndfjn"]
+_data = {
+"RESET": SubResource("Animation_1jrvd"),
+"fade_in": SubResource("Animation_3os01"),
+"fade_out": SubResource("Animation_el41f")
+}
+
 [node name="final_boss_area_1" type="Node2D"]
 scale = Vector2(1.2, 1.2)
 script = ExtResource("1_hb1l1")
@@ -5165,6 +5258,39 @@ color = Color(0, 0, 0, 1)
 libraries = {
 "": SubResource("AnimationLibrary_vhm1u")
 }
+
+[node name="CanvasLayer2" type="CanvasLayer" parent="."]
+
+[node name="Boss_Defeat_FB" type="Label" parent="CanvasLayer2"]
+modulate = Color(1, 1, 1, 0)
+offset_left = 595.0
+offset_top = 429.0
+offset_right = 764.0
+offset_bottom = 452.0
+scale = Vector2(5.25821, 7.27838)
+theme_override_colors/font_color = Color(0.835294, 0.854902, 0.160784, 0.996078)
+theme_override_fonts/font = ExtResource("11_b00uk")
+text = "Nightmare Vanquished
+"
+
+[node name="Hint" type="Label" parent="CanvasLayer2"]
+modulate = Color(1, 1, 1, 0)
+offset_left = 686.0
+offset_top = 553.0
+offset_right = 1219.0
+offset_bottom = 576.0
+scale = Vector2(1.32986, 2.75801)
+theme_override_fonts/font = ExtResource("11_b00uk")
+text = "The Nightmare's Host deems you worthy. Seek the entrance to its realm."
+
+[node name="DefeatFB" type="AnimationPlayer" parent="CanvasLayer2"]
+root_node = NodePath("../..")
+libraries = {
+"": SubResource("AnimationLibrary_ndfjn")
+}
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("13_iu4rs")
 
 [connection signal="body_entered" from="CharacterBody2D/attack_area" to="." method="_on_attack_area_body_entered"]
 [connection signal="body_shape_entered" from="CharacterBody2D/Prox_detection" to="." method="_on_prox_detection_body_shape_entered"]

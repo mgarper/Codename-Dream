@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://c3807tx70v7av"]
+[gd_scene load_steps=23 format=3 uid="uid://c3807tx70v7av"]
 
 [ext_resource type="Texture2D" uid="uid://dcbx1u3yhii42" path="res://SPRITES/Assets Descargados/GothicVania-town-files/GothicVania-town-files/PNG/environment/layers/background.png" id="1_7pj5o"]
 [ext_resource type="Script" path="res://Scripts/VillageZone.gd" id="1_gqdb4"]
@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://c2drhko8d5vya" path="res://Scenes/flying_enemy.tscn" id="9_ag0jy"]
 [ext_resource type="PackedScene" uid="uid://d23lvr4qd0sgt" path="res://Scenes/Save_Statue.tscn" id="9_pb6rh"]
 [ext_resource type="PackedScene" uid="uid://bcprvuslm7am8" path="res://Scenes/patrol_enemy.tscn" id="10_0nvoy"]
+[ext_resource type="AudioStream" uid="uid://cnd8y8eldvopa" path="res://Music/old city theme.ogg" id="11_1dryt"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_km016"]
 texture = ExtResource("3_pdwgf")
@@ -1583,6 +1584,9 @@ position = Vector2(1981, 417)
 
 [node name="patrol_enemy2" parent="." instance=ExtResource("10_0nvoy")]
 position = Vector2(2547, 337)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("11_1dryt")
 
 [connection signal="body_shape_entered" from="ToForest" to="." method="_on_to_forest_body_shape_entered"]
 [connection signal="body_shape_entered" from="ToCastle" to="." method="_on_to_castle_body_shape_entered"]

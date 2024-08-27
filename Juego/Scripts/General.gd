@@ -34,6 +34,9 @@ func change_scene(s_first_load,s_load_game,s_dead,from, to, p_up, p_down, p_left
 	left = p_left
 	right = p_right
 	
+	if from == "demo_end":
+		DirAccess.remove_absolute(OS.get_user_data_dir() + "/ONIROS/Save_Files/savegame.save")
+	
 	var file = ""
 	match to:
 		"main_menu":
@@ -48,9 +51,7 @@ func change_scene(s_first_load,s_load_game,s_dead,from, to, p_up, p_down, p_left
 			file = "res://Scenes/final_boss.tscn"
 		"demo_end":
 			file = "res://Scenes/demo_end.tscn"
-			DirAccess.remove_absolute("C:/Users/USUARIO/Documents/ONIROS/Save_Files/savegame.save")
 	get_tree().change_scene_to_file(file)
-	
 
 func _input(event):
 	if Input.is_action_just_pressed("pause"):
@@ -90,7 +91,7 @@ func retry():
 
 	# Load the file line by line and process that dictionary to restore
 	# the object it represents.
-	var save_file = FileAccess.open("C:/Users/USUARIO/Documents/ONIROS/Save_Files/savegame.save", FileAccess.READ)
+	var save_file = FileAccess.open(OS.get_user_data_dir() + "/ONIROS/Save_Files/savegame.save", FileAccess.READ)
 	while save_file.get_position() < save_file.get_length():
 		var json_string = save_file.get_line()
 
@@ -108,6 +109,5 @@ func retry():
 
 		# Firstly, we need to create the object and add it to the tree and set its position.
 		var path =  node_data["last_place"].replace("/root/", "")
-		
 		set_player_attributes(path, node_data["max_life"],node_data["max_strength"],0,node_data["level"],node_data["check_castle"], 5)
 		change_scene(false,true,false,"",path,false,false,false,false)

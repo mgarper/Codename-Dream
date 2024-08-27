@@ -1,0 +1,14 @@
+res://Scenes/beginning.tscn::9d27def82eeb24736d8078ee3b3c0087::1724756094::res://.godot/exported/133200997/export-c8a4bb4932d4665a4952fdef6faf71ee-beginning.scn
+res://Scenes/castle.tscn::9b6274e0b0f3d2aeb5b4b534b0bb1675::1724756093::res://.godot/exported/133200997/export-99e786b72776d1b272cda6ce94c6a625-castle.scn
+res://Scenes/character_stats.tscn::5670c48518bca91b5cb885af94b7a638::1724491105::res://.godot/exported/133200997/export-17de302c69c274e9cc0075d2ccb230c0-character_stats.scn
+res://Scenes/demo_end.tscn::97f26069ac2c4f3374d2153e7fa64fd1::1724756094::res://.godot/exported/133200997/export-f562c97b89d730afe8fc33e8d8c489f5-demo_end.scn
+res://Scenes/final_boss.tscn::17b32c8ba5e564057d3dfa651661f8f1::1724756092::res://.godot/exported/133200997/export-e75a50723e105d82449db67aaa21af0b-final_boss.scn
+res://Scenes/flying_enemy.tscn::9025e407d10fab3bb62fec8d8c926a5d::1724540348::res://.godot/exported/133200997/export-828bc388c29b4852311fb6a1a9e16c2e-flying_enemy.scn
+res://Scenes/main_menu.tscn::2dce5bf4dae4ed75a9f590742f343b1f::1724756095::res://.godot/exported/133200997/export-502e6a9b269597544b234abf28958cd8-main_menu.scn
+res://Scenes/patrol_enemy.tscn::d696fee192f2ee6bf3fccae0ff324e6e::1724519962::res://.godot/exported/133200997/export-77201ff4d50d530f6351691170ead5fc-patrol_enemy.scn
+res://Scenes/pause_menu.tscn::8824c4bb1ad048367917ec14ac210629::1724491105::res://.godot/exported/133200997/export-e3d0420ddeb812b15edf3553f5556843-pause_menu.scn
+res://Scenes/player.tscn::1f45ccb9a0cafdf63b1e854dc04f97c0::1724756094::res://.godot/exported/133200997/export-1753c997600d68ab5d20ae99fddb15c6-player.scn
+res://Scenes/Save_Statue.tscn::ef8ff8574765d5990cf7527c189b3638::1724696258::res://.godot/exported/133200997/export-f19282cbb5461fa14b02622521e7c574-Save_Statue.scn
+res://Scenes/skeleton.tscn::20e4dd2a0acdf15952c3a2c59c528076::1724540348::res://.godot/exported/133200997/export-1a9c0c648f4e37d3519b0eda465a1d0d-skeleton.scn
+res://Scenes/try_scene.tscn::22daba932755edcd92be84d5320d0ab6::1721376795::res://.godot/exported/133200997/export-6dcc192b72c6d4a75d959e27f1e263c8-try_scene.scn
+res://Scenes/village.tscn::1c1cd85084ccb95b51bf58fe0c7c2125::1724756094::res://.godot/exported/133200997/export-099ecf08be52d7278c9a2f7ae93a9ab1-village.scn

@@ -50,6 +50,8 @@ func _ready():
 	label = get_node("Label")
 	label.visible = false
 	
+	get_node("AudioStreamPlayer").playing = true
+	
 	if !hidden_zone:
 		get_node("Structures").clear_layer(2)
 		get_node("Hidden_Section").visible = hidden_zone

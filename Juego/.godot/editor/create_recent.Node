@@ -1,14 +1,14 @@
+AudioStreamPlayer
+CanvasLayer
 AnimationPlayer
+Label
 Sprite2D
 CollisionShape2D
 Area2D
 ColorRect
-CanvasLayer
 StaticBody2D
 Marker2D
-Label
 Button
 HBoxContainer
 ProgressBar
 Node2D
-Camera2D

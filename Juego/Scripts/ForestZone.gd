@@ -40,6 +40,9 @@ func _ready():
 	anim_background = get_node("Black/Fade")
 	pre_spikes = get_node("SpikesSpawn")
 	post_spikes = get_node("SpikesSpawn2")
+	
+	get_node("AudioStreamPlayer").playing = true
+	
 	_player_set_up()
 
 # Sets up the scale, position and camera of the player
