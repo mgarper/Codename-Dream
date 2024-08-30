@@ -1,11 +1,11 @@
 [gd_scene load_steps=40 format=3 uid="uid://cs7wjnol0uw3q"]
 
-[ext_resource type="Script" path="res://Scripts/Player.gd" id="1_bqfmn"]
+[ext_resource type="Script" path="res://Scripts/player_related/Player.gd" id="1_bqfmn"]
 [ext_resource type="Texture2D" uid="uid://ba3kbkecxa5v1" path="res://SPRITES/Player.png" id="1_d5dl5"]
-[ext_resource type="Texture2D" uid="uid://cockllsiskbge" path="res://SPRITES/Assets Descargados/Hearts n Bars/Hearts n Bars/Bars_Animations/Bar2.png" id="3_pdkvx"]
-[ext_resource type="FontFile" uid="uid://7v2kawm2qawy" path="res://SPRITES/Assets Descargados/alagard/alagard.ttf" id="4_aewq0"]
-[ext_resource type="Texture2D" uid="uid://bbim1y11ybyvy" path="res://SPRITES/Assets Descargados/Ultimate Dark Fantasy UI set v1.2/scalable screen/Variations/Type 1/ScreenxDouble8.png" id="5_sb5nl"]
-[ext_resource type="Texture2D" uid="uid://cf3dnxrnu7cav" path="res://SPRITES/Assets Descargados/DARK - Dog Companion/Doggo-Run.png" id="6_t0xsg"]
+[ext_resource type="Texture2D" uid="uid://cockllsiskbge" path="res://SPRITES/Downloaded_assets/Hearts n Bars/Hearts n Bars/Bars_Animations/Bar2.png" id="3_pdkvx"]
+[ext_resource type="FontFile" uid="uid://7v2kawm2qawy" path="res://SPRITES/Downloaded_assets/alagard/alagard.ttf" id="4_aewq0"]
+[ext_resource type="Texture2D" uid="uid://bbim1y11ybyvy" path="res://SPRITES/Downloaded_assets/Ultimate Dark Fantasy UI set v1.2/scalable screen/Variations/Type 1/ScreenxDouble8.png" id="5_sb5nl"]
+[ext_resource type="Texture2D" uid="uid://cf3dnxrnu7cav" path="res://SPRITES/Downloaded_assets/DARK - Dog Companion/Doggo-Run.png" id="6_t0xsg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8k3ul"]
 size = Vector2(20.0691, 52.3768)

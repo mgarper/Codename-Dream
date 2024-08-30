@@ -1,14 +1,14 @@
 [gd_scene load_steps=20 format=3 uid="uid://cbhpux4701bbc"]
 
-[ext_resource type="Script" path="res://Scripts/main_menu.gd" id="1_2xij3"]
-[ext_resource type="Texture2D" uid="uid://dphvgwk2npmoq" path="res://SPRITES/Assets Descargados/stringstar fields/background_0.png" id="1_pidkb"]
-[ext_resource type="FontFile" uid="uid://7v2kawm2qawy" path="res://SPRITES/Assets Descargados/alagard/alagard.ttf" id="2_0sycx"]
-[ext_resource type="Texture2D" uid="uid://d0kupslrb2qsc" path="res://SPRITES/Assets Descargados/stringstar fields/background_1.png" id="2_hi8dv"]
-[ext_resource type="Texture2D" uid="uid://doe3a35dolnl3" path="res://SPRITES/Assets Descargados/stringstar fields/background_2.png" id="3_ywb2q"]
+[ext_resource type="Script" path="res://Scripts/interfaces/main_menu.gd" id="1_2xij3"]
+[ext_resource type="Texture2D" uid="uid://dphvgwk2npmoq" path="res://SPRITES/Downloaded_assets/stringstar fields/background_0.png" id="1_pidkb"]
+[ext_resource type="FontFile" uid="uid://7v2kawm2qawy" path="res://SPRITES/Downloaded_assets/alagard/alagard.ttf" id="2_0sycx"]
+[ext_resource type="Texture2D" uid="uid://d0kupslrb2qsc" path="res://SPRITES/Downloaded_assets/stringstar fields/background_1.png" id="2_hi8dv"]
+[ext_resource type="Texture2D" uid="uid://doe3a35dolnl3" path="res://SPRITES/Downloaded_assets/stringstar fields/background_2.png" id="3_ywb2q"]
 [ext_resource type="Texture2D" uid="uid://ba3kbkecxa5v1" path="res://SPRITES/Player.png" id="4_dr5pd"]
-[ext_resource type="Texture2D" uid="uid://cf3dnxrnu7cav" path="res://SPRITES/Assets Descargados/DARK - Dog Companion/Doggo-Run.png" id="4_fmecp"]
-[ext_resource type="Texture2D" uid="uid://c3mkgp6e5y5d" path="res://SPRITES/Assets Descargados/Ultimate Dark Fantasy UI set v1.2/scalable screen/Variations/Type 1/Screen2.png" id="8_t1ilr"]
-[ext_resource type="AudioStream" uid="uid://3e026q8yual4" path="res://Music/main_menu.mp3" id="9_fblop"]
+[ext_resource type="Texture2D" uid="uid://cf3dnxrnu7cav" path="res://SPRITES/Downloaded_assets/DARK - Dog Companion/Doggo-Run.png" id="4_fmecp"]
+[ext_resource type="Texture2D" uid="uid://c3mkgp6e5y5d" path="res://SPRITES/Downloaded_assets/Ultimate Dark Fantasy UI set v1.2/scalable screen/Variations/Type 1/Screen2.png" id="8_t1ilr"]
+[ext_resource type="AudioStream" uid="uid://3e026q8yual4" path="res://Music/Phase 1/main_menu.mp3" id="9_fblop"]
 
 [sub_resource type="Animation" id="Animation_ar32c"]
 length = 0.001

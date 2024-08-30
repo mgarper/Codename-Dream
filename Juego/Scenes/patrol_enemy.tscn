@@ -1,7 +1,7 @@
 [gd_scene load_steps=18 format=3 uid="uid://bcprvuslm7am8"]
 
 [ext_resource type="Texture2D" uid="uid://bfclj52pge8r8" path="res://SPRITES/enemie 3/Run.png" id="1_4ghof"]
-[ext_resource type="Script" path="res://Scripts/patrol_enemy.gd" id="1_pvj5s"]
+[ext_resource type="Script" path="res://Scripts/enemies/patrol_enemy.gd" id="1_pvj5s"]
 [ext_resource type="Texture2D" uid="uid://dika8fx3fjq1e" path="res://SPRITES/enemie 3/Attack.png" id="2_bkt7o"]
 [ext_resource type="Texture2D" uid="uid://bp3xj8cixl5fj" path="res://SPRITES/enemie 3/Death.png" id="3_b037d"]
 [ext_resource type="Texture2D" uid="uid://28874njc7csd" path="res://SPRITES/enemie 3/Take Hit.png" id="4_e7r7h"]

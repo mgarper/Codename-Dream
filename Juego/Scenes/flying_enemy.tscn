@@ -1,7 +1,7 @@
 [gd_scene load_steps=35 format=3 uid="uid://c2drhko8d5vya"]
 
 [ext_resource type="Texture2D" uid="uid://ciiuhesc5v1sm" path="res://SPRITES/enemie 2/Attack.png" id="1_lf402"]
-[ext_resource type="Script" path="res://Scripts/flying_enemy.gd" id="1_mypw8"]
+[ext_resource type="Script" path="res://Scripts/enemies/flying_enemy.gd" id="1_mypw8"]
 [ext_resource type="Texture2D" uid="uid://fowo7dpo3quj" path="res://SPRITES/enemie 2/Flight.png" id="1_ow864"]
 [ext_resource type="Texture2D" uid="uid://doaqthcaff0ky" path="res://SPRITES/enemie 2/Death.png" id="2_wf6sf"]
 [ext_resource type="Texture2D" uid="uid://d08snbbq7tb6e" path="res://SPRITES/enemie 2/Take Hit.png" id="4_wisfa"]

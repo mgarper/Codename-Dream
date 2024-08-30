@@ -1,14 +1,14 @@
 [gd_scene load_steps=11 format=3 uid="uid://d048g3lliolog"]
 
-[ext_resource type="FontFile" uid="uid://7v2kawm2qawy" path="res://SPRITES/Assets Descargados/alagard/alagard.ttf" id="1_q2ngd"]
-[ext_resource type="Script" path="res://Scripts/character_stats.gd" id="1_whsdn"]
-[ext_resource type="Texture2D" uid="uid://daao4ofakwg5n" path="res://SPRITES/Assets Descargados/Ultimate Dark Fantasy UI set v1.2/scalable screen/Variations/Type 1/Screen8.png" id="2_k53v3"]
+[ext_resource type="FontFile" uid="uid://7v2kawm2qawy" path="res://SPRITES/Downloaded_assets/alagard/alagard.ttf" id="1_q2ngd"]
+[ext_resource type="Script" path="res://Scripts/interfaces/character_stats.gd" id="1_whsdn"]
+[ext_resource type="Texture2D" uid="uid://daao4ofakwg5n" path="res://SPRITES/Downloaded_assets/Ultimate Dark Fantasy UI set v1.2/scalable screen/Variations/Type 1/Screen8.png" id="2_k53v3"]
 [ext_resource type="Texture2D" uid="uid://ba3kbkecxa5v1" path="res://SPRITES/Player.png" id="3_2rhfc"]
-[ext_resource type="Texture2D" uid="uid://c3mkgp6e5y5d" path="res://SPRITES/Assets Descargados/Ultimate Dark Fantasy UI set v1.2/scalable screen/Variations/Type 1/Screen2.png" id="4_316f6"]
-[ext_resource type="Texture2D" uid="uid://bul607jeda7u4" path="res://SPRITES/Assets Descargados/Ultimate Dark Fantasy UI set v1.2/Gothic patterns/Pattern01 x1.png" id="5_g7x5y"]
-[ext_resource type="Texture2D" uid="uid://brljaekpqmhjb" path="res://SPRITES/Assets Descargados/an-8-bit-retro-styled-pixel-art-illustration-of-a-white-stone-sword-with-vines-and-leaves-wrapped-around-the-handle-free-png.webp" id="6_8ur8x"]
-[ext_resource type="Texture2D" uid="uid://d101f7khnwxvx" path="res://SPRITES/Assets Descargados/Hearts n Bars/Hearts n Bars/Hearts_Animations/Heart1.itchio.png" id="6_j6bes"]
-[ext_resource type="Texture2D" uid="uid://4xgndgrkwufx" path="res://SPRITES/Assets Descargados/Ultimate Dark Fantasy UI set v1.2/Skill Tree/Tree/circle.png" id="7_55vj8"]
+[ext_resource type="Texture2D" uid="uid://c3mkgp6e5y5d" path="res://SPRITES/Downloaded_assets/Ultimate Dark Fantasy UI set v1.2/scalable screen/Variations/Type 1/Screen2.png" id="4_316f6"]
+[ext_resource type="Texture2D" uid="uid://bul607jeda7u4" path="res://SPRITES/Downloaded_assets/Ultimate Dark Fantasy UI set v1.2/Gothic patterns/Pattern01 x1.png" id="5_g7x5y"]
+[ext_resource type="Texture2D" uid="uid://brljaekpqmhjb" path="res://SPRITES/Downloaded_assets/an-8-bit-retro-styled-pixel-art-illustration-of-a-white-stone-sword-with-vines-and-leaves-wrapped-around-the-handle-free-png.webp" id="6_8ur8x"]
+[ext_resource type="Texture2D" uid="uid://d101f7khnwxvx" path="res://SPRITES/Downloaded_assets/Hearts n Bars/Hearts n Bars/Hearts_Animations/Heart1.itchio.png" id="6_j6bes"]
+[ext_resource type="Texture2D" uid="uid://4xgndgrkwufx" path="res://SPRITES/Downloaded_assets/Ultimate Dark Fantasy UI set v1.2/Skill Tree/Tree/circle.png" id="7_55vj8"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jveyv"]
 bg_color = Color(0.745137, 0.557563, 0.378819, 1)

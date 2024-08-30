@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://brit6ckaitsbl"
+path="res://.godot/imported/castle.mp3-3f25e14e8be65a749e2d984701c2253c.mp3str"
+
+[deps]
+
+source_file="res://Music/Phase 1/castle.mp3"
+dest_files=["res://.godot/imported/castle.mp3-3f25e14e8be65a749e2d984701c2253c.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

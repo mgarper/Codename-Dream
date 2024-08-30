@@ -1,7 +1,7 @@
 [gd_scene load_steps=19 format=3 uid="uid://dnkcr3f4dwsqd"]
 
 [ext_resource type="Texture2D" uid="uid://boy4yv5yeacos" path="res://SPRITES/enemie 5/Idle.png" id="1_fiibw"]
-[ext_resource type="Script" path="res://Scripts/skeleton.gd" id="1_xievu"]
+[ext_resource type="Script" path="res://Scripts/enemies/skeleton.gd" id="1_xievu"]
 [ext_resource type="Texture2D" uid="uid://5r57yooc0g86" path="res://SPRITES/enemie 5/Death.png" id="2_nwtih"]
 [ext_resource type="Texture2D" uid="uid://dd8vycc0s6lo2" path="res://SPRITES/enemie 5/Attack.png" id="2_p7ggc"]
 [ext_resource type="Texture2D" uid="uid://tnd4g55ejg70" path="res://SPRITES/enemie 5/Walk.png" id="2_pddeb"]

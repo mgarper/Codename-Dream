@@ -1,8 +1,8 @@
 [gd_scene load_steps=6 format=3 uid="uid://d23lvr4qd0sgt"]
 
-[ext_resource type="Texture2D" uid="uid://b5vvq5r0sc0fh" path="res://SPRITES/Assets Descargados/gothicvania-cemetery-files/gothicvania-cemetery-files/PNG/Environment/sliced-objects/statue.png" id="1_7vu1h"]
-[ext_resource type="Script" path="res://Scripts/save_statue.gd" id="1_8jsmq"]
-[ext_resource type="FontFile" uid="uid://7v2kawm2qawy" path="res://SPRITES/Assets Descargados/alagard/alagard.ttf" id="2_j8lg8"]
+[ext_resource type="Texture2D" uid="uid://b5vvq5r0sc0fh" path="res://SPRITES/Downloaded_assets/gothicvania-cemetery-files/gothicvania-cemetery-files/PNG/Environment/sliced-objects/statue.png" id="1_7vu1h"]
+[ext_resource type="Script" path="res://Scripts/player_related/save_statue.gd" id="1_8jsmq"]
+[ext_resource type="FontFile" uid="uid://7v2kawm2qawy" path="res://SPRITES/Downloaded_assets/alagard/alagard.ttf" id="2_j8lg8"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4bbys"]
 size = Vector2(49, 77)

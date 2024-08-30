@@ -1,15 +1,2 @@
 res://Scenes/final_boss.tscn
-res://Scripts/main_menu.gd
-res://Scenes/castle.tscn
-res://Scenes/demo_end.tscn
-res://Scenes/village.tscn
 res://Scenes/player.tscn
-res://Scripts/General.gd
-res://Scripts/Player.gd
-res://Scripts/save_statue.gd
-res://Scenes/beginning.tscn
-res://Scripts/ForestZone.gd
-res://Scripts/final_boss.gd
-res://Scenes/main_menu.tscn
-res://Scripts/VillageZone.gd
-res://Scripts/castle.gd

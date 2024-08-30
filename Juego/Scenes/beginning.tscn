@@ -1,15 +1,15 @@
 [gd_scene load_steps=19 format=3 uid="uid://cnbkjjtlthmth"]
 
-[ext_resource type="Script" path="res://Scripts/ForestZone.gd" id="1_egs2e"]
-[ext_resource type="Texture2D" uid="uid://byyrga434sui1" path="res://SPRITES/Assets Descargados/stringstar fields/tileset.png" id="1_eyx68"]
-[ext_resource type="Texture2D" uid="uid://dphvgwk2npmoq" path="res://SPRITES/Assets Descargados/stringstar fields/background_0.png" id="3_bl8u3"]
-[ext_resource type="Texture2D" uid="uid://d0kupslrb2qsc" path="res://SPRITES/Assets Descargados/stringstar fields/background_1.png" id="4_w4vhj"]
-[ext_resource type="Texture2D" uid="uid://doe3a35dolnl3" path="res://SPRITES/Assets Descargados/stringstar fields/background_2.png" id="5_0hmc0"]
+[ext_resource type="Script" path="res://Scripts/playable_scenes/ForestZone.gd" id="1_egs2e"]
+[ext_resource type="Texture2D" uid="uid://byyrga434sui1" path="res://SPRITES/Downloaded_assets/stringstar fields/tileset.png" id="1_eyx68"]
+[ext_resource type="Texture2D" uid="uid://dphvgwk2npmoq" path="res://SPRITES/Downloaded_assets/stringstar fields/background_0.png" id="3_bl8u3"]
+[ext_resource type="Texture2D" uid="uid://d0kupslrb2qsc" path="res://SPRITES/Downloaded_assets/stringstar fields/background_1.png" id="4_w4vhj"]
+[ext_resource type="Texture2D" uid="uid://doe3a35dolnl3" path="res://SPRITES/Downloaded_assets/stringstar fields/background_2.png" id="5_0hmc0"]
 [ext_resource type="PackedScene" uid="uid://dnkcr3f4dwsqd" path="res://Scenes/skeleton.tscn" id="6_2mri1"]
 [ext_resource type="PackedScene" uid="uid://bcprvuslm7am8" path="res://Scenes/patrol_enemy.tscn" id="8_i7skf"]
 [ext_resource type="PackedScene" uid="uid://c2drhko8d5vya" path="res://Scenes/flying_enemy.tscn" id="8_yn2fj"]
 [ext_resource type="PackedScene" uid="uid://d23lvr4qd0sgt" path="res://Scenes/Save_Statue.tscn" id="9_13ltq"]
-[ext_resource type="AudioStream" uid="uid://dia1ee8is2v2k" path="res://Music/forest.ogg" id="10_57mvn"]
+[ext_resource type="AudioStream" uid="uid://dia1ee8is2v2k" path="res://Music/Phase 1/forest.ogg" id="10_57mvn"]
 
 [sub_resource type="Animation" id="Animation_ar32c"]
 length = 0.001
