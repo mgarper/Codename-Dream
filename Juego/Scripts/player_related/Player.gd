@@ -29,6 +29,7 @@ var switch_attacks = false
 var is_dashing = false
 var is_double_jump = false
 var can_double_jump = true
+var dash_cooldown = false
 
 var max_life = 5
 var max_strength = 1
@@ -101,7 +102,7 @@ func _physics_process(delta):
 		is_double_jump = true
 		can_double_jump = false
 	
-	if Input.is_action_just_pressed("dash") && is_on_floor() && velocity.x != 0:
+	if Input.is_action_just_pressed("dash") && is_on_floor() && velocity.x != 0 && !dash_cooldown:
 		velocity.x *= 10
 		is_dashing = true
 	#Aplica los movimientos a la escena
@@ -131,6 +132,7 @@ func _apply_animation():
 			anim.play("FALL")
 			
 	else:
+		dash_cooldown = true
 		anim.play("DASH")
 		if velocity.x > 0:
 			sprite.flip_h = false
@@ -138,6 +140,8 @@ func _apply_animation():
 			sprite.flip_h = true
 		await anim.animation_finished
 		is_dashing = false
+		await get_tree().create_timer(1.5).timeout
+		dash_cooldown = false
 
 #Funcion predefinida de Godot para gestionar eventos de input fuera de physics process
 func _input(event):
@@ -188,6 +192,7 @@ func dead():
 	set_physics_process(false)
 	$CollisionShape2D.disabled = true
 	health_bar.play("death")
+	anim.stop()
 	anim.play("DEAD")
 	await anim.animation_finished
 	fade.play("fade_in")

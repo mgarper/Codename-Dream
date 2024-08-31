@@ -1587,6 +1587,7 @@ position = Vector2(2547, 337)
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("11_1dryt")
+parameters/looping = true
 
 [connection signal="body_shape_entered" from="ToForest" to="." method="_on_to_forest_body_shape_entered"]
 [connection signal="body_shape_entered" from="ToCastle" to="." method="_on_to_castle_body_shape_entered"]

@@ -5639,6 +5639,7 @@ position = Vector2(2912, 949)
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("14_2dsiy")
 volume_db = -11.794
+parameters/looping = true
 
 [connection signal="body_shape_entered" from="ToVillage" to="." method="_on_to_village_body_shape_entered"]
 [connection signal="body_shape_entered" from="ToBossFight" to="." method="_on_to_boss_fight_body_shape_entered"]
